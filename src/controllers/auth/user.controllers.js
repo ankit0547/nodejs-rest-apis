@@ -1,4 +1,4 @@
-import crypto from "crypto";
+import crypto from "node:crypto";
 import jwt from "jsonwebtoken";
 // import { UserLoginType, UserRolesEnum } from "../../constants.js";
 import { User } from "../../models/auth/user.models.js";
@@ -8,11 +8,11 @@ import { ApiResponse } from "../../utils/ApiResponse.js";
 //   getStaticFilePath,
 //   removeLocalFile,
 // } from "../../../utils/helpers.js";
-// import {
-//   emailVerificationMailgenContent,
-//   forgotPasswordMailgenContent,
-//   sendEmail,
-// } from "../../../utils/mail.js";
+import {
+  emailVerificationMailgenContent,
+  forgotPasswordMailgenContent,
+  sendEmail,
+} from "../../utils/mail.js";
 // import { ApiError } from "../../utils/ApiError.js";
 import { AsyncHandler } from "../../utils/asyncHandler.js";
 import { ApiError } from "../../utils/ApiError.js";
@@ -71,16 +71,16 @@ const registerUser = AsyncHandler(async (req, res) => {
   user.emailVerificationExpiry = tokenExpiry;
   await user.save({ validateBeforeSave: false });
 
-  // await sendEmail({
-  //   email: user?.email,
-  //   subject: "Please verify your email",
-  //   mailgenContent: emailVerificationMailgenContent(
-  //     user.username,
-  //     `${req.protocol}://${req.get(
-  //       "host"
-  //     )}/api/v1/users/verify-email/${unHashedToken}`
-  //   ),
-  // });
+  await sendEmail({
+    email: user?.email,
+    subject: "Please verify your email",
+    mailgenContent: emailVerificationMailgenContent(
+      user.username,
+      `${req.protocol}://${req.get(
+        "host"
+      )}/api/v1/users/verify-email/${unHashedToken}`
+    ),
+  });
 
   const createdUser = await User.findById(user._id).select(
     "-password -refreshToken -emailVerificationToken -emailVerificationExpiry"
@@ -165,6 +165,12 @@ const loginUser = AsyncHandler(async (req, res) => {
 });
 
 const logoutUser = AsyncHandler(async (req, res) => {
+  const user = await User.findById(req.user._id);
+  if (user.refreshToken === "") {
+    return res
+      .status(200)
+      .json(new ApiResponse(200, {}, "User already logged out"));
+  }
   await User.findByIdAndUpdate(
     req.user._id,
     {
