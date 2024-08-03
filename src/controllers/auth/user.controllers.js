@@ -16,6 +16,7 @@ import {
 // import { ApiError } from "../../utils/ApiError.js";
 import { AsyncHandler } from "../../utils/asyncHandler.js";
 import { ApiError } from "../../utils/ApiError.js";
+import { globalconstants } from "../../constants.js";
 
 const generateAccessAndRefreshTokens = async (userId) => {
   try {
@@ -37,7 +38,7 @@ const generateAccessAndRefreshTokens = async (userId) => {
   }
 };
 
-const registerUser = AsyncHandler(async (req, res) => {
+const registerUser = AsyncHandler(async (req, res, next) => {
   const { email, username, password, role } = req.body;
 
   const existedUser = await User.findOne({
@@ -87,14 +88,17 @@ const registerUser = AsyncHandler(async (req, res) => {
   );
 
   if (!createdUser) {
-    throw new ApiError(500, "Something went wrong while registering the user");
+    throw new ApiError(
+      globalconstants.responseFlags.INTERNAL_SERVER_ERROR,
+      "Something went wrong while registering the user"
+    );
   }
 
   return res
     .status(201)
     .json(
       new ApiResponse(
-        200,
+        globalconstants.responseFlags.ACTION_COMPLETE,
         { user: createdUser },
         "Users registered successfully and verification email has been sent on your email."
       )

@@ -6,6 +6,7 @@ import { createServer } from "http";
 import { Server } from "socket.io";
 import { initializeSocketIO } from "./socket/index.js";
 import userRouter from "./route/auth/user.routes.js";
+import healthcheckRouter from "./route/healthCheck.js";
 import { errorHandler } from "./middlewares/errorHandler.middleware.js";
 import morganMiddleware from "./logger/morgan.logger.js";
 const app = express();
@@ -21,6 +22,20 @@ const io = new Server(httpServer, {
 });
 
 app.set("io", io); // using set method to mount the `io` instance on the app to avoid usage of `global`
+
+app.use(function (req, res, next) {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader(
+    "Access-Control-Allow-Methods",
+    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+  );
+  res.setHeader(
+    "Access-Control-Allow-Headers",
+    "X-Requested-With,content-type"
+  );
+  res.setHeader("Access-Control-Allow-Credentials", true);
+  next();
+});
 
 // global middlewares
 app.use(
@@ -39,6 +54,9 @@ app.use(express.static("public")); // configure static file to save images local
 app.use(cookieParser());
 
 app.use(morganMiddleware);
+
+// * healthcheck
+app.use("/api/v1/healthcheck", healthcheckRouter);
 
 // * App apis
 app.use("/api/v1/users", userRouter);

@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
 import { DB_NAME } from "../constants.js";
-// import { TEST } from "../constants";
 
 /** @type {typeof mongoose | undefined} */
 export let dbInstance = undefined;

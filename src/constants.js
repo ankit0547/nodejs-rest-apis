@@ -31,3 +31,15 @@ export const ChatEventEnum = Object.freeze({
 });
 
 export const AvailableChatEvents = Object.values(ChatEventEnum);
+
+export const globalconstants = {
+  responseFlags: {
+    PARAMETER_MISSING: 100,
+    SHOW_ERROR_MESSAGE: 201,
+    INVALID_ACCESS_TOKEN: 101,
+    ERROR_IN_EXECUTION: 404,
+    INTERNAL_SERVER_ERROR: 500,
+    ACTION_COMPLETE: 200,
+    // You can add more flags here as needed
+  },
+};
