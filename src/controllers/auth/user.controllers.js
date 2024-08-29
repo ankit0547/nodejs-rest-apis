@@ -1,6 +1,5 @@
 import crypto from "node:crypto";
 import jwt from "jsonwebtoken";
-// import { UserLoginType, UserRolesEnum } from "../../constants.js";
 import { User } from "../../models/auth/user.models.js";
 import { ApiResponse } from "../../utils/ApiResponse.js";
 // import {
@@ -13,7 +12,6 @@ import {
   forgotPasswordMailgenContent,
   sendEmail,
 } from "../../utils/mail.js";
-// import { ApiError } from "../../utils/ApiError.js";
 import { AsyncHandler } from "../../utils/asyncHandler.js";
 import { ApiError } from "../../utils/ApiError.js";
 import { globalconstants } from "../../constants.js";

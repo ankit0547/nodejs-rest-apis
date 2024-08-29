@@ -38,6 +38,7 @@ export const globalconstants = {
     SHOW_ERROR_MESSAGE: 201,
     INVALID_ACCESS_TOKEN: 101,
     ERROR_IN_EXECUTION: 404,
+    VALIDATION_FAILED: 400,
     INTERNAL_SERVER_ERROR: 500,
     ACTION_COMPLETE: 200,
     // You can add more flags here as needed

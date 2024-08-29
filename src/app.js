@@ -9,6 +9,8 @@ import userRouter from "./route/auth/user.routes.js";
 import healthcheckRouter from "./route/healthCheck.js";
 import { errorHandler } from "./middlewares/errorHandler.middleware.js";
 import morganMiddleware from "./logger/morgan.logger.js";
+import logger from "./logger/winston.logger.js";
+import { v4 as uuidv4 } from "uuid";
 const app = express();
 
 const httpServer = createServer(app);
@@ -23,17 +25,27 @@ const io = new Server(httpServer, {
 
 app.set("io", io); // using set method to mount the `io` instance on the app to avoid usage of `global`
 
-app.use(function (req, res, next) {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader(
-    "Access-Control-Allow-Methods",
-    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
-  );
-  res.setHeader(
-    "Access-Control-Allow-Headers",
-    "X-Requested-With,content-type"
-  );
-  res.setHeader("Access-Control-Allow-Credentials", true);
+// app.use(appHeader);
+
+// app.use((req, res, next) => {
+//   res.setHeader("Access-Control-Allow-Origin", "*");
+//   res.setHeader(
+//     "Access-Control-Allow-Methods",
+//     "GET, POST, OPTIONS, PUT, PATCH, DELETE"
+//   );
+//   res.setHeader(
+//     "Access-Control-Allow-Headers",
+//     "X-Requested-With,content-type"
+//   );
+//   res.setHeader("Access-Control-Allow-Credentials", true);
+//   next();
+// });
+
+// Middleware to set correlation ID
+app.use((req, res, next) => {
+  const correlationId = req.headers["x-correlation-id"] || uuidv4();
+  req.correlationId = correlationId;
+  res.setHeader("x-correlation-id", correlationId);
   next();
 });
 
@@ -53,6 +65,7 @@ app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(express.static("public")); // configure static file to save images locally
 app.use(cookieParser());
 
+// app.use(logger);
 app.use(morganMiddleware);
 
 // * healthcheck

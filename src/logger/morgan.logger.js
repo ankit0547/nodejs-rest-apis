@@ -12,8 +12,13 @@ const skip = () => {
   return env !== "development";
 };
 
+const arr = ["correlation-id", "method"];
+
+morgan.token("correlation-id", (req) => {
+  return req.correlationId;
+});
 const morganMiddleware = morgan(
-  ":remote-addr :method :url :status - :response-time ms",
+  "- :remote-addr - :method - :url - :status - :response-time ms - correlation-id: :correlation-id'",
   { stream, skip }
 );
 

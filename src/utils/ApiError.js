@@ -23,7 +23,7 @@ class ApiError extends Error {
     this.success = false;
     this.errors = errors;
 
-    if (stack) {
+    if (stack && process.env.NODE_ENV === "development") {
       this.stack = stack;
     } else {
       Error.captureStackTrace(this, this.constructor);

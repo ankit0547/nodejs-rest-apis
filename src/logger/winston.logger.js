@@ -47,10 +47,17 @@ const format = winston.format.combine(
 
 // Define which transports the logger must use to print out messages.
 // In this example, we are using three different transports
-const transports = [
-  // Allow the use the console to print the messages
-  new winston.transports.Console(),
-];
+
+const transports = () => {
+  let transports = [];
+  if (process.env.NODE_ENV === "development") {
+    transports.push(new winston.transports.Console());
+  } else {
+    transports.push(new winston.transports.Console());
+    transports.push(new winston.transports.File({ filename: "combined.log" }));
+  }
+  return transports;
+};
 
 // Create the logger instance that has to be exported
 // and used to log messages.
@@ -58,7 +65,7 @@ const logger = winston.createLogger({
   level: level(),
   levels,
   format,
-  transports,
+  transports: transports(),
 });
 
 export default logger;

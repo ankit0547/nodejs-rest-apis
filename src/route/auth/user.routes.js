@@ -10,15 +10,22 @@ import {
   changeCurrentPassword,
 } from "../../controllers/auth/user.controllers.js";
 import { verifyJWT } from "../../middlewares/auth.middleware.js";
+import { validateRequest } from "../../validation/auth/authValidator.js";
+import {
+  loginUserSchema,
+  registerUserSchema,
+} from "../../validation/auth/authValidationSchema.js";
 
 const router = Router();
 
 // Unsecured route
-router.route("/register").post(registerUser);
+router
+  .route("/register")
+  .post(validateRequest(registerUserSchema), registerUser);
 router.route("/refresh-token").post(refreshAccessToken);
 router.route("/verify-email/:verificationToken").get(verifyEmail);
 
-router.route("/login").post(loginUser);
+router.route("/login").post(validateRequest(loginUserSchema), loginUser);
 
 // Secured routes
 router.route("/logout").post(verifyJWT, logoutUser);
