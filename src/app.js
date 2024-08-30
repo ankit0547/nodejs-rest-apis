@@ -25,9 +25,11 @@ const io = new Server(httpServer, {
 
 app.set("io", io); // using set method to mount the `io` instance on the app to avoid usage of `global`
 
-// app.use(appHeader);
-
+// Middleware to set correlation ID and other headers
 app.use((req, res, next) => {
+  const correlationId = req.headers["x-correlation-id"] || uuidv4();
+  req.correlationId = correlationId;
+  res.setHeader("x-correlation-id", correlationId);
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader(
     "Access-Control-Allow-Methods",
@@ -38,14 +40,6 @@ app.use((req, res, next) => {
     "X-Requested-With,content-type"
   );
   res.setHeader("Access-Control-Allow-Credentials", true);
-  next();
-});
-
-// Middleware to set correlation ID
-app.use((req, res, next) => {
-  const correlationId = req.headers["x-correlation-id"] || uuidv4();
-  req.correlationId = correlationId;
-  res.setHeader("x-correlation-id", correlationId);
   next();
 });
 
@@ -65,8 +59,12 @@ app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(express.static("public")); // configure static file to save images locally
 app.use(cookieParser());
 
+import chatRouter from "./route/chat-app/chat.routers.js";
+
 // app.use(logger);
 app.use(morganMiddleware);
+
+app.use("/api/v1/chat-app/chats", chatRouter);
 
 // * healthcheck
 app.use("/api/v1/healthcheck", healthcheckRouter);
