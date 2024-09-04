@@ -2,9 +2,9 @@
   "version": 2,
   "builds": [
     {
-      "src": "src/**/*.js",
+      "src": "src/app.js",
       "use": "@vercel/node",
-      "config": { "maxLambdaSize": "10mb" }
+        "config": { "maxLambdaSize": "10mb" }
     }
   ],
   "routes": [
@@ -12,5 +12,8 @@
       "src": "/(.*)",
       "dest": "/src/app.js"
     }
-  ]
+  ],
+  "env": {
+    "NODE_ENV": "production"
+  }
 }
