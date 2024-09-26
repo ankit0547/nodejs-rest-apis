@@ -15,6 +15,7 @@ import {
 import { AsyncHandler } from "../../utils/asyncHandler.js";
 import { ApiError } from "../../utils/ApiError.js";
 import { globalconstants } from "../../constants.js";
+import { UserProfile } from "../../models/auth/user.profile.js";
 
 const generateAccessAndRefreshTokens = async (userId) => {
   try {
@@ -37,70 +38,84 @@ const generateAccessAndRefreshTokens = async (userId) => {
 };
 
 const registerUser = AsyncHandler(async (req, res, next) => {
-  const { email, username, password, role } = req.body;
+  const { email, username, password, role, firstName, lastName } = req.body;
 
-  const existedUser = await User.findOne({
-    $or: [{ username }, { email }],
-  });
+  try {
+    const existedUser = await User.findOne({ email });
 
-  if (existedUser) {
-    throw new ApiError(409, "User with email or username already exists", []);
-  }
-  const user = await User.create({
-    email,
-    password,
-    username,
-    isEmailVerified: false,
-    // role: role || UserRolesEnum.USER,
-  });
+    if (existedUser) {
+      throw new ApiError(409, "User with email or username already exists", []);
+    }
+    const user = await User.create({
+      email,
+      password,
+      // username,
+      isEmailVerified: false,
+      // role: role || UserRolesEnum.USER,
+    });
 
-  /**
-   * unHashedToken: unHashed token is something we will send to the user's mail
-   * hashedToken: we will keep record of hashedToken to validate the unHashedToken in verify email controller
-   * tokenExpiry: Expiry to be checked before validating the incoming token
-   */
-  const { unHashedToken, hashedToken, tokenExpiry } =
-    user.generateTemporaryToken();
+    /**
+     * unHashedToken: unHashed token is something we will send to the user's mail
+     * hashedToken: we will keep record of hashedToken to validate the unHashedToken in verify email controller
+     * tokenExpiry: Expiry to be checked before validating the incoming token
+     */
+    const { unHashedToken, hashedToken, tokenExpiry } =
+      user.generateTemporaryToken();
 
-  /**
-   * assign hashedToken and tokenExpiry in DB till user clicks on email verification link
-   * The email verification is handled by {@link verifyEmail}
-   */
-  user.emailVerificationToken = hashedToken;
-  user.emailVerificationExpiry = tokenExpiry;
-  await user.save({ validateBeforeSave: false });
+    /**
+     * assign hashedToken and tokenExpiry in DB till user clicks on email verification link
+     * The email verification is handled by {@link verifyEmail}
+     */
+    user.emailVerificationToken = hashedToken;
+    user.emailVerificationExpiry = tokenExpiry;
+    const savedUser = await user.save({ validateBeforeSave: false });
 
-  await sendEmail({
-    email: user?.email,
-    subject: "Please verify your email",
-    mailgenContent: emailVerificationMailgenContent(
-      user.username,
-      `${req.protocol}://${req.get(
-        "host"
-      )}/api/v1/users/verify-email/${unHashedToken}`
-    ),
-  });
+    // Step 3: Create and save the profile with reference to the user
+    const newProfile = new UserProfile({
+      firstName,
+      lastName,
+      username,
+      profileId: savedUser._id, // Reference the user ID
+    });
+    const savedProfile = await newProfile.save({ validateBeforeSave: false }); // Save the profile
 
-  const createdUser = await User.findById(user._id).select(
-    "-password -refreshToken -emailVerificationToken -emailVerificationExpiry"
-  );
+    await sendEmail({
+      email: user?.email,
+      subject: "Please verify your email",
+      mailgenContent: emailVerificationMailgenContent(
+        newProfile.username,
+        `${req.protocol}://${req.get(
+          "host"
+        )}/api/v1/users/verify-email/${unHashedToken}`
+      ),
+    });
 
-  if (!createdUser) {
-    throw new ApiError(
-      globalconstants.responseFlags.INTERNAL_SERVER_ERROR,
-      "Something went wrong while registering the user"
+    const createdUser = await User.findById(user._id).select(
+      "-password -refreshToken -emailVerificationToken -emailVerificationExpiry -__v -createdAt -updatedAt"
     );
-  }
+    const createdUserProfile = await UserProfile.findById(
+      newProfile._id
+    ).select("-createdAt -updatedAt -__v");
 
-  return res
-    .status(201)
-    .json(
+    if (!createdUser) {
+      throw new ApiError(
+        globalconstants.responseFlags.INTERNAL_SERVER_ERROR,
+        "Something went wrong while registering the user"
+      );
+    }
+
+    return res.json(
       new ApiResponse(
         globalconstants.responseFlags.ACTION_COMPLETE,
-        { user: createdUser },
+        { user: createdUser, profile: createdUserProfile },
+        // { user: createdUser },
         "Users registered successfully and verification email has been sent on your email."
       )
     );
+  } catch (err) {
+    console.log(err);
+    throw new ApiError(400, "Username or email is required", err);
+  }
 });
 
 const loginUser = AsyncHandler(async (req, res) => {
@@ -110,9 +125,7 @@ const loginUser = AsyncHandler(async (req, res) => {
     throw new ApiError(400, "Username or email is required");
   }
 
-  const user = await User.findOne({
-    $or: [{ username }, { email }],
-  });
+  const user = await User.findOne({ email });
 
   if (!user) {
     throw new ApiError(404, "User does not exist");
@@ -135,7 +148,7 @@ const loginUser = AsyncHandler(async (req, res) => {
   const isPasswordValid = await user.isPasswordCorrect(password);
 
   if (!isPasswordValid) {
-    throw new ApiError(401, "Invalid user credentials");
+    throw new ApiError(422, "Invalid user credentials");
   }
 
   const { accessToken, refreshToken } = await generateAccessAndRefreshTokens(
@@ -437,9 +450,17 @@ const assignRole = AsyncHandler(async (req, res) => {
 });
 
 const getCurrentUser = AsyncHandler(async (req, res) => {
-  return res
-    .status(200)
-    .json(new ApiResponse(200, req.user, "Current user fetched successfully"));
+  const user = await User.findById(req.user?.id, "email");
+
+  const profile = await UserProfile.findOne({ profileId: req.user?.id });
+
+  // Find user by profileId
+
+  // const user = await User.findById(req.user?._id, "email"); // Populate to get user details
+  const data = { profile, user };
+  return res.json(
+    new ApiResponse(200, data, "Current user fetched successfully")
+  );
 });
 
 const handleSocialLogin = AsyncHandler(async (req, res) => {

@@ -70,7 +70,7 @@ app.use("/api/v1/chat-app/chats", chatRouter);
 app.use("/api/v1/healthcheck", healthcheckRouter);
 
 // * App apis
-app.use("/api/v1/users", userRouter);
+app.use("/api/v1/user", userRouter);
 
 // import chatRouter from "./routes/apps/chat-app/chat.routes.js";
 // import messageRouter from "./routes/apps/chat-app/message.routes.js";
