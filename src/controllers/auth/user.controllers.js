@@ -86,7 +86,7 @@ const registerUser = AsyncHandler(async (req, res, next) => {
         newProfile.username,
         `${req.protocol}://${req.get(
           "host"
-        )}/api/v1/users/verify-email/${unHashedToken}`
+        )}/api/v1/user/verify-email/${unHashedToken}`
       ),
     });
 
