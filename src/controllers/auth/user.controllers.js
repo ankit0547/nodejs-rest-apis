@@ -49,7 +49,6 @@ const registerUser = AsyncHandler(async (req, res, next) => {
     const user = await User.create({
       email,
       password,
-      // username,
       isEmailVerified: false,
       // role: role || UserRolesEnum.USER,
     });
@@ -68,16 +67,18 @@ const registerUser = AsyncHandler(async (req, res, next) => {
      */
     user.emailVerificationToken = hashedToken;
     user.emailVerificationExpiry = tokenExpiry;
-    const savedUser = await user.save({ validateBeforeSave: false });
+    const savedUser = await user.save();
 
     // Step 3: Create and save the profile with reference to the user
     const newProfile = new UserProfile({
-      firstName,
-      lastName,
-      username,
+      ...req.body,
+      // email,
+      // firstName,
+      // lastName,
+      // username,
       profileId: savedUser._id, // Reference the user ID
     });
-    const savedProfile = await newProfile.save({ validateBeforeSave: false }); // Save the profile
+    const savedProfile = await newProfile.save(); // Save the profile
 
     await sendEmail({
       email: user?.email,
@@ -107,14 +108,14 @@ const registerUser = AsyncHandler(async (req, res, next) => {
     return res.json(
       new ApiResponse(
         globalconstants.responseFlags.ACTION_COMPLETE,
-        { user: createdUser, profile: createdUserProfile },
+        {},
         // { user: createdUser },
         "Users registered successfully and verification email has been sent on your email."
       )
     );
   } catch (err) {
     console.log(err);
-    throw new ApiError(400, "Username or email is required", err);
+    throw new ApiError(400, "Username or email is required", err.errors);
   }
 });
 
@@ -177,6 +178,24 @@ const loginUser = AsyncHandler(async (req, res) => {
         "User logged in successfully"
       )
     );
+});
+
+const getAllUsers = AsyncHandler(async (req, res) => {
+  const users = await User.find().select(
+    "-password -refreshToken -emailVerificationToken -emailVerificationExpiry"
+  );
+  const profiles = await UserProfile.find();
+
+  if (!users || !profiles) {
+    throw new ApiError(404, "Users does not exist");
+  }
+  return res.json(
+    new ApiResponse(
+      200,
+      { users: users, profiles: profiles }, // send access and refresh token in response if client decides to save them by themselves
+      "Users fetched successfully"
+    )
+  );
 });
 
 const logoutUser = AsyncHandler(async (req, res) => {
@@ -540,4 +559,5 @@ export {
   resetForgottenPassword,
   updateUserAvatar,
   verifyEmail,
+  getAllUsers,
 };

@@ -6,6 +6,7 @@ import { createServer } from "http";
 import { Server } from "socket.io";
 import { initializeSocketIO } from "./socket/index.js";
 import userRouter from "./route/auth/user.routes.js";
+import lookupRouter from "./route/lookup/lookup.js";
 import healthcheckRouter from "./route/healthCheck.js";
 import { errorHandler } from "./middlewares/errorHandler.middleware.js";
 import morganMiddleware from "./logger/morgan.logger.js";
@@ -71,6 +72,7 @@ app.use("/api/v1/healthcheck", healthcheckRouter);
 
 // * App apis
 app.use("/api/v1/user", userRouter);
+app.use("/api/v1/lookup", lookupRouter);
 
 // import chatRouter from "./routes/apps/chat-app/chat.routes.js";
 // import messageRouter from "./routes/apps/chat-app/message.routes.js";

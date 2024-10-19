@@ -32,6 +32,10 @@ const userSchema = new Schema(
       type: String,
       required: [true, "Password is required"],
     },
+    status: {
+      type: String,
+      default: "Active",
+    },
     // loginType: {
     //   type: String,
     //   enum: AvailableSocialLogins,
