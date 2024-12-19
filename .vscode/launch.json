@@ -7,9 +7,16 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "api:dev",
+      "name": "API:dev:windows",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}\\src\\index.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "API:dev:linux",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}//src//index.js"
     }
   ]
 }
