@@ -50,9 +50,35 @@ class UserRepository {
     return await User.findById(id);
   }
 
-  // Find user by ID
-  async getUserByParm(id) {
+  // Find user by Parm
+  async getUserByEmail(email) {
     return await User.findOne({ email });
+  }
+  // check user Password Correct or not
+  async generateAccessAndRefreshTokens(userId) {
+    try {
+      const user = await User.findById(userId);
+
+      const accessToken = user.generateAccessToken();
+      const refreshToken = user.generateRefreshToken();
+
+      // attach refresh token to the user document to avoid refreshing the access token with multiple refresh tokens
+      user.refreshToken = refreshToken;
+
+      await user.save({ validateBeforeSave: false });
+      return { accessToken, refreshToken };
+    } catch (error) {
+      throw new ApiError(
+        500,
+        "Something went wrong while generating the access token"
+      );
+    }
+  }
+  // get LoggedIn User Without Password
+  async getLoggedInUserWithoutPassword(userId) {
+    return await User.findById(userId).select(
+      "-password -refreshToken -emailVerificationToken -emailVerificationExpiry -__v"
+    );
   }
 
   // Update user by ID

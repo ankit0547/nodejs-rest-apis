@@ -12,8 +12,14 @@ class UserService {
   async getUserById(id) {
     return await UserRepository.findById(id);
   }
-  async getUserByParm(parm) {
-    return await UserRepository.getUserByParm(parm);
+  async getUserByEmail(email) {
+    return await UserRepository.getUserByEmail(email);
+  }
+  async generateAccessAndRefreshTokens(userId) {
+    return await UserRepository.generateAccessAndRefreshTokens(userId);
+  }
+  async getLoggedInUserWithoutPassword(userId) {
+    return await UserRepository.getLoggedInUserWithoutPassword(userId);
   }
 
   async updateUser(id, updateData) {

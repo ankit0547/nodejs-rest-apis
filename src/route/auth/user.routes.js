@@ -23,6 +23,7 @@ import { UserProfile } from "../../models/auth/user.profile.js";
 import { ApiResponse } from "../../utils/ApiResponse.js";
 import { globalconstants } from "../../constants.js";
 import UserController from "../../controllers/user/UserController.js";
+import AuthController from "../../controllers/auth/AuthController.js";
 
 const router = Router();
 
@@ -30,17 +31,20 @@ router
   .route("/register")
   .post(validateRequest(registerUserSchema), UserController.createUser);
 
+router
+  .route("/login")
+  .post(validateRequest(loginUserSchema), AuthController.login);
+router.route("/logout").post(verifyJWT, logoutUser);
+
 router.route("/refresh-token").post(refreshAccessToken);
 router.route("/verify-email/:verificationToken").get(verifyEmail);
 
-router.route("/login").post(validateRequest(loginUserSchema), loginUser);
-// router.route("/login").post(validateRequest(loginUserSchema), );
+// router.route("/login").post(validateRequest(loginUserSchema), loginUser);
 
 router.route("/").get(verifyJWT, getCurrentUser);
 router.route("/profile:id").put(verifyJWT, updateUserProfile);
 
 // Secured routes
-router.route("/logout").post(verifyJWT, logoutUser);
 
 router.route("/forgot-password").post(forgotPasswordRequest);
 router.route("/change-password").post(verifyJWT, changeCurrentPassword);

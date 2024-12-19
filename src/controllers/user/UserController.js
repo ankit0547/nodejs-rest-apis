@@ -36,7 +36,6 @@ class UserController {
       );
       //   res.status(201).json({ success: true, user });
     } catch (err) {
-      res.status(500).json({ success: false, message: err.message });
       res
         .status(500)
         .json(
