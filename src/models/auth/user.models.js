@@ -1,20 +1,26 @@
 import bcrypt from "bcrypt";
 import crypto from "node:crypto";
+import slugify from "slugify";
 import jwt from "jsonwebtoken";
 import mongoose, { Schema } from "mongoose";
-import { USER_TEMPORARY_TOKEN_EXPIRY } from "../../constants.js";
-// import // AvailableSocialLogins,
-// // AvailableUserRoles,
-// USER_TEMPORARY_TOKEN_EXPIRY,
-// // UserLoginType,
-// // UserRolesEnum,
-// "../../constants";
+import {
+  AvailableUserRoles,
+  USER_TEMPORARY_TOKEN_EXPIRY,
+  UserRolesEnum,
+} from "../../constants.js";
 // import { Cart } from "../ecommerce/cart.models.js";
 // import { EcomProfile } from "../ecommerce/profile.models.js";
 // import { SocialProfile } from "../social-media/profile.models.js";
 
 const userSchema = new Schema(
   {
+    firstName: { type: String },
+    lastName: { type: String },
+    username: {
+      type: String,
+      lowercase: true,
+      trim: true,
+    },
     email: {
       type: String,
       required: true,
@@ -22,12 +28,12 @@ const userSchema = new Schema(
       lowercase: true,
       trim: true,
     },
-    // role: {
-    //   type: String,
-    //   enum: AvailableUserRoles,
-    //   default: UserRolesEnum.USER,
-    //   required: true,
-    // },
+    role: {
+      type: String,
+      enum: AvailableUserRoles,
+      default: UserRolesEnum.USER,
+      required: true,
+    },
     password: {
       type: String,
       required: [true, "Password is required"],
@@ -115,5 +121,54 @@ userSchema.methods.generateTemporaryToken = function () {
 
   return { unHashedToken, hashedToken, tokenExpiry };
 };
+
+userSchema.pre("save", async function (next) {
+  const user = this;
+  // Ensure both firstName and lastName are available
+  if (user.firstName && user.lastName) {
+    const fullName = `${user.firstName} ${user.lastName}`;
+    // Regex to capture first 3 letters of first and last names
+    const regex = /^(\w{3})\w*\s(\w{3})\w*$/;
+    const match = fullName.match(regex);
+
+    if (match) {
+      const firstNamePart = match[1];
+      const lastNamePart = match[2];
+
+      // Create a slug by concatenating the parts
+      const rawSlug = `${firstNamePart}-${lastNamePart}`;
+
+      // Optionally use slugify for further cleanup
+      const slug = slugify(rawSlug, {
+        lower: true, // Convert to lowercase
+        strict: true, // Remove special characters (though not needed here)
+        replacement: "_", // Replace spaces (but spaces aren't expected here)
+      });
+
+      user.username = slug;
+    }
+  }
+  next();
+});
+
+// Pre-update hook to prevent changing firstName and lastName
+userSchema.pre("findOneAndUpdate", async function (next) {
+  const update = this.getUpdate();
+
+  // Prevent firstName or lastName from being changed
+  if (update.firstName || update.lastName) {
+    const user = await this.model.findOne(this.getQuery());
+
+    if (update.firstName && update.firstName !== user.firstName) {
+      return next(new Error("Changing firstName is not allowed"));
+    }
+
+    if (update.lastName && update.lastName !== user.lastName) {
+      return next(new Error("Changing lastName is not allowed"));
+    }
+  }
+
+  next();
+});
 
 export const User = mongoose.model("User", userSchema);

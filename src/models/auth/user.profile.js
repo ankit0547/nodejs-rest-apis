@@ -33,12 +33,12 @@ const userProfileSchema = new mongoose.Schema({
     trim: true,
   },
   address: {
-    address1: { type: String },
-    address2: { type: String }, // Optional field
-    city: { type: String },
-    state: { type: String },
-    postalCode: { type: String },
-    country: { type: String },
+    address1: { type: String, default: "" },
+    address2: { type: String, default: "" }, // Optional field
+    city: { type: String, default: "" },
+    state: { type: String, default: "" },
+    postalCode: { type: String, default: "" },
+    country: { type: String, default: "" },
   },
   // address: {
   //   type: String,

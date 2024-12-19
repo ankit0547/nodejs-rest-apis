@@ -16,6 +16,7 @@ import { AsyncHandler } from "../../utils/asyncHandler.js";
 import { ApiError } from "../../utils/ApiError.js";
 import { globalconstants } from "../../constants.js";
 import { UserProfile } from "../../models/auth/user.profile.js";
+import { validateObjectId } from "../../utils/mongoUtils.js";
 
 const generateAccessAndRefreshTokens = async (userId) => {
   try {
@@ -38,7 +39,7 @@ const generateAccessAndRefreshTokens = async (userId) => {
 };
 
 const registerUser = AsyncHandler(async (req, res, next) => {
-  const { email, username, password, role, firstName, lastName } = req.body;
+  const { email, password } = req.body;
 
   try {
     const existedUser = await User.findOne({ email });
@@ -53,11 +54,11 @@ const registerUser = AsyncHandler(async (req, res, next) => {
       // role: role || UserRolesEnum.USER,
     });
 
-    /**
-     * unHashedToken: unHashed token is something we will send to the user's mail
-     * hashedToken: we will keep record of hashedToken to validate the unHashedToken in verify email controller
-     * tokenExpiry: Expiry to be checked before validating the incoming token
-     */
+    // /**
+    //  * unHashedToken: unHashed token is something we will send to the user's mail
+    //  * hashedToken: we will keep record of hashedToken to validate the unHashedToken in verify email controller
+    //  * tokenExpiry: Expiry to be checked before validating the incoming token
+    //  */
     const { unHashedToken, hashedToken, tokenExpiry } =
       user.generateTemporaryToken();
 
@@ -72,10 +73,6 @@ const registerUser = AsyncHandler(async (req, res, next) => {
     // Step 3: Create and save the profile with reference to the user
     const newProfile = new UserProfile({
       ...req.body,
-      // email,
-      // firstName,
-      // lastName,
-      // username,
       profileId: savedUser._id, // Reference the user ID
     });
     const savedProfile = await newProfile.save(); // Save the profile
@@ -109,13 +106,11 @@ const registerUser = AsyncHandler(async (req, res, next) => {
       new ApiResponse(
         globalconstants.responseFlags.ACTION_COMPLETE,
         {},
-        // { user: createdUser },
         "Users registered successfully and verification email has been sent on your email."
       )
     );
   } catch (err) {
-    console.log(err);
-    throw new ApiError(400, "Username or email is required", err.errors);
+    throw new ApiError(err.statusCode, err.message, err.errors);
   }
 });
 
@@ -476,7 +471,7 @@ const getCurrentUser = AsyncHandler(async (req, res) => {
   // Find user by profileId
 
   // const user = await User.findById(req.user?._id, "email"); // Populate to get user details
-  const data = { profile, user };
+  const data = { profile };
   return res.json(
     new ApiResponse(200, data, "Current user fetched successfully")
   );
@@ -545,6 +540,32 @@ const updateUserAvatar = AsyncHandler(async (req, res) => {
     .json(new ApiResponse(200, updatedUser, "Avatar updated successfully"));
 });
 
+const updateUserProfile = AsyncHandler(async (req, res) => {
+  const profileId = req.params.id;
+  const { address, username } = req.body;
+
+  // Convert profileId to ObjectId (to ensure correct format)
+
+  try {
+    const objectId = validateObjectId(profileId);
+    const user = await UserProfile.findOneAndUpdate(
+      { profileId: objectId }, // Use profileId instead of _id
+      {
+        $set: { address, username, updatedAt: new Date() }, // Update only address
+      },
+      { new: true }
+    );
+
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+
+    res.status(200).json({ message: "Profile updated successfully", user });
+  } catch (error) {
+    res.status(400).json({ message: "Error updating profile", error });
+  }
+});
+
 export {
   assignRole,
   changeCurrentPassword,
@@ -560,4 +581,5 @@ export {
   updateUserAvatar,
   verifyEmail,
   getAllUsers,
+  updateUserProfile,
 };

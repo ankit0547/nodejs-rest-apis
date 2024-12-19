@@ -44,3 +44,13 @@ export const globalconstants = {
     // You can add more flags here as needed
   },
 };
+
+/**
+ * @type {{ ADMIN: "ADMIN"; USER: "USER"} as const}
+ */
+export const UserRolesEnum = {
+  ADMIN: "ADMIN",
+  USER: "USER",
+};
+
+export const AvailableUserRoles = Object.values(UserRolesEnum);
