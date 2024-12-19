@@ -1,8 +1,5 @@
 import { Router } from "express";
 import {
-  loginUser,
-  logoutUser,
-  registerUser,
   forgotPasswordRequest,
   verifyEmail,
   resetForgottenPassword,
@@ -18,38 +15,35 @@ import {
   loginUserSchema,
   registerUserSchema,
 } from "../../validation/auth/authValidationSchema.js";
-import { User } from "../../models/auth/user.models.js";
-import { UserProfile } from "../../models/auth/user.profile.js";
+import { User } from "../../models/user/user.models.js";
+import { UserProfile } from "../../models/user/user.profile.js";
 import { ApiResponse } from "../../utils/ApiResponse.js";
 import { globalconstants } from "../../constants.js";
-import UserController from "../../controllers/user/UserController.js";
-import AuthController from "../../controllers/auth/AuthController.js";
+import { AuthController, UserController } from "../../controllers/index.js";
 
 const router = Router();
 
-router
-  .route("/register")
-  .post(validateRequest(registerUserSchema), UserController.createUser);
-
+// Auth Routes
 router
   .route("/login")
   .post(validateRequest(loginUserSchema), AuthController.login);
-router.route("/logout").post(verifyJWT, logoutUser);
-
-router.route("/refresh-token").post(refreshAccessToken);
+router.route("/logout").post(verifyJWT, AuthController.logout);
+router.route("/refresh-token").post(AuthController.refreshAccessToken);
 router.route("/verify-email/:verificationToken").get(verifyEmail);
 
-// router.route("/login").post(validateRequest(loginUserSchema), loginUser);
+router.route("/forgot-password").post(AuthController.forgotPasswordRequest);
+router.route("/change-password").post(verifyJWT, changeCurrentPassword);
+router.route("/reset-password/:resetToken").post(resetForgottenPassword);
+
+// User Secure Routes
+router
+  .route("/register")
+  .post(validateRequest(registerUserSchema), UserController.createUser);
 
 router.route("/").get(verifyJWT, getCurrentUser);
 router.route("/profile:id").put(verifyJWT, updateUserProfile);
 
 // Secured routes
-
-router.route("/forgot-password").post(forgotPasswordRequest);
-router.route("/change-password").post(verifyJWT, changeCurrentPassword);
-
-router.route("/reset-password/:resetToken").post(resetForgottenPassword);
 
 router.route("/all").get(getAllUsers);
 router.route("/deleteAll").get(async (req, res) => {

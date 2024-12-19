@@ -1,4 +1,5 @@
 import { globalconstants } from "../../constants.js";
+import AuthService from "../../services/auth/AuthService.js";
 import UserService from "../../services/user/UserService.js";
 import { ApiError } from "../../utils/ApiError.js";
 import { ApiResponse } from "../../utils/ApiResponse.js";
@@ -13,24 +14,7 @@ class AuthController {
         throw new ApiError(400, "Username or email is required");
       }
 
-      const user = await UserService.getUserByEmail(email);
-
-      if (!user) {
-        throw new ApiError(404, "User does not exist");
-      }
-      const isPasswordValid = await user.isPasswordCorrect(password);
-
-      if (!isPasswordValid) {
-        throw new ApiError(422, "Invalid user credentials");
-      }
-
-      const { accessToken, refreshToken } =
-        await UserService.generateAccessAndRefreshTokens(user._id);
-
-      // get the user document ignoring the password and refreshToken field
-      const loggedInUser = await UserService.getLoggedInUserWithoutPassword(
-        user._id
-      );
+      const user = await AuthService.getVerifiedUser(email, password);
 
       // TODO: Add more options to make cookie more secure and reliable
       const options = {
@@ -39,12 +23,12 @@ class AuthController {
       };
       return res
         .status(200)
-        .cookie("accessToken", accessToken, options) // set the access token in the cookie
-        .cookie("refreshToken", refreshToken, options) // set the refresh token in the cookie
+        .cookie("accessToken", user.accessToken, options) // set the access token in the cookie
+        .cookie("refreshToken", user.refreshToken, options) // set the refresh token in the cookie
         .json(
           new ApiResponse(
             200,
-            { user: loggedInUser, accessToken, refreshToken }, // send access and refresh token in response if client decides to save them by themselves
+            user, // send access and refresh token in response if client decides to save them by themselves
             "User logged in successfully"
           )
         );
@@ -90,6 +74,54 @@ class AuthController {
         )
       );
     }
+  }
+  async refreshAccessToken(req, res) {
+    try {
+      const incomingRefreshToken =
+        req.cookies.refreshToken || req.body.refreshToken;
+
+      if (!incomingRefreshToken) {
+        throw new ApiError(401, "Unauthorized request");
+      }
+
+      const updatedTokens = await AuthService.getRefreshAccessToken(
+        incomingRefreshToken
+      );
+      const options = {
+        httpOnly: true,
+        secure: process.env.NODE_ENV === "production",
+      };
+      return res
+        .status(200)
+        .cookie("accessToken", updatedTokens.accessToken, options)
+        .cookie("refreshToken", updatedTokens.newRefreshToken, options)
+        .json(new ApiResponse(200, updatedTokens, "Access token refreshed"));
+    } catch (error) {
+      return res.json(
+        new ApiError(401, error?.message || "Invalid refresh token")
+      );
+    }
+  }
+  async forgotPasswordRequest(req, res) {
+    const { email } = req.body;
+
+    // Get email from the client and check if user exists
+    const user = await UserService.getUserByEmail(email);
+
+    if (!user) {
+      throw new ApiError(404, "User does not exists", []);
+    }
+
+    await AuthService.forgotPassword(user);
+    return res
+      .status(200)
+      .json(
+        new ApiResponse(
+          200,
+          {},
+          "Password reset mail has been sent on your mail id"
+        )
+      );
   }
 }
 

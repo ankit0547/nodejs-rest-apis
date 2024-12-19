@@ -1,4 +1,6 @@
-import { User } from "../../models/auth/user.models.js";
+import { UserModel } from "../../models/index.js";
+import jwt from "jsonwebtoken";
+
 import {
   emailVerificationMailgenContent,
   sendEmail,
@@ -7,7 +9,7 @@ import {
 class UserRepository {
   // Create a new user
   async create(userData, req) {
-    const user = new User({
+    const user = new UserModel({
       ...userData,
       isEmailVerified: false,
       // role: role || UserRolesEnum.USER,
@@ -42,22 +44,22 @@ class UserRepository {
 
   // Read all users
   async findAll() {
-    return await User.find();
+    return await UserModel.find();
   }
 
   // Find user by ID
   async findById(id) {
-    return await User.findById(id);
+    return await UserModel.findById(id);
   }
 
   // Find user by Parm
   async getUserByEmail(email) {
-    return await User.findOne({ email });
+    return await UserModel.findOne({ email });
   }
   // check user Password Correct or not
   async generateAccessAndRefreshTokens(userId) {
     try {
-      const user = await User.findById(userId);
+      const user = await UserModel.findById(userId);
 
       const accessToken = user.generateAccessToken();
       const refreshToken = user.generateRefreshToken();
@@ -76,22 +78,24 @@ class UserRepository {
   }
   // get LoggedIn User Without Password
   async getLoggedInUserWithoutPassword(userId) {
-    return await User.findById(userId).select(
-      "-password -refreshToken -emailVerificationToken -emailVerificationExpiry -__v"
+    return await UserModel.findById(userId).select(
+      "-password -refreshToken -emailVerificationToken -emailVerificationExpiry -__v -forgotPasswordExpiry -forgotPasswordToken"
     );
   }
 
   // Update user by ID
   async update(id, updateData) {
-    return await User.findByIdAndUpdate(id, updateData, { new: true });
+    return await UserModel.findByIdAndUpdate(id, updateData, { new: true });
+  }
+  // Verify JWT Token
+  async verifyJwtToken(incomingRefreshToken) {
+    return jwt.verify(incomingRefreshToken, process.env.REFRESH_TOKEN_SECRET);
   }
 
   // Delete user by ID
   async delete(id) {
-    return await User.findByIdAndDelete(id);
+    return await UserModel.findByIdAndDelete(id);
   }
 }
-
-// module.exports = new UserRepository();
 
 export default new UserRepository();

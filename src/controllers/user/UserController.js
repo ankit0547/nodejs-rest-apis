@@ -1,5 +1,5 @@
 import { globalconstants } from "../../constants.js";
-import { User } from "../../models/auth/user.models.js";
+import { User } from "../../models/user/user.models.js";
 import UserService from "../../services/user/UserService.js";
 import { ApiError } from "../../utils/ApiError.js";
 import { ApiResponse } from "../../utils/ApiResponse.js";

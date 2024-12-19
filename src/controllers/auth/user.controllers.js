@@ -1,6 +1,6 @@
 import crypto from "node:crypto";
 import jwt from "jsonwebtoken";
-import { User } from "../../models/auth/user.models.js";
+import { User } from "../../models/user/user.models.js";
 import { ApiResponse } from "../../utils/ApiResponse.js";
 // import {
 //   getLocalPath,
@@ -15,7 +15,7 @@ import {
 import { AsyncHandler } from "../../utils/asyncHandler.js";
 import { ApiError } from "../../utils/ApiError.js";
 import { globalconstants } from "../../constants.js";
-import { UserProfile } from "../../models/auth/user.profile.js";
+import { UserProfile } from "../../models/user/user.profile.js";
 import { validateObjectId } from "../../utils/mongoUtils.js";
 
 const generateAccessAndRefreshTokens = async (userId) => {

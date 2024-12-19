@@ -21,6 +21,9 @@ class UserService {
   async getLoggedInUserWithoutPassword(userId) {
     return await UserRepository.getLoggedInUserWithoutPassword(userId);
   }
+  async verifyJwtToken(incomingRefreshToken) {
+    return await UserRepository.verifyJwtToken(incomingRefreshToken);
+  }
 
   async updateUser(id, updateData) {
     return await UserRepository.update(id, updateData);
