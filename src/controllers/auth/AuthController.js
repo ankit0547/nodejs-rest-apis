@@ -123,6 +123,30 @@ class AuthController {
         )
       );
   }
+
+  async getVerifyEmail(req, res) {
+    try {
+      const { verificationToken } = req.params;
+
+      if (!verificationToken) {
+        throw new ApiError(400, "Email verification token is missing");
+      }
+      await AuthService.verifyEmailAddress(verificationToken);
+
+      return res
+        .status(200)
+        .json(
+          new ApiResponse(200, { isEmailVerified: true }, "Email is verified")
+        );
+    } catch (err) {
+      res.json(
+        new ApiError(
+          err.statusCode || globalconstants.responseFlags.INTERNAL_SERVER_ERROR,
+          err.message
+        )
+      );
+    }
+  }
 }
 
 export default new AuthController();

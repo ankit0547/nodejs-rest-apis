@@ -24,6 +24,9 @@ class UserService {
   async verifyJwtToken(incomingRefreshToken) {
     return await UserRepository.verifyJwtToken(incomingRefreshToken);
   }
+  async verifyEmailToken(incomingEmailHashedToken) {
+    return await UserRepository.verifyEmailToken(incomingEmailHashedToken);
+  }
 
   async updateUser(id, updateData) {
     return await UserRepository.update(id, updateData);

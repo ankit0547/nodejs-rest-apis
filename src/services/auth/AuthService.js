@@ -65,6 +65,10 @@ class AuthService {
       ),
     });
   }
+
+  async verifyEmailAddress(verificationToken) {
+    return await UserService.verifyEmailToken(verificationToken);
+  }
 }
 
 export default new AuthService();

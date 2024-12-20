@@ -29,7 +29,9 @@ router
   .post(validateRequest(loginUserSchema), AuthController.login);
 router.route("/logout").post(verifyJWT, AuthController.logout);
 router.route("/refresh-token").post(AuthController.refreshAccessToken);
-router.route("/verify-email/:verificationToken").get(verifyEmail);
+router
+  .route("/verify-email/:verificationToken")
+  .get(AuthController.getVerifyEmail);
 
 router.route("/forgot-password").post(AuthController.forgotPasswordRequest);
 router.route("/change-password").post(verifyJWT, changeCurrentPassword);
