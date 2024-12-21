@@ -14,7 +14,6 @@ class UserRepository {
     const user = new UserModel({
       ...userData,
       isEmailVerified: false,
-      // role: role || UserRolesEnum.USER,
     });
 
     /**
