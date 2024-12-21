@@ -1,9 +1,5 @@
 import { Router } from "express";
 import { UserController } from "../../controllers/index.js";
-import {
-  getCurrentUser,
-  updateUserProfile,
-} from "../../controllers/auth/user.controllers.js";
 import { verifyJWT } from "../../middlewares/auth.middleware.js";
 import { registerUserSchema } from "../../validation/auth/authValidationSchema.js";
 import { validateRequest } from "../../validation/auth/authValidator.js";
@@ -14,11 +10,7 @@ const router = Router();
 // User Secure Routes
 router
   .route("/register")
-  .post(
-    validateRequest(registerUserSchema),
-    checkPermission("write"),
-    UserController.createUser
-  );
+  .post(validateRequest(registerUserSchema), UserController.createUser);
 
 router.route("/").get(verifyJWT, UserController.getCurrentUser);
 router

@@ -11,9 +11,12 @@ import { ApiError } from "../../utils/ApiError.js";
 class UserRepository {
   // Create a new user
   async create(userData, req) {
+    const role = await RoleModel.findOne({ name: userData.role });
+
     const user = new UserModel({
       ...userData,
       isEmailVerified: false,
+      role: role._id,
     });
 
     /**

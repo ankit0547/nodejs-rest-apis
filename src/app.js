@@ -3,11 +3,7 @@ import express from "express";
 import "dotenv/config";
 import cors from "cors";
 import { createServer } from "http";
-import { Server } from "socket.io";
-import { initializeSocketIO } from "./socket/index.js";
-import userRouter from "./route/user/user.routes.js";
-import authRouter from "./route/auth/auth.routes.js";
-import lookupRouter from "./route/lookup/lookup.js";
+
 import healthcheckRouter from "./route/healthCheck.js";
 import { errorHandler } from "./middlewares/errorHandler.middleware.js";
 import morganMiddleware from "./logger/morgan.logger.js";
@@ -16,16 +12,6 @@ import { v4 as uuidv4 } from "uuid";
 const app = express();
 
 const httpServer = createServer(app);
-
-const io = new Server(httpServer, {
-  pingTimeout: 60000,
-  cors: {
-    origin: process.env.CORS_ORIGIN,
-    credentials: true,
-  },
-});
-
-app.set("io", io); // using set method to mount the `io` instance on the app to avoid usage of `global`
 
 // Middleware to set correlation ID and other headers
 app.use((req, res, next) => {
@@ -61,12 +47,12 @@ app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(express.static("public")); // configure static file to save images locally
 app.use(cookieParser());
 
-import chatRouter from "./route/chat-app/chat.routers.js";
-
 // app.use(logger);
 app.use(morganMiddleware);
 
-app.use("/api/v1/chat-app/chats", chatRouter);
+// Import all routes
+import userRouter from "./route/user/user.routes.js";
+import authRouter from "./route/auth/auth.routes.js";
 
 // * healthcheck
 app.use("/api/v1/healthcheck", healthcheckRouter);
@@ -74,12 +60,6 @@ app.use("/api/v1/healthcheck", healthcheckRouter);
 // * App apis
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/auth", authRouter);
-app.use("/api/v1/lookup", lookupRouter);
-
-// import chatRouter from "./routes/apps/chat-app/chat.routes.js";
-// import messageRouter from "./routes/apps/chat-app/message.routes.js";
-
-initializeSocketIO(io);
 
 // common error handling middleware
 app.use(errorHandler);

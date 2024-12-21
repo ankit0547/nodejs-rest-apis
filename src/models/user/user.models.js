@@ -28,6 +28,24 @@ const userSchema = new Schema(
       lowercase: true,
       trim: true,
     },
+    avatar: {
+      type: {
+        url: String,
+        localPath: String,
+      },
+      default: {
+        url: `https://www.gravatar.com/avatar/?d=identicon`,
+        localPath: "",
+      },
+    },
+    address: {
+      address1: { type: String, default: "" },
+      address2: { type: String, default: "" }, // Optional field
+      city: { type: String, default: "" },
+      state: { type: String, default: "" },
+      postalCode: { type: String, default: "" },
+      country: { type: String, default: "" },
+    },
     role: {
       type: String,
       enum: AvailableUserRoles,
