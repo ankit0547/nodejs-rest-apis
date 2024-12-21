@@ -5,7 +5,8 @@ import cors from "cors";
 import { createServer } from "http";
 import { Server } from "socket.io";
 import { initializeSocketIO } from "./socket/index.js";
-import userRouter from "./route/auth/user.routes.js";
+import userRouter from "./route/user/user.routes.js";
+import authRouter from "./route/auth/auth.routes.js";
 import lookupRouter from "./route/lookup/lookup.js";
 import healthcheckRouter from "./route/healthCheck.js";
 import { errorHandler } from "./middlewares/errorHandler.middleware.js";
@@ -72,6 +73,7 @@ app.use("/api/v1/healthcheck", healthcheckRouter);
 
 // * App apis
 app.use("/api/v1/user", userRouter);
+app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/lookup", lookupRouter);
 
 // import chatRouter from "./routes/apps/chat-app/chat.routes.js";

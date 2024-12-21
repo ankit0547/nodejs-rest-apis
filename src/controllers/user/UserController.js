@@ -89,7 +89,7 @@ class UserController {
   // Update User
   async updateUser(req, res) {
     try {
-      const user = await UserService.updateUser(req.params.id, req.body);
+      const user = await UserService.updateUser(req.user._id, req.body);
       if (!user)
         return res
           .status(404)
@@ -111,6 +111,21 @@ class UserController {
       res
         .status(200)
         .json({ success: true, message: "User deleted successfully" });
+    } catch (err) {
+      res.status(500).json({ success: false, message: err.message });
+    }
+  }
+
+  async getCurrentUser(req, res) {
+    try {
+      const user = await UserService.getUserDetailsWithoutPassword(
+        req.user._id
+      );
+      if (!user)
+        return res
+          .status(404)
+          .json({ success: false, message: "User not found" });
+      res.status(200).json({ success: true, user });
     } catch (err) {
       res.status(500).json({ success: false, message: err.message });
     }

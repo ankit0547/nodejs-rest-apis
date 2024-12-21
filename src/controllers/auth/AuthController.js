@@ -5,7 +5,7 @@ import { ApiError } from "../../utils/ApiError.js";
 import { ApiResponse } from "../../utils/ApiResponse.js";
 
 class AuthController {
-  // Login User
+  // user login
   async login(req, res) {
     try {
       const { email, username, password } = req.body;
@@ -41,6 +41,7 @@ class AuthController {
       );
     }
   }
+  // user logout
   async logout(req, res) {
     try {
       const user = await UserService.getUserById(req.user._id);
@@ -75,6 +76,7 @@ class AuthController {
       );
     }
   }
+  // get new access token
   async refreshAccessToken(req, res) {
     try {
       const incomingRefreshToken =
@@ -102,6 +104,7 @@ class AuthController {
       );
     }
   }
+  // forgot password request
   async forgotPasswordRequest(req, res) {
     const { email } = req.body;
 
@@ -123,7 +126,7 @@ class AuthController {
         )
       );
   }
-
+  // verify email
   async getVerifyEmail(req, res) {
     try {
       const { verificationToken } = req.params;
@@ -146,6 +149,40 @@ class AuthController {
         )
       );
     }
+  }
+
+  // change current password
+  async changeCurrentPassword(req, res) {
+    try {
+      const { oldPassword, newPassword } = req.body;
+      const user = await AuthService.changePassword(
+        req.user._id,
+        oldPassword,
+        newPassword
+      );
+
+      return res
+        .status(200)
+        .json(new ApiResponse(200, user, "Password changed successfully"));
+    } catch (err) {
+      res.json(
+        new ApiError(
+          err.statusCode || globalconstants.responseFlags.INTERNAL_SERVER_ERROR,
+          err.message
+        )
+      );
+    }
+  }
+  // reset password
+  async resetPassword(req, res) {
+    const { resetToken } = req.params;
+    const { newPassword } = req.body;
+
+    await AuthService.resetPassword(resetToken, newPassword);
+
+    return res
+      .status(200)
+      .json(new ApiResponse(200, {}, "Password reset successfully"));
   }
 }
 

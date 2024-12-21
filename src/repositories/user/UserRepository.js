@@ -46,7 +46,9 @@ class UserRepository {
 
   // Read all users
   async findAll() {
-    return await UserModel.find();
+    return await UserModel.find().select(
+      "-password -refreshToken -emailVerificationToken -emailVerificationExpiry -__v -forgotPasswordExpiry -forgotPasswordToken"
+    );
   }
 
   // Find user by ID
@@ -79,7 +81,7 @@ class UserRepository {
     }
   }
   // get LoggedIn User Without Password
-  async getLoggedInUserWithoutPassword(userId) {
+  async getUserDetailsWithoutPassword(userId) {
     return await UserModel.findById(userId).select(
       "-password -refreshToken -emailVerificationToken -emailVerificationExpiry -__v -forgotPasswordExpiry -forgotPasswordToken"
     );
@@ -87,7 +89,15 @@ class UserRepository {
 
   // Update user by ID
   async update(id, updateData) {
-    return await UserModel.findByIdAndUpdate(id, updateData, { new: true });
+    const user = UserModel.findByIdAndUpdate(id, updateData, { new: true });
+    return await user.select(
+      "-password -refreshToken -emailVerificationToken -emailVerificationExpiry -__v -forgotPasswordExpiry -forgotPasswordToken"
+    );
+    // return await UserModel.findByIdAndUpdate(id, updateData, {
+    //   new: true,
+    // }).select(
+    //   "-password -refreshToken -emailVerificationToken -emailVerificationExpiry -__v -forgotPasswordExpiry -forgotPasswordToken"
+    // );
   }
   // Verify JWT Token
   async verifyJwtToken(incomingRefreshToken) {
@@ -126,6 +136,36 @@ class UserRepository {
   // Delete user by ID
   async delete(id) {
     return await UserModel.findByIdAndDelete(id);
+  }
+
+  async verifyPasswordResetTokenAndUpdate(
+    incomingPaaswordHashedToken,
+    newPassword
+  ) {
+    // Create a hash of the incoming reset token
+
+    let hashedToken = crypto
+      .createHash("sha256")
+      .update(incomingPaaswordHashedToken)
+      .digest("hex");
+
+    // See if user with hash similar to resetToken exists
+    // If yes then check if token expiry is greater than current date
+
+    const user = await UserModel.findOne({
+      forgotPasswordToken: hashedToken,
+      forgotPasswordExpiry: { $gt: Date.now() },
+    });
+
+    // if everything is ok and token id valid
+    // reset the forgot password token and expiry
+    user.forgotPasswordToken = undefined;
+    user.forgotPasswordExpiry = undefined;
+
+    // Set the provided password as the new password
+    user.password = newPassword;
+    await user.save({ validateBeforeSave: false });
+    return user;
   }
 }
 

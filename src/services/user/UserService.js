@@ -18,14 +18,23 @@ class UserService {
   async generateAccessAndRefreshTokens(userId) {
     return await UserRepository.generateAccessAndRefreshTokens(userId);
   }
-  async getLoggedInUserWithoutPassword(userId) {
-    return await UserRepository.getLoggedInUserWithoutPassword(userId);
+  async getUserDetailsWithoutPassword(userId) {
+    return await UserRepository.getUserDetailsWithoutPassword(userId);
   }
   async verifyJwtToken(incomingRefreshToken) {
     return await UserRepository.verifyJwtToken(incomingRefreshToken);
   }
   async verifyEmailToken(incomingEmailHashedToken) {
     return await UserRepository.verifyEmailToken(incomingEmailHashedToken);
+  }
+  async verifyPasswordResetTokenAndUpdate(
+    incomingPaaswordHashedToken,
+    newPassword
+  ) {
+    return await UserRepository.verifyPasswordResetTokenAndUpdate(
+      incomingPaaswordHashedToken,
+      newPassword
+    );
   }
 
   async updateUser(id, updateData) {
@@ -34,6 +43,10 @@ class UserService {
 
   async deleteUser(id) {
     return await UserRepository.delete(id);
+  }
+
+  async getUserByPasswordResetToken(resetToken) {
+    return await UserRepository.getUserByPasswordResetToken(resetToken);
   }
 }
 

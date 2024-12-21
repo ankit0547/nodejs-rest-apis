@@ -16,7 +16,7 @@ class AuthService {
       await UserService.generateAccessAndRefreshTokens(user._id);
 
     // get the user document ignoring the password and refreshToken field
-    const loggedInUser = await UserService.getLoggedInUserWithoutPassword(
+    const loggedInUser = await UserService.getUserDetailsWithoutPassword(
       user._id
     );
     return { user: loggedInUser, accessToken, refreshToken };
@@ -68,6 +68,29 @@ class AuthService {
 
   async verifyEmailAddress(verificationToken) {
     return await UserService.verifyEmailToken(verificationToken);
+  }
+
+  async changePassword(id, currentPassword, newPassword) {
+    const user = await UserService.getUserById(id);
+    const isPasswordCorrect = await user.isPasswordCorrect(currentPassword);
+    if (!isPasswordCorrect) {
+      throw new ApiError(422, "Invalid current password");
+    }
+    await UserService.updateUser(id, {
+      $set: {
+        password: newPassword,
+      },
+    });
+  }
+
+  async resetPassword(resetToken, newPassword) {
+    const user = UserService.verifyPasswordResetTokenAndUpdate(
+      resetToken,
+      newPassword
+    );
+    if (!user) {
+      throw new ApiError(404, "Invalid reset token");
+    }
   }
 }
 
