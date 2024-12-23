@@ -46,12 +46,13 @@ const userSchema = new Schema(
       postalCode: { type: String, default: "" },
       country: { type: String, default: "" },
     },
-    role: {
-      type: String,
-      enum: AvailableUserRoles,
-      default: UserRolesEnum.USER,
-      required: true,
-    },
+    role: { type: mongoose.Schema.Types.ObjectId, ref: "Role" }, // Reference to Role model
+    // role: {
+    //   type: String,
+    //   enum: AvailableUserRoles,
+    //   default: UserRolesEnum.USER,
+    //   required: true,
+    // },
     password: {
       type: String,
       required: [true, "Password is required"],

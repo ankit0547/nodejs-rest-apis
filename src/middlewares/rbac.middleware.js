@@ -1,39 +1,30 @@
-import { RoleModel } from "../models/index.js";
+// const { UserModel } = require("../models");
+import { UserModel } from "../models/index.js";
 
-export function checkPermission(resource, action) {
-  return async (req, res, next) => {
-    try {
-      const user = req.user; // Assume user is attached to the request
-      if (!user || !user.role) {
-        return res
-          .status(403)
-          .json({ message: "Access Denied: User role not found" });
-      }
+// Middleware for checking permissions
+const authorize = (resource) => async (req, res, next) => {
+  try {
+    const action = req.method;
+    const userId = req.user.id; // Assume user ID is stored in `req.user` (from authentication middleware)
+    const user = await UserModel.findById(userId).populate("role");
 
-      // Fetch the role and its permissions from MongoDB
-      const role = await RoleModel.findOne({ name: user.role });
-      if (!role) {
-        return res
-          .status(403)
-          .json({ message: "Access Denied: Role not found" });
-      }
+    if (!user) return res.status(401).json({ message: "User not found" });
 
-      // Check if the role has the required action on the resource
-      const hasPermission = role.permissions.some(
-        (perm) => perm.resource === resource && perm.actions.includes(action)
-      );
+    const { permissions } = user.role;
 
-      if (!hasPermission) {
-        return res
-          .status(403)
-          .json({ message: "Access Denied: Insufficient permissions" });
-      }
+    // Check if the user has the required resource and action permission
+    const hasPermission = permissions.some(
+      (perm) => perm.resource === resource && perm.actions.includes(action)
+    );
 
-      next();
-    } catch (error) {
-      res
-        .status(500)
-        .json({ message: "Internal Server Error", error: error.message });
+    if (!hasPermission) {
+      return res.status(403).json({ message: "Access denied" });
     }
-  };
-}
+
+    next(); // User has the required permission, proceed to the next middleware
+  } catch (error) {
+    res.status(500).json({ message: "Server error", error });
+  }
+};
+
+export default authorize;

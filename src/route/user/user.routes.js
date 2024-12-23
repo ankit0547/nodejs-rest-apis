@@ -3,7 +3,7 @@ import { UserController } from "../../controllers/index.js";
 import { verifyJWT } from "../../middlewares/auth.middleware.js";
 import { registerUserSchema } from "../../validation/auth/authValidationSchema.js";
 import { validateRequest } from "../../validation/auth/authValidator.js";
-import { checkPermission } from "../../middlewares/rbac.middleware.js";
+import authorize from "../../middlewares/rbac.middleware.js";
 
 const router = Router();
 
@@ -15,7 +15,8 @@ router
 router.route("/").get(verifyJWT, UserController.getCurrentUser);
 router
   .route("/")
-  .put(verifyJWT, checkPermission("write"), UserController.updateUser);
+  .put(verifyJWT, authorize("Update profile"), UserController.updateUser);
 router.route("/all").get(UserController.getAllUsers);
 
 export default router;
+authorize("users", "update");

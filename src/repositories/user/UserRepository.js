@@ -1,4 +1,4 @@
-import { UserModel } from "../../models/index.js";
+import { RoleModel, UserModel } from "../../models/index.js";
 import jwt from "jsonwebtoken";
 import crypto from "node:crypto";
 
@@ -11,12 +11,16 @@ import { ApiError } from "../../utils/ApiError.js";
 class UserRepository {
   // Create a new user
   async create(userData, req) {
+    // Find the role by name
     const role = await RoleModel.findOne({ name: userData.role });
+    if (!role) {
+      return res.status(400).json({ message: "Invalid role name" });
+    }
 
     const user = new UserModel({
       ...userData,
       isEmailVerified: false,
-      role: role._id,
+      role: role._id, // Reference the role ID
     });
 
     /**
