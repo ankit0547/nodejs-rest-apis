@@ -1,5 +1,6 @@
 // mongoUtils.js
 import mongoose from "mongoose";
+import { ApiError } from "../utils/ApiError.js";
 
 // Utility function to create a document
 export const createDocument = async (Model, data) => {
@@ -32,15 +33,6 @@ export const findDocumentById = async (Model, id) => {
     return await Model.findById(id);
   } catch (error) {
     throw new Error(`Error finding document by ID: ${error.message}`);
-  }
-};
-
-// Utility function to update a document by ID
-export const updateDocumentById = async (Model, id, updateData) => {
-  try {
-    return await Model.findByIdAndUpdate(id, updateData, { new: true });
-  } catch (error) {
-    throw new Error(`Error updating document: ${error.message}`);
   }
 };
 
@@ -86,4 +78,27 @@ export const runTransaction = async (operations) => {
   } finally {
     session.endSession();
   }
+};
+// Utility function to update a document by ID
+const updateDocumentById = async (Model, id, updateData) => {
+  try {
+    const updatedDocument = await Model.findByIdAndUpdate(id, updateData, {
+      new: true,
+    });
+    return updatedDocument;
+
+    // return await Model.findByIdAndUpdate(id, updateData, { new: true });
+  } catch (error) {
+    throw new ApiError(400, `Error updating document: ${error.message}`);
+  }
+};
+
+export const mongoUtils = {
+  createDocument,
+  findDocuments,
+  findDocumentById,
+  updateDocumentById,
+  deleteDocumentById,
+  paginateDocuments,
+  runTransaction,
 };

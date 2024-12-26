@@ -5,8 +5,8 @@ import UserService from "../user/UserService.js";
 class AuthService {
   constructor() {}
 
-  async getVerifiedUser(email, password) {
-    const user = await UserService.getUserByEmail(email);
+  async getVerifiedUser(email, username, password) {
+    const user = await UserService.getUser(email, username);
     const isPasswordValid = await user.isPasswordCorrect(password);
     if (!isPasswordValid) {
       throw new ApiError(422, "Invalid user credentials");

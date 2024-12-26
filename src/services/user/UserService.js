@@ -12,8 +12,8 @@ class UserService {
   async getUserById(id) {
     return await UserRepository.findById(id);
   }
-  async getUserByEmail(email) {
-    return await UserRepository.getUserByEmail(email);
+  async getUser(email, username) {
+    return await UserRepository.getUser(email, username);
   }
   async generateAccessAndRefreshTokens(userId) {
     return await UserRepository.generateAccessAndRefreshTokens(userId);

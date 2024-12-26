@@ -10,11 +10,7 @@ class AuthController {
     try {
       const { email, username, password } = req.body;
 
-      if (!username && !email) {
-        throw new ApiError(400, "Username or email is required");
-      }
-
-      const user = await AuthService.getVerifiedUser(email, password);
+      const user = await AuthService.getVerifiedUser(email, username, password);
 
       // TODO: Add more options to make cookie more secure and reliable
       const options = {
@@ -52,11 +48,15 @@ class AuthController {
           .json(new ApiResponse(200, {}, "User already logged out"));
       }
 
-      UserService.updateUser(req.user._id, {
+      const isUserLoggedOut = await UserService.updateUser(req.user._id, {
         $set: {
           refreshToken: "",
         },
       });
+      if (!isUserLoggedOut) {
+        throw new ApiError(500, "Something went wrong while logging out");
+      }
+
       const options = {
         httpOnly: true,
         secure: process.env.NODE_ENV === "production",

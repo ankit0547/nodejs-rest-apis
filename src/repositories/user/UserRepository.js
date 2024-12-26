@@ -7,6 +7,7 @@ import {
   sendEmail,
 } from "../../utils/mail.js";
 import { ApiError } from "../../utils/ApiError.js";
+import { mongoUtils } from "../../lib/mongo.js";
 
 class UserRepository {
   // Create a new user
@@ -17,7 +18,8 @@ class UserRepository {
       return res.status(400).json({ message: "Invalid role name" });
     }
 
-    const user = new UserModel({
+    // Create a new user
+    const user = mongoUtils.createDocument(UserModel, {
       ...userData,
       isEmailVerified: false,
       role: role._id, // Reference the role ID
@@ -62,9 +64,11 @@ class UserRepository {
     return await UserModel.findById(id);
   }
 
-  // Find user by Parm
-  async getUserByEmail(email) {
-    return await UserModel.findOne({ email });
+  // Find user by email and username
+  async getUser(email, username) {
+    return await UserModel.findOne({
+      $or: [{ email: email }, { username: username }],
+    });
   }
   // check user Password Correct or not
   async generateAccessAndRefreshTokens(userId) {
@@ -99,11 +103,6 @@ class UserRepository {
     return await user.select(
       "-password -refreshToken -emailVerificationToken -emailVerificationExpiry -__v -forgotPasswordExpiry -forgotPasswordToken"
     );
-    // return await UserModel.findByIdAndUpdate(id, updateData, {
-    //   new: true,
-    // }).select(
-    //   "-password -refreshToken -emailVerificationToken -emailVerificationExpiry -__v -forgotPasswordExpiry -forgotPasswordToken"
-    // );
   }
   // Verify JWT Token
   async verifyJwtToken(incomingRefreshToken) {
