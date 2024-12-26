@@ -4,6 +4,7 @@ import { validateRequest } from "../../validation/auth/authValidator.js";
 import { loginUserSchema } from "../../validation/auth/authValidationSchema.js";
 import { AuthController } from "../../controllers/index.js";
 import { RoleModel } from "../../models/index.js";
+import AppLogger from "../../logger/app.logger.js";
 
 const router = Router();
 
@@ -49,7 +50,7 @@ router.post("/roles", async (req, res) => {
 
     res.status(201).json({ message: "Role added successfully", role: newRole });
   } catch (error) {
-    console.error(error);
+    AppLogger.error(error);
     res.status(500).json({ message: "Server error", error });
   }
 });
@@ -82,7 +83,7 @@ router.put("/roles/:roleId", async (req, res) => {
       .status(200)
       .json({ message: "Role updated successfully", role: updatedRole });
   } catch (error) {
-    console.error(error);
+    AppLogger.error(error);
     res.status(500).json({ message: "Server error", error });
   }
 });

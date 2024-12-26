@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "start": "node -r dotenv/config  src/index.js",
-    "dev": "nodemon -r dotenv/config  src/index.js",
+    "start": "node -r dotenv/config  src/index.js --no-deprecation",
+    "dev": "nodemon -r dotenv/config  src/index.js --no-deprecation",
     "test": "jest",
     "test:watch": "jest --watch", 
     "test:coverage": "jest --coverage", 

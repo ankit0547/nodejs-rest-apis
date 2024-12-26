@@ -1,5 +1,6 @@
 import Mailgen from "mailgen";
 import nodemailer from "nodemailer";
+import AppLogger from "../logger/app.logger.js";
 
 /**
  *
@@ -42,14 +43,14 @@ const sendEmail = async (options) => {
 
   try {
     await transporter.sendMail(mail);
-    console.log("Mail sent");
+    AppLogger.info("Mail sent");
   } catch (error) {
     // As sending email is not strongly coupled to the business logic it is not worth to raise an error when email sending fails
     // So it's better to fail silently rather than breaking the app
-    console.log(
+    AppLogger.info(
       "Email service failed silently. Make sure you have provided your MAILTRAP credentials in the .env file"
     );
-    console.log("Error: ", error);
+    AppLogger.error("Error: ", error);
   }
 };
 
