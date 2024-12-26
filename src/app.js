@@ -3,14 +3,47 @@ import express from "express";
 import "dotenv/config";
 import cors from "cors";
 import { createServer } from "http";
-
+import YAML from "yamljs";
+import swaggerUi from "swagger-ui-express";
 import healthcheckRouter from "./route/healthCheck.js";
 import { errorHandler } from "./middlewares/errorHandler.middleware.js";
 import HTTPLoggerMiddleware from "./logger/http.logger.js";
 import { v4 as uuidv4 } from "uuid";
+import fs from "fs";
 const app = express();
+import { fileURLToPath } from "url";
+import path from "path";
 
+// Get the current directory (similar to __dirname in CommonJS)
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const httpServer = createServer(app);
+
+let swaggerDocument;
+const swaggerFilePath = path.resolve(__dirname, "swagger.yaml");
+
+const loadSwaggerDocument = () => {
+  try {
+    swaggerDocument = YAML.load(swaggerFilePath);
+    console.log("Swagger file loaded successfully.");
+  } catch (error) {
+    console.error("Failed to load Swagger file:", error);
+  }
+};
+
+// // Initial load
+loadSwaggerDocument();
+
+// Watch for changes using fs.watch
+fs.watch(swaggerFilePath, (eventType) => {
+  if (eventType === "change") {
+    console.log("Swagger file updated. Reloading...");
+    loadSwaggerDocument();
+  }
+});
+
+// Serve Swagger documentation
+app.use("/docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 // Middleware to set correlation ID and other headers
 app.use((req, res, next) => {
@@ -52,6 +85,8 @@ app.use(HTTPLoggerMiddleware);
 // Import all routes
 import userRouter from "./route/user/user.routes.js";
 import authRouter from "./route/auth/auth.routes.js";
+import { getFilePath } from "./utils/utils.js";
+import AppLogger from "./logger/app.logger.js";
 
 // * healthcheck
 app.use("/api/v1/healthcheck", healthcheckRouter);
