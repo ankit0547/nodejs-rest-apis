@@ -6,6 +6,18 @@
   "configurations": [
     {
       "type": "node",
+      "name": "vscode-jest-tests.v2",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "args": [
+        "--runInBand",
+      ],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+    },
+    {
+      "type": "node",
       "request": "launch",
       "name": "API:dev:windows",
       "skipFiles": ["<node_internals>/**"],
@@ -17,6 +29,7 @@
       "name": "API:dev:linux",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}//src//index.js"
-    }
+    },
+
   ]
 }

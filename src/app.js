@@ -64,4 +64,4 @@ app.use("/api/v1/auth", authRouter);
 // common error handling middleware
 app.use(errorHandler);
 
-export { httpServer };
+export { app, httpServer };
