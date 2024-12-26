@@ -25,9 +25,9 @@ const swaggerFilePath = path.resolve(__dirname, "swagger.yaml");
 const loadSwaggerDocument = () => {
   try {
     swaggerDocument = YAML.load(swaggerFilePath);
-    console.log("Swagger file loaded successfully.");
+    AppLogger.info("Swagger file loaded successfully.");
   } catch (error) {
-    console.error("Failed to load Swagger file:", error);
+    AppLogger.error("Failed to load Swagger file:", error);
   }
 };
 
@@ -37,7 +37,7 @@ loadSwaggerDocument();
 // Watch for changes using fs.watch
 fs.watch(swaggerFilePath, (eventType) => {
   if (eventType === "change") {
-    console.log("Swagger file updated. Reloading...");
+    AppLogger.info("Swagger file updated. Reloading...");
     loadSwaggerDocument();
   }
 });
@@ -85,6 +85,7 @@ app.use(HTTPLoggerMiddleware);
 // Import all routes
 import userRouter from "./route/user/user.routes.js";
 import authRouter from "./route/auth/auth.routes.js";
+import AppLogger from "./logger/app.logger.js";
 
 // * healthcheck
 app.use("/api/v1/healthcheck", healthcheckRouter);
