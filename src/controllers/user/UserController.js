@@ -125,7 +125,13 @@ class UserController {
         return res
           .status(404)
           .json({ success: false, message: "User not found" });
-      res.status(200).json({ success: true, user });
+      res.json(
+        new ApiResponse(
+          globalconstants.responseFlags.ACTION_COMPLETE,
+          user,
+          "Users details fetched successfully"
+        )
+      );
     } catch (err) {
       res.status(500).json({ success: false, message: err.message });
     }

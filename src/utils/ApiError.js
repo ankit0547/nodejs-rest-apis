@@ -13,14 +13,19 @@ class ApiError extends Error {
   constructor(
     statusCode,
     message = "Something went wrong",
+    multipleErrors = [],
     success,
     stack = ""
   ) {
     super();
     this.statusCode = statusCode;
     this.message = message;
-    this.success = false;
 
+    this.multipleErrors = multipleErrors.map((err) => ({
+      errorKey: err.path[0],
+      errorMessage: err.message,
+    }));
+    this.success = false;
 
     if (stack && process.env.NODE_ENV === "development") {
       this.stack = stack;
