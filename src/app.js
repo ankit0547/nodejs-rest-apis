@@ -6,8 +6,7 @@ import { createServer } from "http";
 
 import healthcheckRouter from "./route/healthCheck.js";
 import { errorHandler } from "./middlewares/errorHandler.middleware.js";
-import morganMiddleware from "./logger/morgan.logger.js";
-import logger from "./logger/winston.logger.js";
+import HTTPLoggerMiddleware from "./logger/http.logger.js";
 import { v4 as uuidv4 } from "uuid";
 const app = express();
 
@@ -47,8 +46,8 @@ app.use(express.urlencoded({ extended: true, limit: "16kb" }));
 app.use(express.static("public")); // configure static file to save images locally
 app.use(cookieParser());
 
-// app.use(logger);
-app.use(morganMiddleware);
+// app.use(logger());
+app.use(HTTPLoggerMiddleware);
 
 // Import all routes
 import userRouter from "./route/user/user.routes.js";

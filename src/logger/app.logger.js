@@ -1,4 +1,5 @@
 import winston from "winston";
+
 // Define your severity levels.
 const levels = {
   error: 0,
@@ -59,13 +60,47 @@ const transports = () => {
   return transports;
 };
 
-// Create the logger instance that has to be exported
-// and used to log messages.
-const logger = winston.createLogger({
-  level: level(),
-  levels,
-  format,
-  transports: transports(),
-});
+// Create the logger instance using the Singleton pattern
+class Logger {
+  constructor() {
+    if (!Logger.instance) {
+      Logger.instance = this;
+      this.logger = winston.createLogger({
+        level: level(), // default log level
+        levels,
+        format,
+        transports: transports(),
+      });
+    }
+    return Logger.instance;
+  }
 
-export default logger;
+  // Log messages with different log levels
+  log(level, message, metadata = {}) {
+    this.logger.log(level, message, metadata);
+  }
+
+  info(message, metadata = {}) {
+    this.log("info", message, metadata);
+  }
+
+  debug(message, metadata = {}) {
+    this.log("debug", message, metadata);
+  }
+
+  warn(message, metadata = {}) {
+    this.log("warn", message, metadata);
+  }
+
+  error(message, metadata = {}) {
+    this.log("error", message, metadata);
+  }
+
+  http(message, metadata = {}) {
+    this.log("http", message, metadata);
+  }
+}
+
+// Export the logger instance
+const AppLogger = new Logger();
+export default AppLogger;

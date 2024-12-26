@@ -1,4 +1,5 @@
 import { globalconstants } from "../../constants.js";
+import AppLogger from "../../logger/app.logger.js";
 import { User } from "../../models/user/user.models.js";
 import UserService from "../../services/user/UserService.js";
 import { ApiError } from "../../utils/ApiError.js";
@@ -50,6 +51,7 @@ class UserController {
   // Get All Users
   async getAllUsers(req, res) {
     try {
+      AppLogger.info("Fetching all users");
       const users = await UserService.getAllUsers();
       res.status(200).json({ success: true, users });
     } catch (err) {
