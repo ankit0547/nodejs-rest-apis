@@ -2,17 +2,19 @@ import cookieParser from "cookie-parser";
 import express from "express";
 import "dotenv/config";
 import cors from "cors";
-import { createServer } from "http";
 import YAML from "yamljs";
 import swaggerUi from "swagger-ui-express";
 import healthcheckRouter from "./route/healthCheck.js";
-import { errorHandler } from "./middlewares/errorHandler.middleware.js";
 import HTTPLoggerMiddleware from "./logger/http.logger.js";
+import AppLogger from "./logger/app.logger.js";
+import { createServer } from "http";
 import { v4 as uuidv4 } from "uuid";
-import fs from "fs";
-const app = express();
 import { fileURLToPath } from "url";
+import { errorHandler } from "./middlewares/errorHandler.middleware.js";
 import path from "path";
+import fs from "fs";
+
+const app = express();
 
 // Get the current directory (similar to __dirname in CommonJS)
 const __filename = fileURLToPath(import.meta.url);
@@ -85,7 +87,6 @@ app.use(HTTPLoggerMiddleware);
 // Import all routes
 import userRouter from "./route/user/user.routes.js";
 import authRouter from "./route/auth/auth.routes.js";
-import AppLogger from "./logger/app.logger.js";
 
 // * healthcheck
 app.use("/api/v1/healthcheck", healthcheckRouter);
