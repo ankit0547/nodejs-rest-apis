@@ -85,8 +85,6 @@ app.use(HTTPLoggerMiddleware);
 // Import all routes
 import userRouter from "./route/user/user.routes.js";
 import authRouter from "./route/auth/auth.routes.js";
-import { getFilePath } from "./utils/utils.js";
-import AppLogger from "./logger/app.logger.js";
 
 // * healthcheck
 app.use("/api/v1/healthcheck", healthcheckRouter);
