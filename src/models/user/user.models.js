@@ -1,16 +1,9 @@
-import bcrypt from "bcrypt";
-import crypto from "node:crypto";
-import slugify from "slugify";
-import jwt from "jsonwebtoken";
-import mongoose, { Schema } from "mongoose";
-import {
-  AvailableUserRoles,
-  USER_TEMPORARY_TOKEN_EXPIRY,
-  UserRolesEnum,
-} from "../../constants.js";
-// import { Cart } from "../ecommerce/cart.models.js";
-// import { EcomProfile } from "../ecommerce/profile.models.js";
-// import { SocialProfile } from "../social-media/profile.models.js";
+import bcrypt from 'bcrypt';
+import crypto from 'node:crypto';
+import slugify from 'slugify';
+import jwt from 'jsonwebtoken';
+import mongoose, { Schema } from 'mongoose';
+import { USER_TEMPORARY_TOKEN_EXPIRY } from '../../constants.js';
 
 const userSchema = new Schema(
   {
@@ -35,18 +28,18 @@ const userSchema = new Schema(
       },
       default: {
         url: `https://www.gravatar.com/avatar/?d=identicon`,
-        localPath: "",
+        localPath: '',
       },
     },
     address: {
-      address1: { type: String, default: "" },
-      address2: { type: String, default: "" }, // Optional field
-      city: { type: String, default: "" },
-      state: { type: String, default: "" },
-      postalCode: { type: String, default: "" },
-      country: { type: String, default: "" },
+      address1: { type: String, default: '' },
+      address2: { type: String, default: '' }, // Optional field
+      city: { type: String, default: '' },
+      state: { type: String, default: '' },
+      postalCode: { type: String, default: '' },
+      country: { type: String, default: '' },
     },
-    role: { type: mongoose.Schema.Types.ObjectId, ref: "Role" }, // Reference to Role model
+    role: { type: mongoose.Schema.Types.ObjectId, ref: 'Role' }, // Reference to Role model
     // role: {
     //   type: String,
     //   enum: AvailableUserRoles,
@@ -55,11 +48,11 @@ const userSchema = new Schema(
     // },
     password: {
       type: String,
-      required: [true, "Password is required"],
+      required: [true, 'Password is required'],
     },
     status: {
       type: String,
-      default: "Active",
+      default: 'Active',
     },
     // loginType: {
     //   type: String,
@@ -86,11 +79,11 @@ const userSchema = new Schema(
       type: Date,
     },
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
-userSchema.pre("save", async function (next) {
-  if (!this.isModified("password")) return next();
+userSchema.pre('save', async function (next) {
+  if (!this.isModified('password')) return next();
   this.password = await bcrypt.hash(this.password, 10);
   next();
 });
@@ -108,7 +101,7 @@ userSchema.methods.generateAccessToken = function () {
       role: this.role,
     },
     process.env.ACCESS_TOKEN_SECRET,
-    { expiresIn: process.env.ACCESS_TOKEN_EXPIRY }
+    { expiresIn: process.env.ACCESS_TOKEN_EXPIRY },
   );
 };
 
@@ -118,7 +111,7 @@ userSchema.methods.generateRefreshToken = function () {
       _id: this._id,
     },
     process.env.REFRESH_TOKEN_SECRET,
-    { expiresIn: process.env.REFRESH_TOKEN_EXPIRY }
+    { expiresIn: process.env.REFRESH_TOKEN_EXPIRY },
   );
 };
 
@@ -128,20 +121,20 @@ userSchema.methods.generateRefreshToken = function () {
 userSchema.methods.generateTemporaryToken = function () {
   // This token should be client facing
   // for example: for email verification unHashedToken should go into the user's mail
-  const unHashedToken = crypto.randomBytes(20).toString("hex");
+  const unHashedToken = crypto.randomBytes(20).toString('hex');
 
   // This should stay in the DB to compare at the time of verification
   const hashedToken = crypto
-    .createHash("sha256")
+    .createHash('sha256')
     .update(unHashedToken)
-    .digest("hex");
+    .digest('hex');
   // This is the expiry time for the token (20 minutes)
   const tokenExpiry = Date.now() + USER_TEMPORARY_TOKEN_EXPIRY;
 
   return { unHashedToken, hashedToken, tokenExpiry };
 };
 
-userSchema.pre("save", async function (next) {
+userSchema.pre('save', async function (next) {
   const user = this;
   // Ensure both firstName and lastName are available
   if (user.firstName && user.lastName) {
@@ -161,7 +154,7 @@ userSchema.pre("save", async function (next) {
       const slug = slugify(rawSlug, {
         lower: true, // Convert to lowercase
         strict: true, // Remove special characters (though not needed here)
-        replacement: "_", // Replace spaces (but spaces aren't expected here)
+        replacement: '_', // Replace spaces (but spaces aren't expected here)
       });
 
       user.username = slug;
@@ -171,7 +164,7 @@ userSchema.pre("save", async function (next) {
 });
 
 // Pre-update hook to prevent changing firstName and lastName
-userSchema.pre("findOneAndUpdate", async function (next) {
+userSchema.pre('findOneAndUpdate', async function (next) {
   const update = this.getUpdate();
 
   // Prevent firstName or lastName from being changed
@@ -179,15 +172,15 @@ userSchema.pre("findOneAndUpdate", async function (next) {
     const user = await this.model.findOne(this.getQuery());
 
     if (update.firstName && update.firstName !== user.firstName) {
-      return next(new Error("Changing firstName is not allowed"));
+      return next(new Error('Changing firstName is not allowed'));
     }
 
     if (update.lastName && update.lastName !== user.lastName) {
-      return next(new Error("Changing lastName is not allowed"));
+      return next(new Error('Changing lastName is not allowed'));
     }
   }
 
   next();
 });
 
-export const User = mongoose.model("User", userSchema);
+export const User = mongoose.model('User', userSchema);

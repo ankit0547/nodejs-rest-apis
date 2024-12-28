@@ -1,13 +1,13 @@
-import { RoleModel, UserModel } from "../../models/index.js";
-import jwt from "jsonwebtoken";
-import crypto from "node:crypto";
+import { RoleModel, UserModel } from '../../models/index.js';
+import jwt from 'jsonwebtoken';
+import crypto from 'node:crypto';
 
 import {
   emailVerificationMailgenContent,
   sendEmail,
-} from "../../utils/mail.js";
-import { ApiError } from "../../utils/ApiError.js";
-import { mongoUtils } from "../../lib/mongo.js";
+} from '../../utils/mail.js';
+import { ApiError } from '../../utils/ApiError.js';
+import { mongoUtils } from '../../lib/mongo.js';
 
 class UserRepository {
   // Create a new user
@@ -15,7 +15,7 @@ class UserRepository {
     // Find the role by name
     const role = await RoleModel.findOne({ name: userData.role });
     if (!role) {
-      return res.status(400).json({ message: "Invalid role name" });
+      return res.status(400).json({ message: 'Invalid role name' });
     }
 
     // Create a new user
@@ -41,12 +41,12 @@ class UserRepository {
     user.emailVerificationExpiry = tokenExpiry;
     await sendEmail({
       email: user?.email,
-      subject: "Please verify your email",
+      subject: 'Please verify your email',
       mailgenContent: emailVerificationMailgenContent(
         user.username,
         `${req.protocol}://${req.get(
-          "host"
-        )}/api/v1/user/verify-email/${unHashedToken}`
+          'host',
+        )}/api/v1/user/verify-email/${unHashedToken}`,
       ),
     });
     return await user.save();
@@ -55,7 +55,7 @@ class UserRepository {
   // Read all users
   async findAll() {
     return await UserModel.find().select(
-      "-password -refreshToken -emailVerificationToken -emailVerificationExpiry -__v -forgotPasswordExpiry -forgotPasswordToken"
+      '-password -refreshToken -emailVerificationToken -emailVerificationExpiry -__v -forgotPasswordExpiry -forgotPasswordToken',
     );
   }
 
@@ -86,14 +86,15 @@ class UserRepository {
     } catch (error) {
       throw new ApiError(
         500,
-        "Something went wrong while generating the access token"
+        'Something went wrong while generating the access token',
+        error.message,
       );
     }
   }
   // get LoggedIn User Without Password
   async getUserDetailsWithoutPassword(userId) {
     return await UserModel.findById(userId).select(
-      "-password -refreshToken -emailVerificationToken -emailVerificationExpiry -__v -forgotPasswordExpiry -forgotPasswordToken"
+      '-password -refreshToken -emailVerificationToken -emailVerificationExpiry -__v -forgotPasswordExpiry -forgotPasswordToken',
     );
   }
 
@@ -101,7 +102,7 @@ class UserRepository {
   async update(id, updateData) {
     const user = UserModel.findByIdAndUpdate(id, updateData, { new: true });
     return await user.select(
-      "-password -refreshToken -emailVerificationToken -emailVerificationExpiry -__v -forgotPasswordExpiry -forgotPasswordToken"
+      '-password -refreshToken -emailVerificationToken -emailVerificationExpiry -__v -forgotPasswordExpiry -forgotPasswordToken',
     );
   }
   // Verify JWT Token
@@ -112,9 +113,9 @@ class UserRepository {
   async verifyEmailToken(incomingEmailHashedToken) {
     // generate a hash from the token that we are receiving from the user
     let hashedToken = crypto
-      .createHash("sha256")
+      .createHash('sha256')
       .update(incomingEmailHashedToken)
-      .digest("hex");
+      .digest('hex');
 
     // While registering the user, same time when we are sending the verification mail
     // we have saved a hashed value of the original email verification token in the db
@@ -126,7 +127,7 @@ class UserRepository {
     });
 
     if (!user) {
-      throw new ApiError(489, "Token is invalid or expired");
+      throw new ApiError(489, 'Token is invalid or expired');
     }
     // If we found the user that means the token is valid
     // Now we can remove the associated email token and expiry date as we no  longer need them
@@ -145,14 +146,14 @@ class UserRepository {
 
   async verifyPasswordResetTokenAndUpdate(
     incomingPaaswordHashedToken,
-    newPassword
+    newPassword,
   ) {
     // Create a hash of the incoming reset token
 
     let hashedToken = crypto
-      .createHash("sha256")
+      .createHash('sha256')
       .update(incomingPaaswordHashedToken)
-      .digest("hex");
+      .digest('hex');
 
     // See if user with hash similar to resetToken exists
     // If yes then check if token expiry is greater than current date

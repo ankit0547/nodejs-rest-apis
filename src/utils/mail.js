@@ -1,6 +1,6 @@
-import Mailgen from "mailgen";
-import nodemailer from "nodemailer";
-import AppLogger from "../logger/app.logger.js";
+import Mailgen from 'mailgen';
+import nodemailer from 'nodemailer';
+import AppLogger from '../logger/app.logger.js';
 
 /**
  *
@@ -9,10 +9,10 @@ import AppLogger from "../logger/app.logger.js";
 const sendEmail = async (options) => {
   // Initialize mailgen instance with default theme and brand configuration
   const mailGenerator = new Mailgen({
-    theme: "default",
+    theme: 'default',
     product: {
-      name: "FreeAPI",
-      link: "https://freeapi.app",
+      name: 'FreeAPI',
+      link: 'https://freeapi.app',
     },
   });
 
@@ -34,7 +34,7 @@ const sendEmail = async (options) => {
   });
 
   const mail = {
-    from: "mail.freeapi@gmail.com", // We can name this anything. The mail will go to your Mailtrap inbox
+    from: 'mail.freeapi@gmail.com', // We can name this anything. The mail will go to your Mailtrap inbox
     to: options.email, // receiver's mail
     subject: options.subject, // mail subject
     text: emailTextual, // mailgen content textual variant
@@ -43,14 +43,14 @@ const sendEmail = async (options) => {
 
   try {
     await transporter.sendMail(mail);
-    AppLogger.info("Mail sent");
+    AppLogger.info('Mail sent');
   } catch (error) {
     // As sending email is not strongly coupled to the business logic it is not worth to raise an error when email sending fails
     // So it's better to fail silently rather than breaking the app
     AppLogger.info(
-      "Email service failed silently. Make sure you have provided your MAILTRAP credentials in the .env file"
+      'Email service failed silently. Make sure you have provided your MAILTRAP credentials in the .env file',
     );
-    AppLogger.error("Error: ", error);
+    AppLogger.error('Error: ', error);
   }
 };
 
@@ -68,10 +68,10 @@ const emailVerificationMailgenContent = (username, verificationUrl) => {
       intro: "Welcome to our app! We're very excited to have you on board.",
       action: {
         instructions:
-          "To verify your email please click on the following button:",
+          'To verify your email please click on the following button:',
         button: {
-          color: "#22BC66", // Optional action button color
-          text: "Verify your email",
+          color: '#22BC66', // Optional action button color
+          text: 'Verify your email',
           link: verificationUrl,
         },
       },
@@ -92,13 +92,13 @@ const forgotPasswordMailgenContent = (username, passwordResetUrl) => {
   return {
     body: {
       name: username,
-      intro: "We got a request to reset the password of our account",
+      intro: 'We got a request to reset the password of our account',
       action: {
         instructions:
-          "To reset your password click on the following button or link:",
+          'To reset your password click on the following button or link:',
         button: {
-          color: "#22BC66", // Optional action button color
-          text: "Reset password",
+          color: '#22BC66', // Optional action button color
+          text: 'Reset password',
           link: passwordResetUrl,
         },
       },

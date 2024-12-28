@@ -1,4 +1,4 @@
-import UserRepository from "../../repositories/user/UserRepository.js";
+import UserRepository from '../../repositories/user/UserRepository.js';
 
 class UserService {
   async createUser(userData, req) {
@@ -29,11 +29,11 @@ class UserService {
   }
   async verifyPasswordResetTokenAndUpdate(
     incomingPaaswordHashedToken,
-    newPassword
+    newPassword,
   ) {
     return await UserRepository.verifyPasswordResetTokenAndUpdate(
       incomingPaaswordHashedToken,
-      newPassword
+      newPassword,
     );
   }
 

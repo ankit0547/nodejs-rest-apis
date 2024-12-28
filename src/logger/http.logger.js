@@ -1,5 +1,5 @@
-import morgan from "morgan";
-import AppLogger from "./app.logger.js";
+import morgan from 'morgan';
+import AppLogger from './app.logger.js';
 
 const stream = {
   // Use the http severity
@@ -7,18 +7,16 @@ const stream = {
 };
 
 const skip = () => {
-  const env = process.env.NODE_ENV || "development";
-  return env !== "development";
+  const env = process.env.NODE_ENV || 'development';
+  return env !== 'development';
 };
 
-const arr = ["correlation-id", "method"];
-
-morgan.token("correlation-id", (req) => {
+morgan.token('correlation-id', (req) => {
   return req.correlationId;
 });
 const HTTPLoggerMiddleware = morgan(
   "- :remote-addr - :method - :url - :status - :response-time ms - correlation-id: :correlation-id'",
-  { stream, skip }
+  { stream, skip },
 );
 
 export default HTTPLoggerMiddleware;

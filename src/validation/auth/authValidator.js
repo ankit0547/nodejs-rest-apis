@@ -1,5 +1,5 @@
-import { globalconstants } from "../../constants.js";
-import { ApiError } from "../../utils/ApiError.js";
+import { globalconstants } from '../../constants.js';
+import { ApiError } from '../../utils/ApiError.js';
 
 export const validateRequest = (schema) => {
   return async (req, res, next) => {
@@ -9,8 +9,8 @@ export const validateRequest = (schema) => {
       if (error) {
         throw new ApiError(
           globalconstants.responseFlags.VALIDATION_FAILED,
-          "Validation Failed",
-          error.details
+          'Validation Failed',
+          error.details,
         );
       }
 

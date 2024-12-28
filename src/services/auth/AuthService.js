@@ -1,6 +1,6 @@
-import { ApiError } from "../../utils/ApiError.js";
-import { forgotPasswordMailgenContent, sendEmail } from "../../utils/mail.js";
-import UserService from "../user/UserService.js";
+import { ApiError } from '../../utils/ApiError.js';
+import { forgotPasswordMailgenContent, sendEmail } from '../../utils/mail.js';
+import UserService from '../user/UserService.js';
 
 class AuthService {
   constructor() {}
@@ -9,7 +9,7 @@ class AuthService {
     const user = await UserService.getUser(email, username);
     const isPasswordValid = await user.isPasswordCorrect(password);
     if (!isPasswordValid) {
-      throw new ApiError(422, "Invalid user credentials");
+      throw new ApiError(422, 'Invalid user credentials');
     }
 
     const { accessToken, refreshToken } =
@@ -17,7 +17,7 @@ class AuthService {
 
     // get the user document ignoring the password and refreshToken field
     const loggedInUser = await UserService.getUserDetailsWithoutPassword(
-      user._id
+      user._id,
     );
     return { user: loggedInUser, accessToken, refreshToken };
   }
@@ -27,7 +27,7 @@ class AuthService {
 
     const user = await UserService.getUserById(decodedToken._id);
     if (!user) {
-      throw new ApiError(401, "Invalid refresh token");
+      throw new ApiError(401, 'Invalid refresh token');
     }
 
     // check if incoming refresh token is same as the refresh token attached in the user document
@@ -35,7 +35,7 @@ class AuthService {
     // Once it is used, we are replacing it with new refresh token below
     if (incomingRefreshToken !== user?.refreshToken) {
       // If token is valid but is used already
-      throw new ApiError(401, "Refresh token is expired or used");
+      throw new ApiError(401, 'Refresh token is expired or used');
     }
 
     const { accessToken, refreshToken: newRefreshToken } =
@@ -56,12 +56,12 @@ class AuthService {
     // Send mail with the password reset link. It should be the link of the frontend url with token
     await sendEmail({
       email: user?.email,
-      subject: "Password reset request",
+      subject: 'Password reset request',
       mailgenContent: forgotPasswordMailgenContent(
         user.username,
         // ! NOTE: Following link should be the link of the frontend page responsible to request password reset
         // ! Frontend will send the below token with the new password in the request body to the backend reset password endpoint
-        `${process.env.FORGOT_PASSWORD_REDIRECT_URL}/${unHashedToken}`
+        `${process.env.FORGOT_PASSWORD_REDIRECT_URL}/${unHashedToken}`,
       ),
     });
   }
@@ -74,7 +74,7 @@ class AuthService {
     const user = await UserService.getUserById(id);
     const isPasswordCorrect = await user.isPasswordCorrect(currentPassword);
     if (!isPasswordCorrect) {
-      throw new ApiError(422, "Invalid current password");
+      throw new ApiError(422, 'Invalid current password');
     }
     await UserService.updateUser(id, {
       $set: {
@@ -86,10 +86,10 @@ class AuthService {
   async resetPassword(resetToken, newPassword) {
     const user = UserService.verifyPasswordResetTokenAndUpdate(
       resetToken,
-      newPassword
+      newPassword,
     );
     if (!user) {
-      throw new ApiError(404, "Invalid reset token");
+      throw new ApiError(404, 'Invalid reset token');
     }
   }
 }

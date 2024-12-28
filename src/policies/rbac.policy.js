@@ -1,7 +1,7 @@
 const policies = {
-  ADMIN: ["read", "write", "delete"],
-  USER: ["read"],
-  viewer: ["read"],
+  ADMIN: ['read', 'write', 'delete'],
+  USER: ['read'],
+  viewer: ['read'],
 };
 
 class RBACPolicy {

@@ -1,9 +1,5 @@
-import mongoose from "mongoose";
-
-import AppLogger from "../logger/app.logger.js";
-import { AsyncHandler } from "../utils/asyncHandler.js";
-import { ApiError } from "../utils/ApiError.js";
-// import { removeUnusedMulterImageFilesOnError } from "../utils/helpers.js";
+import mongoose from 'mongoose';
+import { ApiError } from '../utils/ApiError.js';
 
 /**
  *
@@ -15,11 +11,11 @@ import { ApiError } from "../utils/ApiError.js";
  *
  * @description This middleware is responsible to catch the errors from any request handler wrapped inside the {@link AsyncHandler}
  */
-const errorHandler = (err, req, res, next) => {
+const errorHandler = (err, req, res) => {
   let error = err;
 
   // Check if the error is an instance of an ApiError class which extends native Error class
-  if (!error instanceof ApiError) {
+  if ((!error) instanceof ApiError) {
     // if not
     // create a new ApiError instance to keep the consistency
 
@@ -28,7 +24,7 @@ const errorHandler = (err, req, res, next) => {
       error.statusCode || (error instanceof mongoose.Error ? 400 : 500);
 
     // set a message from native Error instance or a custom one
-    const message = error.message || "Something went wrong";
+    const message = error.message || 'Something went wrong';
     error = new ApiError(statusCode, message, error?.errors || [], err.stack);
   }
 
@@ -36,10 +32,8 @@ const errorHandler = (err, req, res, next) => {
   const response = {
     ...error,
     message: error.message,
-    ...(process.env.NODE_ENV === "development" ? { stack: error.stack } : {}), // Error stack traces should be visible in development for debugging
+    ...(process.env.NODE_ENV === 'development' ? { stack: error.stack } : {}), // Error stack traces should be visible in development for debugging
   };
-
-  AppLogger.error(`${error.message}`);
 
   //   removeUnusedMulterImageFilesOnError(req);
   // Send error response

@@ -12,10 +12,10 @@ class ApiError extends Error {
    */
   constructor(
     statusCode,
-    message = "Something went wrong",
+    message = 'Something went wrong',
     multipleErrors = [],
     success,
-    stack = ""
+    stack = '',
   ) {
     super();
     this.statusCode = statusCode;
@@ -27,7 +27,7 @@ class ApiError extends Error {
     }));
     this.success = false;
 
-    if (stack && process.env.NODE_ENV === "development") {
+    if (stack && process.env.NODE_ENV === 'development') {
       this.stack = stack;
     } else {
       Error.captureStackTrace(this, this.constructor);

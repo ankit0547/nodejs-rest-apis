@@ -1,6 +1,6 @@
 // mongoUtils.js
-import mongoose from "mongoose";
-import { ApiError } from "../utils/ApiError.js";
+import mongoose from 'mongoose';
+import { ApiError } from '../utils/ApiError.js';
 
 // Utility function to create a document
 export const createDocument = async (Model, data) => {
@@ -18,7 +18,7 @@ export const findDocuments = async (
   Model,
   query = {},
   projection = null,
-  options = {}
+  options = {},
 ) => {
   try {
     return await Model.find(query, projection, options);

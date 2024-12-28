@@ -1,9 +1,9 @@
-import { globalconstants } from "../../constants.js";
-import AppLogger from "../../logger/app.logger.js";
-import { User } from "../../models/user/user.models.js";
-import UserService from "../../services/user/UserService.js";
-import { ApiError } from "../../utils/ApiError.js";
-import { ApiResponse } from "../../utils/ApiResponse.js";
+import { globalconstants } from '../../constants.js';
+import AppLogger from '../../logger/app.logger.js';
+import { User } from '../../models/user/user.models.js';
+import UserService from '../../services/user/UserService.js';
+import { ApiError } from '../../utils/ApiError.js';
+import { ApiResponse } from '../../utils/ApiResponse.js';
 
 class UserController {
   // Create User
@@ -15,8 +15,8 @@ class UserController {
       if (existedUser) {
         throw new ApiError(
           409,
-          "User with email or username already exists",
-          []
+          'User with email or username already exists',
+          [],
         );
       }
       const user = await UserService.createUser(req.body, req);
@@ -24,7 +24,7 @@ class UserController {
       if (!user) {
         throw new ApiError(
           globalconstants.responseFlags.INTERNAL_SERVER_ERROR,
-          "Something went wrong while registering the user"
+          'Something went wrong while registering the user',
         );
       }
 
@@ -32,8 +32,8 @@ class UserController {
         new ApiResponse(
           globalconstants.responseFlags.ACTION_COMPLETE,
           {},
-          "Users registered successfully and verification email has been sent on your email."
-        )
+          'Users registered successfully and verification email has been sent on your email.',
+        ),
       );
       //   res.status(201).json({ success: true, user });
     } catch (err) {
@@ -42,8 +42,8 @@ class UserController {
         .json(
           new ApiError(
             globalconstants.responseFlags.INTERNAL_SERVER_ERROR,
-            err.message
-          )
+            err.message,
+          ),
         );
     }
   }
@@ -51,7 +51,7 @@ class UserController {
   // Get All Users
   async getAllUsers(req, res) {
     try {
-      AppLogger.info("Fetching all users");
+      AppLogger.info('Fetching all users');
       const users = await UserService.getAllUsers();
       res.status(200).json({ success: true, users });
     } catch (err) {
@@ -66,7 +66,7 @@ class UserController {
       if (!user)
         return res
           .status(404)
-          .json({ success: false, message: "User not found" });
+          .json({ success: false, message: 'User not found' });
       res.status(200).json({ success: true, user });
     } catch (err) {
       res.status(500).json({ success: false, message: err.message });
@@ -81,7 +81,7 @@ class UserController {
       if (!user)
         return res
           .status(404)
-          .json({ success: false, message: "User not found" });
+          .json({ success: false, message: 'User not found' });
       res.status(200).json({ success: true, user });
     } catch (err) {
       res.status(500).json({ success: false, message: err.message });
@@ -95,7 +95,7 @@ class UserController {
       if (!user)
         return res
           .status(404)
-          .json({ success: false, message: "User not found" });
+          .json({ success: false, message: 'User not found' });
       res.status(200).json({ success: true, user });
     } catch (err) {
       res.status(500).json({ success: false, message: err.message });
@@ -109,10 +109,10 @@ class UserController {
       if (!user)
         return res
           .status(404)
-          .json({ success: false, message: "User not found" });
+          .json({ success: false, message: 'User not found' });
       res
         .status(200)
-        .json({ success: true, message: "User deleted successfully" });
+        .json({ success: true, message: 'User deleted successfully' });
     } catch (err) {
       res.status(500).json({ success: false, message: err.message });
     }
@@ -121,18 +121,18 @@ class UserController {
   async getCurrentUser(req, res) {
     try {
       const user = await UserService.getUserDetailsWithoutPassword(
-        req.user._id
+        req.user._id,
       );
       if (!user)
         return res
           .status(404)
-          .json({ success: false, message: "User not found" });
+          .json({ success: false, message: 'User not found' });
       res.json(
         new ApiResponse(
           globalconstants.responseFlags.ACTION_COMPLETE,
           user,
-          "Users details fetched successfully"
-        )
+          'Users details fetched successfully',
+        ),
       );
     } catch (err) {
       res.status(500).json({ success: false, message: err.message });
