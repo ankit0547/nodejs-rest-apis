@@ -1,0 +1,120 @@
+[29 Dec, 2024 - 00:14:57:1457] [31merror[39m: [31mFailed to load Swagger file: ENOENT: no such file or directory, open './swagger.yaml'[39m
+[29 Dec, 2024 - 00:15:04:154] [31merror[39m: [31mFailed to load Swagger file: ENOENT: no such file or directory, open './swagger.yaml'[39m
+[29 Dec, 2024 - 00:15:48:1548] [31merror[39m: [31mFailed to load Swagger file: ENOENT: no such file or directory, open './swagger.yaml'[39m
+[29 Dec, 2024 - 00:16:06:166] [31merror[39m: [31mFailed to load Swagger file: ENOENT: no such file or directory, open './swagger.yaml'[39m
+[29 Dec, 2024 - 00:16:25:1625] [31merror[39m: [31mFailed to load Swagger file: ENOENT: no such file or directory, open './swagger.yaml'[39m
+[29 Dec, 2024 - 00:16:43:1643] [31merror[39m: [31mFailed to load Swagger file: ENOENT: no such file or directory, open './swagger.yaml'[39m
+[29 Dec, 2024 - 00:16:47:1647] [31merror[39m: [31mFailed to load Swagger file: ENOENT: no such file or directory, open './swagger.yaml'[39m
+[29 Dec, 2024 - 00:16:52:1652] [31merror[39m: [31mFailed to load Swagger file: ENOENT: no such file or directory, open './swagger.yaml'[39m
+[29 Dec, 2024 - 00:17:04:174] [31merror[39m: [31mFailed to load Swagger file: ENOENT: no such file or directory, open './swagger.yaml'[39m
+[29 Dec, 2024 - 00:17:52:1752] [31merror[39m: [31mFailed to load Swagger file: ENOENT: no such file or directory, open './swagger.yaml'[39m
+[29 Dec, 2024 - 00:20:20:2020] [31merror[39m: [31mFailed to load Swagger file: ENOENT: no such file or directory, open './swagger.yaml'[39m
+[29 Dec, 2024 - 01:33:56:3356] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[29 Dec, 2024 - 01:33:56:3356] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:33:56:3356] [31merror[39m: [31mMongoDB connection attempt 1 failed:[39m
+[29 Dec, 2024 - 01:33:56:3356] [31merror[39m: [31mRetrying in 2 seconds...[39m
+[29 Dec, 2024 - 01:33:58:3358] [34minfo[39m: [34mAttempt 2 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:33:58:3358] [31merror[39m: [31mMongoDB connection attempt 2 failed:[39m
+[29 Dec, 2024 - 01:33:58:3358] [31merror[39m: [31mRetrying in 2 seconds...[39m
+[29 Dec, 2024 - 01:34:00:340] [34minfo[39m: [34mAttempt 3 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:34:00:340] [31merror[39m: [31mMongoDB connection attempt 3 failed:[39m
+[29 Dec, 2024 - 01:34:00:340] [31merror[39m: [31mRetrying in 2 seconds...[39m
+[29 Dec, 2024 - 01:34:02:342] [34minfo[39m: [34mAttempt 4 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:34:02:342] [31merror[39m: [31mMongoDB connection attempt 4 failed:[39m
+[29 Dec, 2024 - 01:34:02:342] [31merror[39m: [31mRetrying in 2 seconds...[39m
+[29 Dec, 2024 - 01:34:04:344] [34minfo[39m: [34mAttempt 5 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:38:59:3859] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[29 Dec, 2024 - 01:38:59:3859] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:38:59:3859] [31merror[39m: [31mMongoDB connection attempt 1 failed:[39m
+[29 Dec, 2024 - 01:38:59:3859] [31merror[39m: [31mRetrying in 2 seconds...[39m
+[29 Dec, 2024 - 01:39:01:391] [34minfo[39m: [34mAttempt 2 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:39:01:391] [31merror[39m: [31mMongoDB connection attempt 2 failed:[39m
+[29 Dec, 2024 - 01:39:01:391] [31merror[39m: [31mRetrying in 2 seconds...[39m
+[29 Dec, 2024 - 01:39:03:393] [34minfo[39m: [34mAttempt 3 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:39:03:393] [31merror[39m: [31mMongoDB connection attempt 3 failed:[39m
+[29 Dec, 2024 - 01:39:03:393] [31merror[39m: [31mRetrying in 2 seconds...[39m
+[29 Dec, 2024 - 01:39:05:395] [34minfo[39m: [34mAttempt 4 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:39:05:395] [31merror[39m: [31mMongoDB connection attempt 4 failed:[39m
+[29 Dec, 2024 - 01:39:05:395] [31merror[39m: [31mRetrying in 2 seconds...[39m
+[29 Dec, 2024 - 01:39:07:397] [34minfo[39m: [34mAttempt 5 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:45:42:4542] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[29 Dec, 2024 - 01:45:42:4542] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:45:42:4542] [31merror[39m: [31mMongoDB connection attempt 1 failed:[39m
+[29 Dec, 2024 - 01:45:42:4542] [31merror[39m: [31mRetrying in 2 seconds...[39m
+[29 Dec, 2024 - 01:45:44:4544] [34minfo[39m: [34mAttempt 2 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:45:44:4544] [31merror[39m: [31mMongoDB connection attempt 2 failed:[39m
+[29 Dec, 2024 - 01:45:44:4544] [31merror[39m: [31mRetrying in 2 seconds...[39m
+[29 Dec, 2024 - 01:45:46:4546] [34minfo[39m: [34mAttempt 3 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:45:46:4546] [31merror[39m: [31mMongoDB connection attempt 3 failed:[39m
+[29 Dec, 2024 - 01:45:46:4546] [31merror[39m: [31mRetrying in 2 seconds...[39m
+[29 Dec, 2024 - 01:45:48:4548] [34minfo[39m: [34mAttempt 4 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:45:48:4548] [31merror[39m: [31mMongoDB connection attempt 4 failed:[39m
+[29 Dec, 2024 - 01:45:48:4548] [31merror[39m: [31mRetrying in 2 seconds...[39m
+[29 Dec, 2024 - 01:45:50:4550] [34minfo[39m: [34mAttempt 5 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:46:08:468] [34minfo[39m: [34mLoading environment variables from .env.development[39m
+[29 Dec, 2024 - 01:46:08:468] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[29 Dec, 2024 - 01:46:08:468] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:46:08:468] [31merror[39m: [31mMongoDB connection attempt 1 failed:[39m
+[29 Dec, 2024 - 01:46:08:468] [31merror[39m: [31mRetrying in 2 seconds...[39m
+[29 Dec, 2024 - 01:46:11:4611] [34minfo[39m: [34mAttempt 2 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:46:11:4611] [31merror[39m: [31mMongoDB connection attempt 2 failed:[39m
+[29 Dec, 2024 - 01:46:11:4611] [31merror[39m: [31mRetrying in 2 seconds...[39m
+[29 Dec, 2024 - 01:46:13:4613] [34minfo[39m: [34mAttempt 3 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:46:13:4613] [31merror[39m: [31mMongoDB connection attempt 3 failed:[39m
+[29 Dec, 2024 - 01:46:13:4613] [31merror[39m: [31mRetrying in 2 seconds...[39m
+[29 Dec, 2024 - 01:46:15:4615] [34minfo[39m: [34mAttempt 4 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:46:15:4615] [31merror[39m: [31mMongoDB connection attempt 4 failed:[39m
+[29 Dec, 2024 - 01:46:15:4615] [31merror[39m: [31mRetrying in 2 seconds...[39m
+[29 Dec, 2024 - 01:46:17:4617] [34minfo[39m: [34mAttempt 5 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:46:44:4644] [34minfo[39m: [34mLoading environment variables from .env.development[39m
+[29 Dec, 2024 - 01:46:44:4644] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[29 Dec, 2024 - 01:46:44:4644] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:46:44:4644] [31merror[39m: [31mMongoDB connection attempt 1 failed:[39m
+[29 Dec, 2024 - 01:46:44:4644] [31merror[39m: [31mRetrying in 2 seconds...[39m
+[29 Dec, 2024 - 01:46:46:4646] [34minfo[39m: [34mAttempt 2 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:46:46:4646] [31merror[39m: [31mMongoDB connection attempt 2 failed:[39m
+[29 Dec, 2024 - 01:46:46:4646] [31merror[39m: [31mRetrying in 2 seconds...[39m
+[29 Dec, 2024 - 01:46:48:4648] [34minfo[39m: [34mAttempt 3 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:46:48:4648] [31merror[39m: [31mMongoDB connection attempt 3 failed:[39m
+[29 Dec, 2024 - 01:46:48:4648] [31merror[39m: [31mRetrying in 2 seconds...[39m
+[29 Dec, 2024 - 01:46:50:4650] [34minfo[39m: [34mAttempt 4 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:46:50:4650] [31merror[39m: [31mMongoDB connection attempt 4 failed:[39m
+[29 Dec, 2024 - 01:46:50:4650] [31merror[39m: [31mRetrying in 2 seconds...[39m
+[29 Dec, 2024 - 01:46:52:4652] [34minfo[39m: [34mAttempt 5 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:47:12:4712] [34minfo[39m: [34m[34minfo[34m[39m
+[29 Dec, 2024 - 01:47:12:4712] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[29 Dec, 2024 - 01:47:12:4712] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[29 Dec, 2024 - 01:47:12:4712] [31merror[39m: [31mMongoDB connection attempt 1 failed:[39m
+[29 Dec, 2024 - 01:47:12:4712] [31merror[39m: [31mRetrying in 2 seconds...[39m
+[29 Dec, 2024 - 01:51:47:5147] [31merror[39m: [31mFailed to load Swagger file: ENOENT: no such file or directory, open '/Users/ankitsharma/Developer/MasterNodeApp/src/middlewares/src/middlewares/swagger.middleware.js'[39m
+[29 Dec, 2024 - 01:53:09:539] [31merror[39m: [31mFailed to load Swagger file: ENOENT: no such file or directory, open '/Users/ankitsharma/Developer/MasterNodeApp/src/middlewares/src/middlewares/swagger.middleware.js'[39m
+[29 Dec, 2024 - 01:54:29:5429] [31merror[39m: [31mFailed to load Swagger file: ENOENT: no such file or directory, open '/Users/ankitsharma/Developer/MasterNodeApp/src/middlewares/src/middlewares/swagger.middleware.js'[39m
+[29 Dec, 2024 - 01:54:59:5459] [31merror[39m: [31mFailed to load Swagger file: ENOENT: no such file or directory, open '/Users/ankitsharma/Developer/MasterNodeApp/src/middlewares/src/middlewares/swagger.middleware.js'[39m
+[29 Dec, 2024 - 02:02:27:227] [31merror[39m: [31mFailed to load Swagger file: EISDIR: illegal operation on a directory, read[39m
+[29 Dec, 2024 - 02:02:53:253] [31merror[39m: [31mFailed to load Swagger file: EISDIR: illegal operation on a directory, read[39m
+[29 Dec, 2024 - 02:03:18:318] [34minfo[39m: [34m__dirname: /Users/ankitsharma/Developer/MasterNodeApp[39m
+[29 Dec, 2024 - 02:03:18:318] [34minfo[39m: [34m[34minfo[34m[39m
+[29 Dec, 2024 - 02:03:21:321] [34minfo[39m: [34m__dirname: /Users/ankitsharma/Developer/MasterNodeApp[39m
+[29 Dec, 2024 - 02:03:21:321] [31merror[39m: [31mFailed to load Swagger file: EISDIR: illegal operation on a directory, read[39m
+[29 Dec, 2024 - 02:03:21:321] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[29 Dec, 2024 - 02:03:21:321] [31merror[39m: [31mMongoDB connection attempt 1 failed:[39m
+[29 Dec, 2024 - 02:03:27:327] [31merror[39m: [31mRetrying in 2 seconds...[39m
+[29 Dec, 2024 - 02:03:29:329] [34minfo[39m: [34mAttempt 2 to connect to MongoDB...[39m
+[29 Dec, 2024 - 02:03:29:329] [31merror[39m: [31mMongoDB connection attempt 2 failed:[39m
+[29 Dec, 2024 - 02:03:34:334] [31merror[39m: [31mRetrying in 2 seconds...[39m
+[29 Dec, 2024 - 02:03:36:336] [34minfo[39m: [34mAttempt 3 to connect to MongoDB...[39m
+[29 Dec, 2024 - 02:05:01:51] [31merror[39m: [31mFailed to load Swagger file: EISDIR: illegal operation on a directory, read[39m
+[29 Dec, 2024 - 02:07:41:741] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[29 Dec, 2024 - 02:07:41:741] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[29 Dec, 2024 - 02:07:41:741] [31merror[39m: [31mMongoDB connection attempt 1 failed:[39m
+[29 Dec, 2024 - 02:07:44:744] [31merror[39m: [31mRetrying in 2 seconds...[39m
+[29 Dec, 2024 - 02:07:46:746] [34minfo[39m: [34mAttempt 2 to connect to MongoDB...[39m
+[29 Dec, 2024 - 02:16:09:169] [31merror[39m: [31mFailed to load Swagger file: Unable to parse.[39m
+[29 Dec, 2024 - 02:16:21:1621] [31merror[39m: [31mFailed to load Swagger file: EISDIR: illegal operation on a directory, read[39m
+[29 Dec, 2024 - 02:16:54:1654] [31merror[39m: [31mFailed to load Swagger file: EISDIR: illegal operation on a directory, read[39m
+[29 Dec, 2024 - 02:22:50:2250] [31merror[39m: [31mFailed to load Swagger file: EISDIR: illegal operation on a directory, read[39m
+[29 Dec, 2024 - 02:27:23:2723] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[29 Dec, 2024 - 02:27:23:2723] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[29 Dec, 2024 - 02:27:23:2723] [34minfo[39m: [34mMongoDB connected successfully![39m
+[29 Dec, 2024 - 02:27:23:2723] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[29 Dec, 2024 - 02:27:23:2723] [34minfo[39m: [34m⚙️  Server is running on port: 7800[39m

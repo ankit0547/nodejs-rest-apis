@@ -6,15 +6,29 @@
   "configurations": [
     {
       "type": "node",
-      "name": "Run Test All",
+      "name": "Dev:Run Test All",
       "request": "launch",
       "program": "${workspaceFolder}/node_modules/.bin/jest",
-      "args": [
-        "--runInBand",
-      ],
+      "args": ["--runInBand"],
       "cwd": "${workspaceFolder}",
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    },
+    {
+      "type": "node",
+      "name": "Dev:Debug Current Test File",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/.bin/jest",
+      "args": ["${relativeFile}"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "env": {
+        "NODE_ENV": "development"
+      }
     },
     {
       "type": "node",
@@ -31,5 +45,18 @@
       "program": "${workspaceFolder}//src//index.js"
     },
 
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch in Prod Mode (Debug)",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}//src//index.js", // Path to your entry file
+      "env": {
+        "NODE_ENV": "production", // Set environment to 'production'
+        "DEBUG": "app:*" // Enable debugging for your application
+      },
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"], // If you have compiled files, adjust accordingly
+      "sourceMaps": true // Enable source maps if you're using transpilers like Babel
+    }
   ]
 }
