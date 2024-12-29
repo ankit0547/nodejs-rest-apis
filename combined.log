@@ -118,3 +118,106 @@
 [29 Dec, 2024 - 02:27:23:2723] [34minfo[39m: [34mMongoDB connected successfully![39m
 [29 Dec, 2024 - 02:27:23:2723] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
 [29 Dec, 2024 - 02:27:23:2723] [34minfo[39m: [34m⚙️  Server is running on port: 7800[39m
+[29 Dec, 2024 - 17:30:54:3054] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[29 Dec, 2024 - 17:30:58:3058] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[29 Dec, 2024 - 17:30:58:3058] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[29 Dec, 2024 - 17:30:58:3058] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800[39m
+[29 Dec, 2024 - 17:30:59:3059] [34minfo[39m: [34mMongoDB connected successfully![39m
+[29 Dec, 2024 - 17:31:07:317] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/register - 400 - 3.739 ms - correlation-id: 03abdadc-7caf-4d85-8f45-660020587ab2'[39m
+[29 Dec, 2024 - 17:31:32:3132] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/register - 400 - 2.467 ms - correlation-id: f2f0cc24-099a-46ba-930f-db983493c397'[39m
+[29 Dec, 2024 - 17:31:45:3145] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[29 Dec, 2024 - 17:31:45:3145] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[29 Dec, 2024 - 17:31:45:3145] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[29 Dec, 2024 - 17:31:45:3145] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800[39m
+[29 Dec, 2024 - 17:31:47:3147] [34minfo[39m: [34mMongoDB connected successfully![39m
+[29 Dec, 2024 - 17:34:19:3419] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/register - 400 - 133775.787 ms - correlation-id: fcd73a51-3a36-4786-a564-c09b0e3ad549'[39m
+[29 Dec, 2024 - 17:34:35:3435] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/register - 500 - 1871.902 ms - correlation-id: 52703823-115e-438f-84f2-0801c3190e35'[39m
+[29 Dec, 2024 - 17:35:09:359] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/register - 500 - 2007.804 ms - correlation-id: 4dd5ea7d-14c6-4425-a931-876d34d3600e'[39m
+[29 Dec, 2024 - 17:35:29:3529] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/register - 500 - 2.125 ms - correlation-id: 24e3a7b0-a9d8-47b2-b90b-2165af727471'[39m
+[29 Dec, 2024 - 17:35:35:3535] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/register - 500 - 1.645 ms - correlation-id: 0e20317a-45e4-4a8c-b625-05742e8c7e38'[39m
+[29 Dec, 2024 - 17:35:42:3542] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[29 Dec, 2024 - 17:35:42:3542] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[29 Dec, 2024 - 17:35:42:3542] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[29 Dec, 2024 - 17:35:42:3542] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800[39m
+[29 Dec, 2024 - 17:35:43:3543] [34minfo[39m: [34mMongoDB connected successfully![39m
+[29 Dec, 2024 - 17:35:48:3548] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/register - 500 - 4.717 ms - correlation-id: daf9562b-83dd-416d-a699-3ecdaa77a06b'[39m
+[29 Dec, 2024 - 17:35:57:3557] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/register - 500 - 2.188 ms - correlation-id: 16d0d883-49db-46b1-bc9b-1a9a890c3f60'[39m
+[29 Dec, 2024 - 17:36:32:3632] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/register - 500 - 19442.177 ms - correlation-id: 66d1ad4a-b55f-4628-b25b-75d649050eb6'[39m
+[29 Dec, 2024 - 17:36:49:3649] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/register - 500 - 2196.166 ms - correlation-id: 1b846706-e294-43bf-9f93-a1d4ea1a2f5c'[39m
+[29 Dec, 2024 - 17:37:10:3710] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/register - 500 - 2044.024 ms - correlation-id: d049dd9c-c8e3-4ffe-af50-07bfdc4f92d6'[39m
+[29 Dec, 2024 - 17:39:09:399] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/register - 500 - 2763.531 ms - correlation-id: 0c3acaed-ed30-45c0-b6a2-32c910a22aa1'[39m
+[29 Dec, 2024 - 17:39:23:3923] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/register - 500 - 1815.517 ms - correlation-id: 97a7efb3-75b9-46f7-b44b-da65eb1a5354'[39m
+[29 Dec, 2024 - 17:39:56:3956] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[29 Dec, 2024 - 17:39:56:3956] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[29 Dec, 2024 - 17:39:56:3956] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[29 Dec, 2024 - 17:39:56:3956] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800[39m
+[29 Dec, 2024 - 17:39:56:3956] [34minfo[39m: [34mMongoDB connected successfully![39m
+[29 Dec, 2024 - 17:40:22:4022] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/register - 500 - 19223.560 ms - correlation-id: a58cfba0-be52-49a1-98c0-d6bc995e6cfb'[39m
+[29 Dec, 2024 - 17:40:59:4059] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/register - 500 - 3360.120 ms - correlation-id: bc193477-3e84-4c3b-b642-579cd37eb07e'[39m
+[29 Dec, 2024 - 17:41:49:4149] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[29 Dec, 2024 - 17:41:49:4149] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[29 Dec, 2024 - 17:41:49:4149] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[29 Dec, 2024 - 17:41:49:4149] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800[39m
+[29 Dec, 2024 - 17:41:49:4149] [34minfo[39m: [34mMongoDB connected successfully![39m
+[29 Dec, 2024 - 17:42:19:4219] [34minfo[39m: [34mMail sent[39m
+[29 Dec, 2024 - 17:42:19:4219] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/register - 200 - 21507.280 ms - correlation-id: 772f5522-0eb7-4b2a-bfe1-7d8469aebbd4'[39m
+[29 Dec, 2024 - 17:42:37:4237] [34minfo[39m: [34mFetching all users[39m
+[29 Dec, 2024 - 17:42:37:4237] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 49.085 ms - correlation-id: 5aeccfae-2719-43eb-9b33-4cb284984aa7'[39m
+[29 Dec, 2024 - 17:44:15:4415] [34minfo[39m: [34mFetching all users[39m
+[29 Dec, 2024 - 17:44:15:4415] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 45.156 ms - correlation-id: 36519338-c330-499d-8fd4-e54c526c8085'[39m
+[29 Dec, 2024 - 17:45:26:4526] [34minfo[39m: [34mMail sent[39m
+[29 Dec, 2024 - 17:45:26:4526] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/register - 200 - 10965.518 ms - correlation-id: 3bbd2b9a-8f2d-4cca-bd3b-054bb9be0bc2'[39m
+[29 Dec, 2024 - 17:50:33:5033] [34minfo[39m: [34mMail sent[39m
+[29 Dec, 2024 - 17:50:33:5033] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/register - 200 - 18704.436 ms - correlation-id: 42a10f76-8abe-449f-93ff-90195e727a21'[39m
+[29 Dec, 2024 - 17:52:55:5255] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 4319.064 ms - correlation-id: 67088833-0e2e-4dc0-9d55-e061d915cb92'[39m
+[29 Dec, 2024 - 17:53:22:5322] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user - 200 - 79.343 ms - correlation-id: 763ccc32-e025-4f05-997b-6e0bf26c5c2c'[39m
+[29 Dec, 2024 - 17:53:45:5345] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user - 200 - 80.783 ms - correlation-id: 325c93b1-f7ce-4d87-95d9-ae80754ab7bd'[39m
+[29 Dec, 2024 - 17:55:23:5523] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user - 200 - 78.859 ms - correlation-id: 2567d260-7a45-4e38-83be-fcae1bc21ce2'[39m
+[29 Dec, 2024 - 17:55:39:5539] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[29 Dec, 2024 - 17:55:39:5539] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[29 Dec, 2024 - 17:55:39:5539] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[29 Dec, 2024 - 17:55:39:5539] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800[39m
+[29 Dec, 2024 - 17:55:41:5541] [34minfo[39m: [34mMongoDB connected successfully![39m
+[29 Dec, 2024 - 17:55:42:5542] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user - 200 - 157.202 ms - correlation-id: 983f75c0-e9a4-444e-872c-28985ecbe6d2'[39m
+[29 Dec, 2024 - 17:56:11:5611] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[29 Dec, 2024 - 17:56:11:5611] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[29 Dec, 2024 - 17:56:11:5611] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[29 Dec, 2024 - 17:56:11:5611] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800[39m
+[29 Dec, 2024 - 17:56:12:5612] [34minfo[39m: [34mMongoDB connected successfully![39m
+[29 Dec, 2024 - 17:56:15:5615] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user - 200 - 102.474 ms - correlation-id: 02953a0e-e3f6-4f98-a8df-9d250b1af99a'[39m
+[29 Dec, 2024 - 17:56:29:5629] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[29 Dec, 2024 - 17:56:29:5629] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[29 Dec, 2024 - 17:56:29:5629] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[29 Dec, 2024 - 17:56:29:5629] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800[39m
+[29 Dec, 2024 - 17:56:29:5629] [34minfo[39m: [34mMongoDB connected successfully![39m
+[29 Dec, 2024 - 17:56:32:5632] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user - 200 - 151.944 ms - correlation-id: 44886bbb-2fd6-4835-adbc-75f7be1bd9c3'[39m
+[29 Dec, 2024 - 17:57:25:5725] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[29 Dec, 2024 - 17:57:25:5725] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[29 Dec, 2024 - 17:57:25:5725] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[29 Dec, 2024 - 17:57:25:5725] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800[39m
+[29 Dec, 2024 - 17:57:25:5725] [34minfo[39m: [34mMongoDB connected successfully![39m
+[29 Dec, 2024 - 17:57:31:5731] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user - 200 - 128.516 ms - correlation-id: f4c09c18-4bad-4f61-8bf6-456e473a41c9'[39m
+[29 Dec, 2024 - 17:58:52:5852] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[29 Dec, 2024 - 17:58:52:5852] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[29 Dec, 2024 - 17:58:52:5852] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[29 Dec, 2024 - 17:58:52:5852] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800[39m
+[29 Dec, 2024 - 17:58:52:5852] [34minfo[39m: [34mMongoDB connected successfully![39m
+[29 Dec, 2024 - 17:58:56:5856] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user - 200 - 129.982 ms - correlation-id: a0a74a69-f6ff-4a50-96e4-616888342e92'[39m
+[29 Dec, 2024 - 18:01:00:10] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[29 Dec, 2024 - 18:01:00:10] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[29 Dec, 2024 - 18:01:00:10] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[29 Dec, 2024 - 18:01:00:10] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800[39m
+[29 Dec, 2024 - 18:01:00:10] [34minfo[39m: [34mMongoDB connected successfully![39m
+[29 Dec, 2024 - 18:01:04:14] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user - 200 - 133.089 ms - correlation-id: ec0436e6-5893-4279-8232-3db202d18f0e'[39m
+[29 Dec, 2024 - 18:01:21:121] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[29 Dec, 2024 - 18:01:21:121] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[29 Dec, 2024 - 18:01:21:121] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[29 Dec, 2024 - 18:01:21:121] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800[39m
+[29 Dec, 2024 - 18:01:21:121] [34minfo[39m: [34mMongoDB connected successfully![39m
+[29 Dec, 2024 - 18:01:24:124] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user - 200 - 130.224 ms - correlation-id: e6317085-4de4-4d49-86e7-2ed50b529113'[39m
+[29 Dec, 2024 - 18:01:40:140] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[29 Dec, 2024 - 18:01:40:140] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[29 Dec, 2024 - 18:01:40:140] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[29 Dec, 2024 - 18:01:40:140] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800[39m
+[29 Dec, 2024 - 18:01:41:141] [34minfo[39m: [34mMongoDB connected successfully![39m
+[29 Dec, 2024 - 18:01:43:143] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user - 200 - 132.118 ms - correlation-id: 1beb0c5a-1478-4e1a-a340-f656b2d65fa9'[39m
