@@ -3,7 +3,7 @@ import { ApiError } from '../utils/ApiError.js';
 import mongoose from 'mongoose';
 
 describe('errorHandler Middleware', () => {
-  let req, res, next;
+  let req, res;
 
   beforeEach(() => {
     req = {};

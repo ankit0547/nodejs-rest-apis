@@ -1,6 +1,8 @@
 import eslintPluginNode from 'eslint-plugin-node';
 import eslintPluginImport from 'eslint-plugin-import';
 import eslintPluginPrettier from 'eslint-plugin-prettier';
+import airbnbBase from 'eslint-config-airbnb-base';
+import prettier from 'eslint-config-prettier';
 
 export default [
   {
@@ -18,6 +20,8 @@ export default [
       prettier: eslintPluginPrettier,
     },
     rules: {
+      ...airbnbBase.rules,
+      ...prettier.rules,
       'prettier/prettier': 'error',
       'no-console': 'warn',
       'node/no-unsupported-features/es-syntax': 'off',
