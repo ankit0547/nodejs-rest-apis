@@ -15,7 +15,9 @@ const startServer = () => {
         process.env.PORT || 8080
       }/docs`,
     );
-    AppLogger.info('⚙️  Server is running on port: ' + process.env.PORT);
+    AppLogger.info(
+      `⚙️  Server is running in ${process.env.NODE_ENV} env on port: ${process.env.PORT}`,
+    );
   });
 };
 
