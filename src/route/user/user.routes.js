@@ -2,7 +2,7 @@ import { Router } from 'express';
 import { UserController } from '../../controllers/index.js';
 import { verifyJWT } from '../../middlewares/auth.middleware.js';
 import { registerUserSchema } from '../../validation/auth/authValidationSchema.js';
-import { validateRequest } from '../../validation/auth/authValidator.js';
+import { validateRequest } from '../../validation/auth/requestValidator.js';
 import authorize from '../../middlewares/rbac.middleware.js';
 
 const router = Router();

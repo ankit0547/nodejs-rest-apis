@@ -19,7 +19,7 @@ class UserRepository {
     }
 
     // Create a new user
-    const user = mongoUtils.createDocument(UserModel, {
+    const user = await mongoUtils.createDocument(UserModel, {
       ...userData,
       isEmailVerified: false,
       role: role._id, // Reference the role ID
@@ -61,7 +61,7 @@ class UserRepository {
 
   // Find user by ID
   async findById(id) {
-    return await UserModel.findById(id);
+    return await UserModel.findById(id).populate('role');
   }
 
   // Find user by email and username
@@ -93,9 +93,14 @@ class UserRepository {
   }
   // get LoggedIn User Without Password
   async getUserDetailsWithoutPassword(userId) {
-    return await UserModel.findById(userId).select(
-      '-password -refreshToken -emailVerificationToken -emailVerificationExpiry -__v -forgotPasswordExpiry -forgotPasswordToken',
-    );
+    return await UserModel.findById(userId)
+      .select(
+        '-password -refreshToken -emailVerificationToken -emailVerificationExpiry -__v -forgotPasswordExpiry -forgotPasswordToken',
+      )
+      .populate({
+        path: 'role', // The field in the User model that references Role
+        select: 'name -_id', // Only include the 'name' field from the Role model
+      });
   }
 
   // Update user by ID
