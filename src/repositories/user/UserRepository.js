@@ -12,17 +12,10 @@ import { mongoUtils } from '../../lib/mongo.js';
 class UserRepository {
   // Create a new user
   async create(userData, req) {
-    // Find the role by name
-    const role = await RoleModel.findOne({ name: userData.role });
-    if (!role) {
-      return res.status(400).json({ message: 'Invalid role name' });
-    }
-
     // Create a new user
     const user = await mongoUtils.createDocument(UserModel, {
       ...userData,
       isEmailVerified: false,
-      role: role._id, // Reference the role ID
     });
 
     /**
@@ -93,14 +86,9 @@ class UserRepository {
   }
   // get LoggedIn User Without Password
   async getUserDetailsWithoutPassword(userId) {
-    return await UserModel.findById(userId)
-      .select(
-        '-password -refreshToken -emailVerificationToken -emailVerificationExpiry -__v -forgotPasswordExpiry -forgotPasswordToken',
-      )
-      .populate({
-        path: 'role', // The field in the User model that references Role
-        select: 'name -_id', // Only include the 'name' field from the Role model
-      });
+    return await UserModel.findById(userId).select(
+      '-password -refreshToken -emailVerificationToken -emailVerificationExpiry -__v -forgotPasswordExpiry -forgotPasswordToken',
+    );
   }
 
   // Update user by ID

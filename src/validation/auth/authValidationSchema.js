@@ -12,10 +12,6 @@ export const registerUserSchema = Joi.object({
     'string.empty': 'Password is required',
     'string.min': 'Password must be at least 8 characters long',
   }),
-  address: Joi.allow(),
-  role: Joi.string().required().messages({
-    'string.empty': 'Role is required',
-  }),
 });
 
 export const loginUserSchema = Joi.object({

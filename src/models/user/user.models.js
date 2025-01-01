@@ -31,21 +31,8 @@ const userSchema = new Schema(
         localPath: '',
       },
     },
-    address: {
-      address1: { type: String, default: '' },
-      address2: { type: String, default: '' }, // Optional field
-      city: { type: String, default: '' },
-      state: { type: String, default: '' },
-      postalCode: { type: String, default: '' },
-      country: { type: String, default: '' },
-    },
-    role: { type: mongoose.Schema.Types.ObjectId, ref: 'Role' }, // Reference to Role model
-    // role: {
-    //   type: String,
-    //   enum: AvailableUserRoles,
-    //   default: UserRolesEnum.USER,
-    //   required: true,
-    // },
+    isOnline: { type: Boolean, default: false },
+    lastSeen: { type: Date }, // Tracks when the user was last online
     password: {
       type: String,
       required: [true, 'Password is required'],
@@ -182,5 +169,7 @@ userSchema.pre('findOneAndUpdate', async function (next) {
 
   next();
 });
+
+userSchema.index({ username: 1 });
 
 export const User = mongoose.model('User', userSchema);

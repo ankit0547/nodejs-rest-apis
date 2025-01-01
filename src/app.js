@@ -7,6 +7,7 @@ import cors from 'cors';
 import swaggerUi from 'swagger-ui-express';
 import healthcheckRouter from './route/healthCheck.js';
 import HTTPLoggerMiddleware from './logger/http.logger.js';
+import { Server } from 'socket.io';
 
 import { createServer } from 'http';
 import { v4 as uuidv4 } from 'uuid';
@@ -26,6 +27,7 @@ dotenv.config({
 
 const app = express();
 const httpServer = createServer(app);
+const io = new Server(httpServer);
 
 // Initialize Swagger
 loadSwaggerDocument();
@@ -73,9 +75,24 @@ app.use(cookieParser());
 // app.use(logger());
 app.use(HTTPLoggerMiddleware);
 
+io.on('connection', (socket) => {
+  AppLogger.info('A user connected:', socket.id);
+
+  socket.on('send_message', (data) => {
+    io.to(data.to).emit('receive_message', data);
+  });
+
+  socket.on('disconnect', () => {
+    AppLogger.info('User disconnected');
+  });
+});
+
 // Import all routes
 import userRouter from './route/user/user.routes.js';
 import authRouter from './route/auth/auth.routes.js';
+import groupRoutes from './route/group/group.routes.js';
+import messageRoutes from './route/message/message.routes.js';
+import AppLogger from './logger/app.logger.js';
 
 // * healthcheck
 app.use('/api/v1/healthcheck', healthcheckRouter);
@@ -83,6 +100,8 @@ app.use('/api/v1/healthcheck', healthcheckRouter);
 // * App apis
 app.use('/api/v1/user', userRouter);
 app.use('/api/v1/auth', authRouter);
+app.use('/groups', groupRoutes);
+app.use('/messages', messageRoutes);
 
 // common error handling middleware
 app.use(errorHandler);
