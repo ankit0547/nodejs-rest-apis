@@ -16,7 +16,7 @@ router.route('/').get(verifyJWT, UserController.getCurrentUser);
 router
   .route('/')
   .put(verifyJWT, authorize('Update profile'), UserController.updateUser);
-router.route('/all').get(UserController.getAllUsers);
+router.route('/all').get(verifyJWT, UserController.getAllUsers);
 
 export default router;
 authorize('users', 'update');

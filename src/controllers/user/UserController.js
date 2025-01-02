@@ -53,9 +53,22 @@ class UserController {
     try {
       AppLogger.info('Fetching all users');
       const users = await UserService.getAllUsers();
-      res.status(200).json({ success: true, users });
+      res.json(
+        new ApiResponse(
+          globalconstants.responseFlags.ACTION_COMPLETE,
+          users,
+          'Users fetched successfully',
+        ),
+      );
     } catch (err) {
-      res.status(500).json({ success: false, message: err.message });
+      res
+        .status(500)
+        .json(
+          new ApiError(
+            globalconstants.responseFlags.INTERNAL_SERVER_ERROR,
+            err.message,
+          ),
+        );
     }
   }
 

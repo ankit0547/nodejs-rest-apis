@@ -16,7 +16,7 @@ const startServer = () => {
       }/docs`,
     );
     AppLogger.info(
-      `⚙️  Server is running in ${process.env.NODE_ENV} env on port: ${process.env.PORT}`,
+      `⚙️  Server is running in ${process.env.NODE_ENV} env on port: ${process.env.PORT} and connected to ${process.env.DB_NAME} DB`,
     );
   });
 };

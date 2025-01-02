@@ -1,4 +1,4 @@
-import { RoleModel, UserModel } from '../../models/index.js';
+import { UserModel } from '../../models/index.js';
 import jwt from 'jsonwebtoken';
 import crypto from 'node:crypto';
 

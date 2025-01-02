@@ -1,8 +1,8 @@
 import mongoose from 'mongoose';
-import { DB_NAME } from '../constants.js';
 import AppLogger from '../logger/app.logger.js';
 
 const dbOptions = {};
+const DB_NAME = process.env.DB_NAME;
 const MONGODB_URI = `${process.env.MONGODB_URI}/${DB_NAME}`;
 
 const connectDB = async (

@@ -27,7 +27,11 @@ dotenv.config({
 
 const app = express();
 const httpServer = createServer(app);
-const io = new Server(httpServer);
+const io = new Server(httpServer, {
+  cors: {
+    origin: '*',
+  },
+});
 
 // Initialize Swagger
 loadSwaggerDocument();
@@ -75,15 +79,21 @@ app.use(cookieParser());
 // app.use(logger());
 app.use(HTTPLoggerMiddleware);
 
+// Socket.IO for real-time
 io.on('connection', (socket) => {
-  AppLogger.info('A user connected:', socket.id);
+  AppLogger.info('User connected:', socket.id);
 
-  socket.on('send_message', (data) => {
-    io.to(data.to).emit('receive_message', data);
+  socket.on('joinChat', (chatId) => {
+    socket.join(chatId);
+    AppLogger.info(`User joined chat: ${chatId}`);
+  });
+
+  socket.on('sendMessage', (message) => {
+    io.to(message.chat).emit('messageReceived', message);
   });
 
   socket.on('disconnect', () => {
-    AppLogger.info('User disconnected');
+    AppLogger.info('User disconnected:', socket.id);
   });
 });
 
@@ -92,6 +102,7 @@ import userRouter from './route/user/user.routes.js';
 import authRouter from './route/auth/auth.routes.js';
 import groupRoutes from './route/group/group.routes.js';
 import messageRoutes from './route/message/message.routes.js';
+import sessionRoutes from './route/session/session.routes.js';
 import AppLogger from './logger/app.logger.js';
 
 // * healthcheck
@@ -100,8 +111,10 @@ app.use('/api/v1/healthcheck', healthcheckRouter);
 // * App apis
 app.use('/api/v1/user', userRouter);
 app.use('/api/v1/auth', authRouter);
-app.use('/groups', groupRoutes);
-app.use('/messages', messageRoutes);
+
+app.use('/api/v1/sessions', sessionRoutes);
+app.use('/api/v1/groups', groupRoutes);
+app.use('/api/v1/messages', messageRoutes);
 
 // common error handling middleware
 app.use(errorHandler);

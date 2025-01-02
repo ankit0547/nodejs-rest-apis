@@ -3,7 +3,6 @@ import { verifyJWT } from '../../middlewares/auth.middleware.js';
 import { validateRequest } from '../../validation/auth/requestValidator.js';
 import { loginUserSchema } from '../../validation/auth/authValidationSchema.js';
 import { AuthController } from '../../controllers/index.js';
-import { RoleModel } from '../../models/index.js';
 import AppLogger from '../../logger/app.logger.js';
 
 const router = Router();
