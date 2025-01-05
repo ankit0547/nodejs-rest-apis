@@ -1,17 +1,26 @@
-import { MessageModel } from '../../models/index.js';
+import { ChatMessageModel } from '../../models/index.js';
 
 // Send a message
 export const sendMessage = async (req, res) => {
   try {
     const { type, from, to, groupId, content } = req.body;
-    const message = await MessageModel.create({
+    const message = await ChatMessageModel.create({
       type,
       from,
       to,
       groupId,
       content,
     });
-    res.status(201).json(message);
+
+    // Emit the message to the recipient (or group)
+    if (to) {
+      // Send message to a specific user
+      io.to(socketConnections[to]).emit('receive_message', message);
+    } else if (groupId) {
+      // Send message to all users in a group (you need to handle group logic)
+      io.to(groupId).emit('receive_message', message);
+    }
+    // res.status(201).json(message);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }

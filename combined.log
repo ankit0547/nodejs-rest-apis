@@ -341,3 +341,1655 @@
 [02 Jan, 2025 - 03:25:49:2549] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user - 304 - 73.900 ms - correlation-id: 84453ca4-5510-41dd-9a64-e99c220d3c08'[39m
 [02 Jan, 2025 - 03:25:52:2552] [35mhttp[39m: [35m- ::1 - GET - /api/v1/auth/resources - 500 - 6.389 ms - correlation-id: 66501b83-f909-4a26-835d-f8ef829920a2'[39m
 [02 Jan, 2025 - 03:25:52:2552] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user - 304 - 63.022 ms - correlation-id: 4b0209ac-1c11-4b49-be82-589085f8355c'[39m
+[05 Jan, 2025 - 12:21:25:2125] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[05 Jan, 2025 - 12:21:25:2125] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[05 Jan, 2025 - 12:21:25:2125] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[05 Jan, 2025 - 12:21:25:2125] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[05 Jan, 2025 - 12:21:26:2126] [34minfo[39m: [34mMongoDB connected successfully![39m
+[05 Jan, 2025 - 12:21:50:2150] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 3055.008 ms - correlation-id: 9ad31b7b-aa9a-4b69-9e9d-33f0b6afc5c0'[39m
+[05 Jan, 2025 - 12:21:51:2151] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:21:51:2151] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 60.907 ms - correlation-id: 49bb6cbf-c860-46fd-902a-2251c6aa49fb'[39m
+[05 Jan, 2025 - 12:21:51:2151] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:21:51:2151] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 79.600 ms - correlation-id: f6eb45cc-7ec6-4608-b84c-db165e6aae21'[39m
+[05 Jan, 2025 - 12:24:02:242] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:24:02:242] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 69.109 ms - correlation-id: 3e84d033-e12a-44e6-894e-4cc6fddaf216'[39m
+[05 Jan, 2025 - 12:24:02:242] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:24:02:242] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.041 ms - correlation-id: 5f9fe406-20d7-4d72-aa46-d32928e38e28'[39m
+[05 Jan, 2025 - 12:25:12:2512] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:25:12:2512] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 74.867 ms - correlation-id: ceb0df6f-ddbe-4516-82f0-b053e31daec0'[39m
+[05 Jan, 2025 - 12:25:12:2512] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:25:12:2512] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.508 ms - correlation-id: 090fe713-715e-4361-97e7-1ede849e0753'[39m
+[05 Jan, 2025 - 12:25:33:2533] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:25:33:2533] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 70.604 ms - correlation-id: 034f82ec-d15d-42fa-9349-e5698ecf9240'[39m
+[05 Jan, 2025 - 12:25:33:2533] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:25:33:2533] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.862 ms - correlation-id: 95a01599-ddac-4010-b963-21c59c2544a9'[39m
+[05 Jan, 2025 - 12:28:40:2840] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:28:40:2840] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 67.511 ms - correlation-id: ee5f1fa5-9e93-493b-83f9-a6244dcd2a0f'[39m
+[05 Jan, 2025 - 12:28:40:2840] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:28:40:2840] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.750 ms - correlation-id: 80dda2b5-e366-4f82-a61e-1e2c28eca59d'[39m
+[05 Jan, 2025 - 12:29:15:2915] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:29:15:2915] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 73.617 ms - correlation-id: 12739a4f-aa1b-40a0-afc2-aaa57a3a3522'[39m
+[05 Jan, 2025 - 12:29:15:2915] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:29:15:2915] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.315 ms - correlation-id: 3b5edd05-bd72-4c46-84d6-5036225cad58'[39m
+[05 Jan, 2025 - 12:32:17:3217] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:32:17:3217] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 77.383 ms - correlation-id: bf4e0b53-64cd-4739-bcee-c89f871df824'[39m
+[05 Jan, 2025 - 12:32:18:3218] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:32:18:3218] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 66.627 ms - correlation-id: b985171b-2e2c-4bc3-a28a-def5684da683'[39m
+[05 Jan, 2025 - 12:32:29:3229] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:32:29:3229] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 83.430 ms - correlation-id: 619e1278-bd17-493b-88c7-488485eada97'[39m
+[05 Jan, 2025 - 12:32:29:3229] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:32:29:3229] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 72.419 ms - correlation-id: fe74ea68-d240-45c8-8302-d7b9a4294f3b'[39m
+[05 Jan, 2025 - 12:32:54:3254] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:32:54:3254] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 74.424 ms - correlation-id: 63ea2a25-3f27-407e-83e5-a57a12d5f898'[39m
+[05 Jan, 2025 - 12:32:55:3255] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:32:55:3255] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 66.808 ms - correlation-id: bef277d6-9025-4504-b3b6-69c130534bd6'[39m
+[05 Jan, 2025 - 12:34:21:3421] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:34:21:3421] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 82.161 ms - correlation-id: aa6579d8-3d82-47ed-aaf6-b2c28575352f'[39m
+[05 Jan, 2025 - 12:34:22:3422] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:34:22:3422] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 68.223 ms - correlation-id: 40c9ba22-fd08-4de6-9bef-7ed1ad0864cb'[39m
+[05 Jan, 2025 - 12:35:19:3519] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:35:19:3519] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 71.413 ms - correlation-id: ccc94c93-a475-4eb1-b387-ae3bbb4909a5'[39m
+[05 Jan, 2025 - 12:35:19:3519] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:35:19:3519] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 70.403 ms - correlation-id: d0762b34-e343-41e6-abc5-9ecf2c8c4fbc'[39m
+[05 Jan, 2025 - 12:37:29:3729] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:37:29:3729] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 78.406 ms - correlation-id: d86cc81c-b248-4ad5-af16-361d0b35834c'[39m
+[05 Jan, 2025 - 12:37:29:3729] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:37:29:3729] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 70.460 ms - correlation-id: 41e008bb-dfa3-43ae-a75a-3b34b27a1565'[39m
+[05 Jan, 2025 - 12:37:49:3749] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:37:49:3749] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 81.962 ms - correlation-id: 30024ed9-ad08-4e0d-801a-28e4afa4e03e'[39m
+[05 Jan, 2025 - 12:37:49:3749] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:37:50:3750] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 76.620 ms - correlation-id: e53d0c16-4a2a-4b8f-802b-cc8fa16aae21'[39m
+[05 Jan, 2025 - 12:41:55:4155] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:41:55:4155] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 85.026 ms - correlation-id: 5079af70-dd8d-4b9f-8b4c-f2722f0f68a1'[39m
+[05 Jan, 2025 - 12:41:55:4155] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:41:55:4155] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 69.315 ms - correlation-id: 46c1e636-8c2a-4389-b82f-aad0656fe36e'[39m
+[05 Jan, 2025 - 12:47:47:4747] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:47:47:4747] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 89.525 ms - correlation-id: c3af3003-143e-45ba-8ea2-e2ad83b445f8'[39m
+[05 Jan, 2025 - 12:47:47:4747] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:47:47:4747] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 70.538 ms - correlation-id: 0d0d4d64-25c9-482b-bbfd-dd08ae10de6d'[39m
+[05 Jan, 2025 - 12:49:17:4917] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:49:17:4917] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 75.938 ms - correlation-id: 8a7c5a49-6cd9-4651-950b-a1e86dbc2e2e'[39m
+[05 Jan, 2025 - 12:49:17:4917] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:49:17:4917] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 70.495 ms - correlation-id: c9ecc037-723e-45f9-8361-925754fdeffa'[39m
+[05 Jan, 2025 - 12:50:02:502] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:50:02:502] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 78.928 ms - correlation-id: ac0d1e9a-4b2a-4254-b084-2fbb92ce89a2'[39m
+[05 Jan, 2025 - 12:50:02:502] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:50:02:502] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 83.719 ms - correlation-id: 3497283f-72ce-4b98-9515-32affafa15c5'[39m
+[05 Jan, 2025 - 12:50:24:5024] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:50:24:5024] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 82.051 ms - correlation-id: 5dc4ba57-9b43-44af-9c5a-02876f076862'[39m
+[05 Jan, 2025 - 12:50:24:5024] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:50:24:5024] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 72.055 ms - correlation-id: 504d9095-10f7-4276-bd2f-bc025877cb7c'[39m
+[05 Jan, 2025 - 12:50:59:5059] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:50:59:5059] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 89.585 ms - correlation-id: 57423556-68e8-4f2e-bb18-6ed5e7c5506d'[39m
+[05 Jan, 2025 - 12:50:59:5059] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:50:59:5059] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 69.261 ms - correlation-id: 230f89da-a390-431c-ae6d-69566e0bb16c'[39m
+[05 Jan, 2025 - 12:51:37:5137] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:51:37:5137] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 67.168 ms - correlation-id: 58498f7a-23d6-41ce-a9a0-9075ba4c049a'[39m
+[05 Jan, 2025 - 12:51:37:5137] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:51:37:5137] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.684 ms - correlation-id: 88c54cc7-3113-40d3-9542-60ce63f4a28a'[39m
+[05 Jan, 2025 - 12:52:21:5221] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:52:21:5221] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 66.477 ms - correlation-id: ae852475-b6f1-4856-b183-f426821b90c4'[39m
+[05 Jan, 2025 - 12:52:21:5221] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:52:21:5221] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.918 ms - correlation-id: 90fc76fd-f673-4dd6-aee8-0483df584925'[39m
+[05 Jan, 2025 - 12:53:23:5323] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:53:23:5323] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 73.862 ms - correlation-id: 0388de3d-bbb2-40e8-949c-d6f30b998fe9'[39m
+[05 Jan, 2025 - 12:53:23:5323] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 12:53:23:5323] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.902 ms - correlation-id: 4083edd0-107f-4f26-bfe3-b43c26ff50d1'[39m
+[05 Jan, 2025 - 13:06:35:635] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:06:35:635] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 79.240 ms - correlation-id: e9172f32-5559-4175-8fb8-6ef56d30160e'[39m
+[05 Jan, 2025 - 13:06:35:635] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:06:35:635] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.919 ms - correlation-id: 96148804-1ab1-411d-9364-bb55d682e251'[39m
+[05 Jan, 2025 - 13:06:36:636] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:06:36:636] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.709 ms - correlation-id: a7cc030b-174d-4334-9423-a02046d81536'[39m
+[05 Jan, 2025 - 13:06:36:636] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:06:36:636] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.820 ms - correlation-id: 4f2a5763-52ca-4dab-af6c-aec5eac1030f'[39m
+[05 Jan, 2025 - 13:07:36:736] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:07:36:736] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 79.656 ms - correlation-id: 2c69bc21-2346-466c-9bb7-5644c116d75e'[39m
+[05 Jan, 2025 - 13:07:36:736] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:07:36:736] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 69.422 ms - correlation-id: d45e0304-0071-40b2-bc32-3cc8c83ffb67'[39m
+[05 Jan, 2025 - 13:07:42:742] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:07:42:742] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 76.077 ms - correlation-id: 7a948692-a287-4312-bcd0-bc5fe6d5052e'[39m
+[05 Jan, 2025 - 13:07:42:742] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:07:42:742] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 69.647 ms - correlation-id: e6a58f24-9986-4b26-b7a6-0c1ed333e526'[39m
+[05 Jan, 2025 - 13:07:47:747] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 225.186 ms - correlation-id: c21d45d0-d72f-4f3e-a0c5-efd9062be44e'[39m
+[05 Jan, 2025 - 13:07:56:756] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 268.332 ms - correlation-id: 451cc1f8-b4a5-4622-a414-a4fa6610fa2a'[39m
+[05 Jan, 2025 - 13:07:57:757] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:07:57:757] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:07:57:757] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 81.559 ms - correlation-id: fcd61f0f-3d7f-497d-90c5-dd8a2331af56'[39m
+[05 Jan, 2025 - 13:07:57:757] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:07:57:757] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 66.593 ms - correlation-id: 2ff20cfb-5650-4d88-8c4b-9be7a199fc35'[39m
+[05 Jan, 2025 - 13:09:37:937] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 13:09:38:938] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:09:38:938] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 103.050 ms - correlation-id: 48cfa354-f467-4e16-adf4-d5f126ad9e60'[39m
+[05 Jan, 2025 - 13:09:38:938] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:09:38:938] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 77.142 ms - correlation-id: 86c2acea-e331-4b50-9aa5-02cbfc8ad2bd'[39m
+[05 Jan, 2025 - 13:09:38:938] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:09:39:939] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 82.242 ms - correlation-id: 72f60919-5e4c-4634-95b0-6ede84331502'[39m
+[05 Jan, 2025 - 13:09:39:939] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:09:39:939] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 72.112 ms - correlation-id: 9adb0892-093c-4ae2-ae91-7bb9e4d15288'[39m
+[05 Jan, 2025 - 13:09:49:949] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 81.406 ms - correlation-id: adfb2280-e7c5-4eb5-ad92-4fe85d655cc4'[39m
+[05 Jan, 2025 - 13:10:03:103] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 264.732 ms - correlation-id: e158f425-88d2-4411-885f-ca7c7766d59c'[39m
+[05 Jan, 2025 - 13:10:03:103] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:10:03:103] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:10:03:103] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 67.793 ms - correlation-id: ff2c7873-de33-48b8-a282-16ec0452dced'[39m
+[05 Jan, 2025 - 13:10:04:104] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:10:04:104] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 64.870 ms - correlation-id: 44fa19e7-f9c8-4d77-871a-986c44bb75ba'[39m
+[05 Jan, 2025 - 13:10:28:1028] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 13:10:29:1029] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:10:29:1029] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 72.899 ms - correlation-id: 3398d707-9b32-46b6-bdb2-7fdc10acd032'[39m
+[05 Jan, 2025 - 13:10:29:1029] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:10:29:1029] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 70.228 ms - correlation-id: b298e4e3-7a56-40bd-b374-063e34178218'[39m
+[05 Jan, 2025 - 13:15:31:1531] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:15:31:1531] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 78.584 ms - correlation-id: 2d9b9b51-5b4d-4461-89f8-c0c9473d51e5'[39m
+[05 Jan, 2025 - 13:15:31:1531] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:15:31:1531] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 71.139 ms - correlation-id: affd9577-48c9-4969-aa9b-23f036ab7f4c'[39m
+[05 Jan, 2025 - 13:15:46:1546] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:15:46:1546] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 74.421 ms - correlation-id: 7306d0c0-c7cf-4588-9e9f-5d8cfbede434'[39m
+[05 Jan, 2025 - 13:15:46:1546] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:15:46:1546] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 71.274 ms - correlation-id: 0d66bc94-dd64-4b5e-8949-0556f9075a4a'[39m
+[05 Jan, 2025 - 13:15:56:1556] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:15:56:1556] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 82.998 ms - correlation-id: b8026a8e-070e-44b9-8cbd-866bae3f09cb'[39m
+[05 Jan, 2025 - 13:15:56:1556] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:15:56:1556] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.439 ms - correlation-id: 45370ac5-f863-4b14-af64-bc8db98d5dec'[39m
+[05 Jan, 2025 - 13:17:58:1758] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:17:58:1758] [35mhttp[39m: [35m- ::1 - GET - /api/v1/auth/resources - 500 - 6.709 ms - correlation-id: c451750a-1a7f-411c-89ad-a264bba37794'[39m
+[05 Jan, 2025 - 13:17:58:1758] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:17:58:1758] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 86.004 ms - correlation-id: 42f42998-8b98-4476-984e-846de0e329da'[39m
+[05 Jan, 2025 - 13:17:58:1758] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:17:58:1758] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.686 ms - correlation-id: 2d3f7375-8fb7-463e-948a-d331e7aed07a'[39m
+[05 Jan, 2025 - 13:17:58:1758] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 13:17:59:1759] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:17:59:1759] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:17:59:1759] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 85.343 ms - correlation-id: e603598c-0020-49c8-aebe-486d74f2173d'[39m
+[05 Jan, 2025 - 13:17:59:1759] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:17:59:1759] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.314 ms - correlation-id: 82b2d1cf-e7d5-4c3e-842c-6b70674b984e'[39m
+[05 Jan, 2025 - 13:18:00:180] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 13:18:00:180] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:18:00:180] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:18:00:180] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 72.140 ms - correlation-id: f673dc13-b4ca-411b-adc0-b01f9bbe700b'[39m
+[05 Jan, 2025 - 13:18:00:180] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:18:00:180] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.105 ms - correlation-id: aaec60cb-4120-48f8-b275-a476714e9c94'[39m
+[05 Jan, 2025 - 13:18:39:1839] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 13:18:39:1839] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:18:39:1839] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:18:39:1839] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.415 ms - correlation-id: b52a4b6f-9830-4e6c-b8ce-4f46d2bd6c00'[39m
+[05 Jan, 2025 - 13:18:39:1839] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:18:39:1839] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.227 ms - correlation-id: 4e83b4b4-e005-4f90-885a-77dd4c791b12'[39m
+[05 Jan, 2025 - 13:19:04:194] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 68.372 ms - correlation-id: d9e254db-a8cf-4ea5-b3f7-afe514723349'[39m
+[05 Jan, 2025 - 13:19:24:1924] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 252.783 ms - correlation-id: c64d7553-bc5d-4155-9ef0-a86c7a2e3a1e'[39m
+[05 Jan, 2025 - 13:19:24:1924] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:19:24:1924] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:19:24:1924] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:19:24:1924] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 58.072 ms - correlation-id: 5ce2e1de-cecb-4e0d-9c2b-1e876329929f'[39m
+[05 Jan, 2025 - 13:19:24:1924] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:19:24:1924] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 54.391 ms - correlation-id: 07d66826-5405-4055-8fd1-1448f843d5e2'[39m
+[05 Jan, 2025 - 13:19:54:1954] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:19:54:1954] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.060 ms - correlation-id: cc36ba9c-f58f-4a84-a605-1642d4cb5ad7'[39m
+[05 Jan, 2025 - 13:19:54:1954] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:19:54:1954] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.808 ms - correlation-id: 69ef1635-25b4-48f1-83f5-770751d8a1d2'[39m
+[05 Jan, 2025 - 13:19:58:1958] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 71.760 ms - correlation-id: 8f6593bc-f7b2-4421-825e-d89525bce418'[39m
+[05 Jan, 2025 - 13:20:09:209] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 227.277 ms - correlation-id: 19219040-3b33-4f64-a454-eee290f21efd'[39m
+[05 Jan, 2025 - 13:20:09:209] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:20:09:209] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:20:09:209] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 56.910 ms - correlation-id: 90eace3a-9a1b-402d-9d10-6e883851f805'[39m
+[05 Jan, 2025 - 13:20:09:209] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:20:09:209] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 55.221 ms - correlation-id: cf421cf4-461f-4cf9-8ee3-ba5e91f1d3a1'[39m
+[05 Jan, 2025 - 13:31:05:315] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[05 Jan, 2025 - 13:31:05:315] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[05 Jan, 2025 - 13:31:05:315] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[05 Jan, 2025 - 13:31:05:315] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[05 Jan, 2025 - 13:31:05:315] [34minfo[39m: [34mMongoDB connected successfully![39m
+[05 Jan, 2025 - 13:31:06:316] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:31:06:316] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:31:06:316] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:31:06:316] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:31:07:317] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 13:31:07:317] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 13:31:07:317] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 13:31:07:317] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 13:31:07:317] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:31:07:317] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 76.207 ms - correlation-id: 84c39c5f-9976-453c-b773-f0288af4b919'[39m
+[05 Jan, 2025 - 13:31:07:317] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:31:07:317] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.529 ms - correlation-id: 80b34bd2-4501-4884-a8d2-8b6fbf32f3d2'[39m
+[05 Jan, 2025 - 13:31:09:319] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 66.391 ms - correlation-id: 65d7dc6a-33cc-4db7-b3b1-ddc2f323f568'[39m
+[05 Jan, 2025 - 13:34:32:3432] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 558.107 ms - correlation-id: 591188fa-5f29-40c9-8ade-b11e7cfddf35'[39m
+[05 Jan, 2025 - 13:34:32:3432] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:34:33:3433] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:34:33:3433] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 146.293 ms - correlation-id: 9e177fda-cbae-43ca-8fc7-3daa27eb2d81'[39m
+[05 Jan, 2025 - 13:34:33:3433] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:34:33:3433] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 72.366 ms - correlation-id: 533fb6b7-0fa9-4a7a-b935-c43c325b1bb0'[39m
+[05 Jan, 2025 - 13:34:47:3447] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 13:34:48:3448] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:34:48:3448] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 75.514 ms - correlation-id: 8c8d4c5a-761c-4b5b-8ed7-9d2d4ad38889'[39m
+[05 Jan, 2025 - 13:34:48:3448] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:34:48:3448] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 72.121 ms - correlation-id: 2d751458-caa4-48d8-b8e9-a0f39da5ecec'[39m
+[05 Jan, 2025 - 13:43:31:4331] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:43:31:4331] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 99.502 ms - correlation-id: a8ae7cc7-86da-46c1-846d-9d5274b25362'[39m
+[05 Jan, 2025 - 13:43:31:4331] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:43:31:4331] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 70.210 ms - correlation-id: f32c925a-e40e-4798-abde-c8c18caf06da'[39m
+[05 Jan, 2025 - 13:43:32:4332] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:43:32:4332] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:43:32:4332] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 75.757 ms - correlation-id: 572d8952-54f6-4811-b5c3-bb786c39e0d0'[39m
+[05 Jan, 2025 - 13:43:32:4332] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:43:32:4332] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 71.472 ms - correlation-id: 39625a9d-0c06-4c4b-9f1e-c83e4932e2b0'[39m
+[05 Jan, 2025 - 13:43:34:4334] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 62.990 ms - correlation-id: 7052bfb2-8dbc-4454-92c5-4b467921903d'[39m
+[05 Jan, 2025 - 13:43:34:4334] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 13:43:42:4342] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[05 Jan, 2025 - 13:43:42:4342] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[05 Jan, 2025 - 13:43:42:4342] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[05 Jan, 2025 - 13:43:42:4342] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[05 Jan, 2025 - 13:43:43:4343] [34minfo[39m: [34mMongoDB connected successfully![39m
+[05 Jan, 2025 - 13:43:54:4354] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 255.283 ms - correlation-id: 45d5a73a-7618-4ec8-9902-9b83a5f396fc'[39m
+[05 Jan, 2025 - 13:43:54:4354] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:43:54:4354] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:43:54:4354] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 71.803 ms - correlation-id: 779b93bf-9198-4e14-aa9e-64858bc076c5'[39m
+[05 Jan, 2025 - 13:43:54:4354] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:43:54:4354] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 67.763 ms - correlation-id: 9e2085de-74ed-42ee-a842-0c224397627f'[39m
+[05 Jan, 2025 - 13:44:01:441] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 13:44:01:441] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:44:01:441] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:44:01:441] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 71.180 ms - correlation-id: b7d63b6c-0829-44ac-b0d8-a079977c261b'[39m
+[05 Jan, 2025 - 13:44:01:441] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:44:01:441] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 72.706 ms - correlation-id: 927e88e4-8ba8-41d5-8c6d-cb91dbcf6f5c'[39m
+[05 Jan, 2025 - 13:44:22:4422] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 13:44:22:4422] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:44:22:4422] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:44:22:4422] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 85.502 ms - correlation-id: 2222d551-c836-4f1f-801a-f95719e8ffc2'[39m
+[05 Jan, 2025 - 13:44:22:4422] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:44:22:4422] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 87.540 ms - correlation-id: 873cc971-f8ce-4e69-a5e8-42c3425317e6'[39m
+[05 Jan, 2025 - 13:44:30:4430] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 93.845 ms - correlation-id: a2dec7cb-3729-4e88-aae8-cab4709472bf'[39m
+[05 Jan, 2025 - 13:44:30:4430] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 13:44:42:4442] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 289.740 ms - correlation-id: 0af5e934-8629-4eae-b77e-b6f14dc6b8a1'[39m
+[05 Jan, 2025 - 13:44:42:4442] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:44:42:4442] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:44:42:4442] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 68.776 ms - correlation-id: 621439df-8bc8-40df-b758-a9ff6e3e35f5'[39m
+[05 Jan, 2025 - 13:44:42:4442] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:44:42:4442] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 71.634 ms - correlation-id: 66f9daa6-a781-481e-b515-bd0c05b099d5'[39m
+[05 Jan, 2025 - 13:53:39:5339] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 13:53:39:5339] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:53:39:5339] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:53:40:5340] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 82.765 ms - correlation-id: 9a279fc4-c247-43b8-be2e-97a57b5e478f'[39m
+[05 Jan, 2025 - 13:53:40:5340] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:53:40:5340] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 64.100 ms - correlation-id: 013167a7-8f74-403a-878b-dbdd6073a728'[39m
+[05 Jan, 2025 - 13:53:40:5340] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 13:53:40:5340] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:53:40:5340] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:53:40:5340] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 73.019 ms - correlation-id: 04f1eb5c-3850-459c-bed0-90c64e6b8c78'[39m
+[05 Jan, 2025 - 13:53:40:5340] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:53:41:5341] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.892 ms - correlation-id: 7f9244f9-ca46-4c82-ac23-ed1f83491bec'[39m
+[05 Jan, 2025 - 13:53:42:5342] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 13:53:42:5342] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:53:42:5342] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:53:42:5342] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.964 ms - correlation-id: e045c973-59be-41ae-914e-ab869759f10a'[39m
+[05 Jan, 2025 - 13:53:42:5342] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:53:42:5342] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.678 ms - correlation-id: 04f46871-c1e7-4a46-a6e4-2971ce5e79d9'[39m
+[05 Jan, 2025 - 13:53:43:5343] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 72.797 ms - correlation-id: fe965764-fc62-4a84-8415-151f4deee684'[39m
+[05 Jan, 2025 - 13:53:43:5343] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 13:53:56:5356] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 284.095 ms - correlation-id: 0868d232-02d6-4269-a351-f2e061d1be26'[39m
+[05 Jan, 2025 - 13:53:56:5356] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:53:56:5356] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:53:56:5356] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 61.841 ms - correlation-id: bd8bc2c8-7e83-4e20-8d7b-b6340ea035f2'[39m
+[05 Jan, 2025 - 13:53:56:5356] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:53:56:5356] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.605 ms - correlation-id: 98d8448a-e6ab-4c65-938a-c8a4e229751d'[39m
+[05 Jan, 2025 - 13:54:54:5454] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[05 Jan, 2025 - 13:54:54:5454] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[05 Jan, 2025 - 13:54:54:5454] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[05 Jan, 2025 - 13:54:54:5454] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[05 Jan, 2025 - 13:54:54:5454] [34minfo[39m: [34mMongoDB connected successfully![39m
+[05 Jan, 2025 - 13:54:56:5456] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:54:59:5459] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 64.258 ms - correlation-id: 050a9bdf-34cc-4913-b799-96c5788ee62d'[39m
+[05 Jan, 2025 - 13:54:59:5459] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 13:55:09:559] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 245.718 ms - correlation-id: b12fdb0a-804e-4b31-aee1-9a2f7342916e'[39m
+[05 Jan, 2025 - 13:55:09:559] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:55:09:559] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:55:09:559] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 62.771 ms - correlation-id: 2c0bb3ea-3d30-41c2-8dd0-ebd9ae66cf51'[39m
+[05 Jan, 2025 - 13:55:09:559] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:55:09:559] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.790 ms - correlation-id: eff4f562-5f43-4b56-8416-e9f5e665fe85'[39m
+[05 Jan, 2025 - 13:56:06:566] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 13:56:07:567] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:56:07:567] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:56:07:567] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 66.075 ms - correlation-id: 115b7311-8cf7-4507-bd42-e3ffc086ad26'[39m
+[05 Jan, 2025 - 13:56:07:567] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:56:07:567] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.782 ms - correlation-id: d1f0c8c0-9670-4728-9661-8f23d4326c77'[39m
+[05 Jan, 2025 - 13:56:42:5642] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 13:56:43:5643] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:56:43:5643] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:56:43:5643] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 67.071 ms - correlation-id: 4f6ce109-bc90-46b5-8878-6f83a94e14b7'[39m
+[05 Jan, 2025 - 13:56:43:5643] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:56:43:5643] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 64.015 ms - correlation-id: 8cde8af8-6bb6-41a0-bb66-3cfe71924e50'[39m
+[05 Jan, 2025 - 13:56:44:5644] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 66.156 ms - correlation-id: 1c157c33-dbec-4706-be3f-2474d2fe84af'[39m
+[05 Jan, 2025 - 13:56:44:5644] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 13:56:52:5652] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 232.921 ms - correlation-id: 2ac8534f-1d1c-4c8b-b7e1-4475d57efb86'[39m
+[05 Jan, 2025 - 13:56:52:5652] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:56:52:5652] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:56:52:5652] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 62.318 ms - correlation-id: 1e7fe484-1eda-4a37-a244-7538772e31fc'[39m
+[05 Jan, 2025 - 13:56:52:5652] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:56:52:5652] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.599 ms - correlation-id: 42263ca1-23e9-4ef6-9986-c11dd28532a3'[39m
+[05 Jan, 2025 - 13:58:17:5817] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 13:58:18:5818] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 13:58:18:5818] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:58:18:5818] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.082 ms - correlation-id: faf04d06-00db-410b-aedd-a836ecb6d704'[39m
+[05 Jan, 2025 - 13:58:18:5818] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 13:58:18:5818] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 68.721 ms - correlation-id: b6eb5e9f-b819-4eba-8052-2506aa55e7e6'[39m
+[05 Jan, 2025 - 14:00:32:032] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:00:32:032] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:00:32:032] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:00:32:032] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 284.795 ms - correlation-id: 7d5de258-7038-4735-952f-c36ecdc29004'[39m
+[05 Jan, 2025 - 14:00:33:033] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:00:33:033] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 74.437 ms - correlation-id: 3917ff91-80c3-4563-a3a9-92082783fee2'[39m
+[05 Jan, 2025 - 14:00:39:039] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 72.985 ms - correlation-id: 5aa4c0fe-a3d3-4512-acf7-bd8139c844b5'[39m
+[05 Jan, 2025 - 14:00:39:039] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:00:57:057] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 244.323 ms - correlation-id: 9f50e86d-f320-49a1-bb67-b82ed7916c73'[39m
+[05 Jan, 2025 - 14:00:57:057] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:00:57:057] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:00:57:057] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 61.488 ms - correlation-id: 1ee09234-5da5-4907-9c32-657734f84947'[39m
+[05 Jan, 2025 - 14:00:57:057] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:00:57:057] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.626 ms - correlation-id: d49d72cf-4922-4465-a159-4480fa1b8c84'[39m
+[05 Jan, 2025 - 14:02:07:27] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:02:08:28] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:02:08:28] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:02:08:28] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 66.157 ms - correlation-id: 20185154-63af-4b49-928f-8e548363fc8b'[39m
+[05 Jan, 2025 - 14:02:08:28] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:02:08:28] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 66.044 ms - correlation-id: 2330566d-af41-48e1-b6d0-03095dc3cd43'[39m
+[05 Jan, 2025 - 14:02:08:28] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 64.855 ms - correlation-id: 7226a20a-5186-4e7c-af98-8122a7ef11ec'[39m
+[05 Jan, 2025 - 14:02:08:28] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:02:25:225] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 236.301 ms - correlation-id: aaf370ac-b3e8-4d57-a95b-dc03fe1a505a'[39m
+[05 Jan, 2025 - 14:02:25:225] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:02:25:225] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:02:25:225] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 60.541 ms - correlation-id: 60baa443-a408-4b0d-a7e5-867bd22ae685'[39m
+[05 Jan, 2025 - 14:02:25:225] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:02:25:225] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.455 ms - correlation-id: 7afbe03e-0e76-4580-94cb-415ef236b934'[39m
+[05 Jan, 2025 - 14:03:41:341] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 68.001 ms - correlation-id: d0787efd-d5fa-42b2-988e-fd3898f63190'[39m
+[05 Jan, 2025 - 14:03:41:341] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:03:51:351] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 245.124 ms - correlation-id: 65b70efe-66d9-4dee-8979-070cc9795693'[39m
+[05 Jan, 2025 - 14:03:51:351] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:03:51:351] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:03:51:351] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 58.128 ms - correlation-id: 0a041365-5758-445d-b8bf-5c86bdf25a08'[39m
+[05 Jan, 2025 - 14:03:51:351] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:03:51:351] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 54.586 ms - correlation-id: 136ae016-687f-4968-8ab6-092d6fe5fb69'[39m
+[05 Jan, 2025 - 14:04:19:419] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:04:26:426] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:04:26:426] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:04:26:426] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.297 ms - correlation-id: 9bb91d42-1b03-4632-97e2-03c47b600ea1'[39m
+[05 Jan, 2025 - 14:04:26:426] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:04:26:426] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.335 ms - correlation-id: 4c5abebd-cda0-453d-9590-b70694d10e71'[39m
+[05 Jan, 2025 - 14:04:39:439] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 68.007 ms - correlation-id: fd543c94-2dc9-405e-9422-6864fa478b6f'[39m
+[05 Jan, 2025 - 14:04:39:439] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:04:48:448] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 235.070 ms - correlation-id: 5d0861ac-f45f-47cb-bb3c-a6b87400a89b'[39m
+[05 Jan, 2025 - 14:04:48:448] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:04:48:448] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:04:48:448] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 61.938 ms - correlation-id: 0cab36e3-1600-430c-a8b2-dcdf17489e15'[39m
+[05 Jan, 2025 - 14:04:48:448] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:04:48:448] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 55.760 ms - correlation-id: d6fe8360-37eb-492b-a324-ed2e5345a74d'[39m
+[05 Jan, 2025 - 14:05:32:532] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:05:32:532] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:05:32:532] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:05:32:532] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 69.806 ms - correlation-id: 297309b3-391e-409d-90cd-4c6157fd2723'[39m
+[05 Jan, 2025 - 14:05:33:533] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:05:33:533] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.977 ms - correlation-id: d3ad5549-afa2-4543-ad94-0c208a971806'[39m
+[05 Jan, 2025 - 14:05:59:559] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 66.133 ms - correlation-id: 88a62516-f919-481b-a65c-7ca760d8ef5d'[39m
+[05 Jan, 2025 - 14:05:59:559] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:06:20:620] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 254.072 ms - correlation-id: 6c0cf3cf-b6b5-4759-b24e-9d4a80976b5a'[39m
+[05 Jan, 2025 - 14:06:56:656] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:06:56:656] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 75.816 ms - correlation-id: 794509ad-df23-4930-8f25-be6795a6bd79'[39m
+[05 Jan, 2025 - 14:06:56:656] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:06:56:656] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.848 ms - correlation-id: 377b62f3-40f8-42fd-9d21-f8f9ee878f39'[39m
+[05 Jan, 2025 - 14:06:57:657] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:06:57:657] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:06:57:657] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 67.735 ms - correlation-id: 80ee47d4-ff2a-48d4-b23d-85726b3d55ac'[39m
+[05 Jan, 2025 - 14:06:57:657] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:06:57:657] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 65.245 ms - correlation-id: 6d68ac61-2939-44aa-bbec-68e29ee663fd'[39m
+[05 Jan, 2025 - 14:06:58:658] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 71.392 ms - correlation-id: 37ac450d-925d-4ca2-9ec5-719dfddae85f'[39m
+[05 Jan, 2025 - 14:06:58:658] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:07:04:74] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 400 - 6.374 ms - correlation-id: 50f01a64-6acc-4bae-abf2-97edeea468a0'[39m
+[05 Jan, 2025 - 14:07:05:75] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 400 - 4.088 ms - correlation-id: 2cc2f686-2d70-4301-8fcf-885f3fe2c448'[39m
+[05 Jan, 2025 - 14:07:21:721] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 251.743 ms - correlation-id: ed3c2c0d-adc4-46a7-92c0-de0e6eb63fcd'[39m
+[05 Jan, 2025 - 14:07:21:721] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:07:21:721] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:07:21:721] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 71.760 ms - correlation-id: 43744abc-d44f-45cb-82cf-106eea85875a'[39m
+[05 Jan, 2025 - 14:07:21:721] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:07:21:721] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.030 ms - correlation-id: ed373056-2509-4937-b43b-b94f2e80fb5c'[39m
+[05 Jan, 2025 - 14:07:37:737] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 67.598 ms - correlation-id: 244e3d23-e854-40a7-bd78-688e159927ee'[39m
+[05 Jan, 2025 - 14:07:37:737] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:08:10:810] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 235.651 ms - correlation-id: 2a1698b3-7d63-4a30-bcf9-3cbd1bacb1b6'[39m
+[05 Jan, 2025 - 14:08:10:810] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:08:10:810] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:08:10:810] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 57.121 ms - correlation-id: 882f2c17-ef3a-46c8-b4a4-d8bb4d55d5fd'[39m
+[05 Jan, 2025 - 14:08:11:811] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:08:11:811] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 55.670 ms - correlation-id: 9aed05aa-a495-40ee-9e7f-6b6f4b9506db'[39m
+[05 Jan, 2025 - 14:08:43:843] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:08:43:843] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:08:44:844] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:08:44:844] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 71.242 ms - correlation-id: 4bd61095-97ba-4992-9b05-7ce955727f73'[39m
+[05 Jan, 2025 - 14:08:44:844] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:08:44:844] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.608 ms - correlation-id: f35264ef-d3e3-4832-971e-526179bc1053'[39m
+[05 Jan, 2025 - 14:08:45:845] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:08:46:846] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:08:46:846] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:08:46:846] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.330 ms - correlation-id: 57133eaa-e9a7-46ad-8454-9c72ffd7e060'[39m
+[05 Jan, 2025 - 14:08:46:846] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:08:46:846] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.477 ms - correlation-id: 87b9af9e-32e2-4154-a999-d9dc42e4423f'[39m
+[05 Jan, 2025 - 14:08:50:850] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 84.898 ms - correlation-id: 90730fb6-e83a-4011-913c-7c5e3b044d1d'[39m
+[05 Jan, 2025 - 14:08:50:850] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:09:00:90] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 245.291 ms - correlation-id: 719619f2-b833-4b39-8a38-8df0fb52f80b'[39m
+[05 Jan, 2025 - 14:09:00:90] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:09:00:90] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:09:00:90] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 62.442 ms - correlation-id: 164799f4-60f5-4e28-9b55-231ef2d1b513'[39m
+[05 Jan, 2025 - 14:09:00:90] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:09:00:90] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.887 ms - correlation-id: 57410313-3d5e-41c3-ba46-579d247aaa63'[39m
+[05 Jan, 2025 - 14:09:12:912] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:09:12:912] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:09:12:912] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:09:12:912] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 79.458 ms - correlation-id: ed656210-1cdf-4f1a-9fa5-04c0d9f7597a'[39m
+[05 Jan, 2025 - 14:09:12:912] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:09:12:912] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.723 ms - correlation-id: 561ccaba-0fc4-4fb2-b463-386e2714b082'[39m
+[05 Jan, 2025 - 14:09:18:918] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 72.979 ms - correlation-id: 2b009d13-79f9-4992-8891-42527c87cb67'[39m
+[05 Jan, 2025 - 14:09:18:918] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:09:28:928] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 267.524 ms - correlation-id: 60e4027a-22e6-4fd2-90ab-401dfaa36cb2'[39m
+[05 Jan, 2025 - 14:09:28:928] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:09:28:928] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:09:28:928] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 65.004 ms - correlation-id: d743283b-83ff-4b37-831f-b59a57f131e9'[39m
+[05 Jan, 2025 - 14:09:28:928] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:09:28:928] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.306 ms - correlation-id: a29d02bb-2b7d-4c50-aa85-70b403178bb7'[39m
+[05 Jan, 2025 - 14:09:43:943] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:09:43:943] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:09:43:943] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:09:43:943] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.401 ms - correlation-id: 07b61c4b-6c2b-47bd-89c3-c1968667a216'[39m
+[05 Jan, 2025 - 14:09:43:943] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:09:43:943] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.626 ms - correlation-id: e491270b-0f85-4de6-a00e-8a094c33f9cc'[39m
+[05 Jan, 2025 - 14:09:49:949] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:09:50:950] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:09:50:950] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:09:50:950] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.716 ms - correlation-id: b69b8921-92ff-401e-a1dd-efd90e5e166b'[39m
+[05 Jan, 2025 - 14:09:50:950] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:09:50:950] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.664 ms - correlation-id: 1da91eb0-1ed6-484b-835a-4ca02f997dba'[39m
+[05 Jan, 2025 - 14:09:57:957] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 67.556 ms - correlation-id: 76fa81a5-052c-44a5-8442-f606e1efba86'[39m
+[05 Jan, 2025 - 14:09:57:957] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:10:05:105] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 231.160 ms - correlation-id: a98e8a61-41d1-4ea5-8bb4-f55b7c431ab3'[39m
+[05 Jan, 2025 - 14:10:05:105] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:10:05:105] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:10:05:105] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 62.409 ms - correlation-id: 445e00a6-76e3-43e7-95fc-22a3a274fe0d'[39m
+[05 Jan, 2025 - 14:10:05:105] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:10:05:105] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.864 ms - correlation-id: f76c99de-103b-489e-82d9-26b0028b57d7'[39m
+[05 Jan, 2025 - 14:10:26:1026] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:10:27:1027] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:10:27:1027] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:10:27:1027] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 67.410 ms - correlation-id: 98c676aa-f18a-4727-a70e-fedb284f0cfa'[39m
+[05 Jan, 2025 - 14:10:27:1027] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:10:27:1027] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 65.060 ms - correlation-id: 3e83e8c0-89f8-4a3e-b064-883fd611ce3f'[39m
+[05 Jan, 2025 - 14:10:29:1029] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 69.402 ms - correlation-id: d5088331-dfd2-424a-acb6-79bfe86a8b91'[39m
+[05 Jan, 2025 - 14:10:29:1029] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:10:36:1036] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 237.427 ms - correlation-id: 2801c531-dc22-4feb-b07f-26c1aa89a161'[39m
+[05 Jan, 2025 - 14:10:36:1036] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:10:36:1036] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:10:36:1036] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 63.497 ms - correlation-id: 087ac223-1269-4b3d-89b8-096ca8c80f34'[39m
+[05 Jan, 2025 - 14:10:37:1037] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:10:37:1037] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.119 ms - correlation-id: df6f4260-0763-484d-8d17-2f7268628a7b'[39m
+[05 Jan, 2025 - 14:10:55:1055] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:10:55:1055] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:10:55:1055] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:10:55:1055] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 66.891 ms - correlation-id: a2c2ec57-4c74-4fab-9ae2-f0ac54974e9b'[39m
+[05 Jan, 2025 - 14:10:55:1055] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:10:56:1056] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.993 ms - correlation-id: 36764319-fab7-4bb5-aa6e-5e8fe5eada1a'[39m
+[05 Jan, 2025 - 14:10:57:1057] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 64.086 ms - correlation-id: 022f85bb-7134-46f5-b105-48be34cff97e'[39m
+[05 Jan, 2025 - 14:10:57:1057] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:11:05:115] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 247.396 ms - correlation-id: 0166a39d-00a5-4b43-b622-78ff287318b0'[39m
+[05 Jan, 2025 - 14:11:05:115] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:11:05:115] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:11:05:115] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 63.874 ms - correlation-id: 5b06cd41-3c3f-4516-a818-7178bdfec349'[39m
+[05 Jan, 2025 - 14:11:05:115] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:11:05:115] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.194 ms - correlation-id: 1bc22076-042a-416a-a577-1d3b082d8646'[39m
+[05 Jan, 2025 - 14:11:26:1126] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:11:26:1126] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:11:27:1127] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:11:27:1127] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 65.735 ms - correlation-id: e5e268d9-568e-4bb5-ba3d-d85a805fe4d1'[39m
+[05 Jan, 2025 - 14:11:27:1127] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:11:27:1127] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.175 ms - correlation-id: fbb9358c-931d-482b-bbfb-83f45f09a845'[39m
+[05 Jan, 2025 - 14:11:29:1129] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 68.469 ms - correlation-id: cbeefc8b-d14c-468b-a279-dd796c8c18fc'[39m
+[05 Jan, 2025 - 14:11:29:1129] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:11:36:1136] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 233.349 ms - correlation-id: 35b7bac0-3ff0-46cb-b910-a0bbf41ed9eb'[39m
+[05 Jan, 2025 - 14:11:36:1136] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:11:36:1136] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:11:36:1136] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 61.729 ms - correlation-id: 852ea894-142a-4bda-bcba-21de72f739d8'[39m
+[05 Jan, 2025 - 14:11:36:1136] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:11:36:1136] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.154 ms - correlation-id: 12d5c1ff-0394-42ef-890e-8eb453a2202e'[39m
+[05 Jan, 2025 - 14:11:54:1154] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:11:55:1155] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:11:55:1155] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:11:55:1155] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.029 ms - correlation-id: 367832be-45cc-44fd-8769-c8f0e66b02c9'[39m
+[05 Jan, 2025 - 14:11:55:1155] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:11:55:1155] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.508 ms - correlation-id: 694f1f64-b8aa-44b1-a0b7-f02771f2aece'[39m
+[05 Jan, 2025 - 14:11:57:1157] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 67.508 ms - correlation-id: d2e7e6f2-7087-4893-a73e-14094c7ffdd5'[39m
+[05 Jan, 2025 - 14:11:57:1157] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:12:04:124] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 232.266 ms - correlation-id: 0873ebb4-1581-41d7-a21a-b5fb8669cc59'[39m
+[05 Jan, 2025 - 14:12:04:124] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:12:04:124] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:12:04:124] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 67.198 ms - correlation-id: 4670a69a-90dd-48b4-9364-08f74e3431ce'[39m
+[05 Jan, 2025 - 14:12:04:124] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:12:04:124] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.507 ms - correlation-id: aa2386af-1f00-4d27-814e-e164a1d5f05b'[39m
+[05 Jan, 2025 - 14:13:07:137] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:13:07:137] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:13:07:137] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:13:07:137] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 65.007 ms - correlation-id: f397911c-1461-4b38-8568-aaa041038755'[39m
+[05 Jan, 2025 - 14:13:07:137] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:13:07:137] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.589 ms - correlation-id: 5ccecd5e-bfd8-421b-8e4d-0a4af7c40a14'[39m
+[05 Jan, 2025 - 14:13:09:139] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 68.002 ms - correlation-id: 258a6fa5-831d-4aae-a307-f5af9e23d92e'[39m
+[05 Jan, 2025 - 14:13:09:139] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:13:17:1317] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 243.885 ms - correlation-id: 61901f4c-f2c6-402b-a1ed-91e45cee6229'[39m
+[05 Jan, 2025 - 14:13:17:1317] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:13:17:1317] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:13:17:1317] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 66.784 ms - correlation-id: c2ae9a06-d36f-4dce-aa79-bcee7bfb9960'[39m
+[05 Jan, 2025 - 14:13:17:1317] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:13:17:1317] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.015 ms - correlation-id: 67804890-17ae-412c-a900-98c803b50848'[39m
+[05 Jan, 2025 - 14:14:56:1456] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:14:58:1458] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:14:58:1458] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:14:58:1458] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 202.582 ms - correlation-id: b0f1dc8d-9290-4594-9c26-e8a56cfdaba6'[39m
+[05 Jan, 2025 - 14:14:58:1458] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:14:58:1458] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 315.848 ms - correlation-id: 641b5587-47b7-41d9-92db-5f526ab4dfef'[39m
+[05 Jan, 2025 - 14:20:34:2034] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:20:52:2052] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:20:53:2053] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:20:53:2053] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 292.922 ms - correlation-id: e5337c45-bd5e-431a-a160-74e445e4207c'[39m
+[05 Jan, 2025 - 14:20:53:2053] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:20:53:2053] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 64.280 ms - correlation-id: c84e449d-d29e-417a-ac32-6cf51978b013'[39m
+[05 Jan, 2025 - 14:21:39:2139] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:21:44:2144] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:21:44:2144] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:21:44:2144] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 68.166 ms - correlation-id: 70a3c803-0289-4479-a184-c370c3a2064f'[39m
+[05 Jan, 2025 - 14:21:44:2144] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:21:44:2144] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 68.042 ms - correlation-id: 2452ae8e-aebb-4fa6-9e5a-042d8b96f599'[39m
+[05 Jan, 2025 - 14:22:13:2213] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:22:13:2213] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:22:13:2213] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:22:13:2213] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.223 ms - correlation-id: c04ce67a-dfa8-448c-9ef8-ef7c6f6cca7e'[39m
+[05 Jan, 2025 - 14:22:13:2213] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:22:13:2213] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.971 ms - correlation-id: f567e108-a015-4435-8892-7ce0217db32d'[39m
+[05 Jan, 2025 - 14:22:16:2216] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:22:16:2216] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:22:16:2216] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:22:16:2216] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.813 ms - correlation-id: 30d578eb-7246-4836-b5c1-18d988c5c2ce'[39m
+[05 Jan, 2025 - 14:22:16:2216] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:22:16:2216] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.049 ms - correlation-id: 7145ccc2-2ca9-4297-85ab-9c0dd0051926'[39m
+[05 Jan, 2025 - 14:22:44:2244] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:22:51:2251] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:22:51:2251] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:22:51:2251] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 64.406 ms - correlation-id: 4e7b4483-d1cf-4f1f-895c-0f5f38bd475e'[39m
+[05 Jan, 2025 - 14:22:52:2252] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:22:52:2252] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.700 ms - correlation-id: 1b89e5da-1246-413e-a25f-be0331f95c8d'[39m
+[05 Jan, 2025 - 14:24:41:2441] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:24:49:2449] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:24:49:2449] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:24:49:2449] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 73.426 ms - correlation-id: a42e8a8c-f1b3-4fac-83f7-1074ae73c8c9'[39m
+[05 Jan, 2025 - 14:24:49:2449] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:24:49:2449] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.801 ms - correlation-id: 49dff7ae-eb02-4e47-8e69-475c627956c5'[39m
+[05 Jan, 2025 - 14:25:29:2529] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:25:29:2529] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:25:29:2529] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:25:29:2529] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.963 ms - correlation-id: 9206da21-d10e-450a-a9df-cb477fd72043'[39m
+[05 Jan, 2025 - 14:25:29:2529] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:25:29:2529] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.891 ms - correlation-id: 36c5b090-625a-46e9-9256-4ccc607dea93'[39m
+[05 Jan, 2025 - 14:25:31:2531] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:25:31:2531] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:25:31:2531] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:25:31:2531] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 69.237 ms - correlation-id: c5073290-bf8e-41fe-9043-f30baded368f'[39m
+[05 Jan, 2025 - 14:25:31:2531] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:25:31:2531] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.863 ms - correlation-id: 4d6559b0-3a22-4079-ad97-8e09b0087cdd'[39m
+[05 Jan, 2025 - 14:26:21:2621] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:26:21:2621] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:26:21:2621] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:26:21:2621] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 80.373 ms - correlation-id: 12066e0f-7b2b-415a-bdf8-0f78a41f367d'[39m
+[05 Jan, 2025 - 14:26:21:2621] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:26:21:2621] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 93.905 ms - correlation-id: ff9949b9-19ac-44a6-a759-07fd31b02b3f'[39m
+[05 Jan, 2025 - 14:28:36:2836] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:45:52:4552] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:45:53:4553] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:45:53:4553] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 419.291 ms - correlation-id: c5dd873c-ff63-47b0-977f-21319321d18b'[39m
+[05 Jan, 2025 - 14:45:53:4553] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:45:53:4553] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.087 ms - correlation-id: 271e6892-fac2-4c16-b01b-7f1267ba679c'[39m
+[05 Jan, 2025 - 14:46:06:466] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 79.433 ms - correlation-id: 2b22dfa5-e4e9-4e79-8788-d53500d6157f'[39m
+[05 Jan, 2025 - 14:46:06:466] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:46:11:4611] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 270.924 ms - correlation-id: 35281129-9f30-40d3-b721-9471e6c1bee6'[39m
+[05 Jan, 2025 - 14:46:14:4614] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:46:14:4614] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:46:14:4614] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 64.093 ms - correlation-id: 92447c45-159a-443e-ac87-2818347e1d1e'[39m
+[05 Jan, 2025 - 14:46:14:4614] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:46:14:4614] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 66.826 ms - correlation-id: 65f79672-6705-4734-a116-b7c02853c8d6'[39m
+[05 Jan, 2025 - 14:46:30:4630] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:46:30:4630] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:46:30:4630] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:46:30:4630] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 71.660 ms - correlation-id: 99a5f638-7552-467c-82d8-7721d6ae2179'[39m
+[05 Jan, 2025 - 14:46:30:4630] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:46:30:4630] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 67.979 ms - correlation-id: 3c53ac9c-efdc-4ce5-844b-79bfa534e6aa'[39m
+[05 Jan, 2025 - 14:51:39:5139] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:51:39:5139] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:51:39:5139] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:51:39:5139] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 68.502 ms - correlation-id: f0398e37-0b47-4e89-bb25-5e0644716add'[39m
+[05 Jan, 2025 - 14:51:39:5139] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:51:39:5139] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.446 ms - correlation-id: 7739b62f-b52c-4c46-ad2f-e8a6c5596a24'[39m
+[05 Jan, 2025 - 14:51:43:5143] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 77.839 ms - correlation-id: df88c643-39a5-413a-836e-d56e63692ec2'[39m
+[05 Jan, 2025 - 14:51:43:5143] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:51:51:5151] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 264.926 ms - correlation-id: 6514424e-3cbe-42d4-9f8f-a98939561818'[39m
+[05 Jan, 2025 - 14:51:53:5153] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:51:53:5153] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:51:53:5153] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 61.679 ms - correlation-id: 8f4fa95e-6b20-4aac-b817-76b585887d60'[39m
+[05 Jan, 2025 - 14:51:53:5153] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:51:53:5153] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 54.548 ms - correlation-id: 88c9941c-139d-4637-be72-ade12247de16'[39m
+[05 Jan, 2025 - 14:52:26:5226] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:52:27:5227] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:52:27:5227] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:52:27:5227] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 74.629 ms - correlation-id: 677e612b-da45-4969-9bf3-d71dd96d2eb3'[39m
+[05 Jan, 2025 - 14:52:27:5227] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:52:27:5227] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.659 ms - correlation-id: eef6795a-bc7e-42fe-9241-e86f2a5a09fc'[39m
+[05 Jan, 2025 - 14:56:30:5630] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:56:30:5630] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:56:30:5630] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:56:30:5630] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.140 ms - correlation-id: 46c1015a-b0e1-4113-a361-3104f3768418'[39m
+[05 Jan, 2025 - 14:56:30:5630] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:56:30:5630] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.230 ms - correlation-id: 829f707d-ee44-4d1b-aac2-10d03f3106cd'[39m
+[05 Jan, 2025 - 14:56:31:5631] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 65.772 ms - correlation-id: 9ce7abc2-07e9-4ff4-9413-517355f1e745'[39m
+[05 Jan, 2025 - 14:56:31:5631] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:56:38:5638] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 247.765 ms - correlation-id: c9f52238-4b6d-4025-8db9-eea186e4f4ba'[39m
+[05 Jan, 2025 - 14:56:40:5640] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:56:40:5640] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:56:40:5640] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 58.778 ms - correlation-id: 9c852330-2320-455e-a86d-7a49d3855a76'[39m
+[05 Jan, 2025 - 14:56:40:5640] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:56:40:5640] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.771 ms - correlation-id: e97497d5-5ab4-41c2-b320-3c026a04476a'[39m
+[05 Jan, 2025 - 14:56:55:5655] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:56:56:5656] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:56:56:5656] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:56:56:5656] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 74.081 ms - correlation-id: 2b24c040-b971-4ba2-b512-5569c48cdc7c'[39m
+[05 Jan, 2025 - 14:56:56:5656] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:56:56:5656] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 64.401 ms - correlation-id: 0b776598-e8c0-44bf-ad5f-d6014d347f2f'[39m
+[05 Jan, 2025 - 14:59:53:5953] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 14:59:53:5953] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 14:59:53:5953] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:59:53:5953] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 64.607 ms - correlation-id: 348554ae-16d4-43e0-9802-eb56cbff6f53'[39m
+[05 Jan, 2025 - 14:59:53:5953] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 14:59:53:5953] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.387 ms - correlation-id: 4474e842-4ef7-4078-bafe-0d368fd37f8e'[39m
+[05 Jan, 2025 - 15:00:31:031] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:00:32:032] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:00:32:032] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:00:32:032] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 71.061 ms - correlation-id: d84037ca-2fa8-4e1a-8b70-8c2456e47717'[39m
+[05 Jan, 2025 - 15:00:32:032] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:00:32:032] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.532 ms - correlation-id: 31ec32ab-33fc-4ed7-9d34-e8a1d2fe1f72'[39m
+[05 Jan, 2025 - 15:01:18:118] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:01:18:118] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:01:18:118] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:01:18:118] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 69.572 ms - correlation-id: 20d0bd63-f0cb-48dc-aa0d-7689483d128a'[39m
+[05 Jan, 2025 - 15:01:18:118] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:01:18:118] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.021 ms - correlation-id: ae2a1c6c-7fbb-45b7-a5e8-e5cb4a013910'[39m
+[05 Jan, 2025 - 15:01:53:153] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:01:53:153] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:01:53:153] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:01:53:153] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 66.443 ms - correlation-id: 2be30796-515a-4290-98c9-55e3adaa12ba'[39m
+[05 Jan, 2025 - 15:01:53:153] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:01:53:153] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 92.461 ms - correlation-id: 13665dee-b88f-49e0-9c11-643e578328da'[39m
+[05 Jan, 2025 - 15:02:04:24] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:02:05:25] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:02:05:25] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:02:05:25] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.597 ms - correlation-id: 00ad51fd-ae56-42bb-a3be-bb02a1571ba0'[39m
+[05 Jan, 2025 - 15:02:05:25] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:02:05:25] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 66.425 ms - correlation-id: c8fefbe9-06af-4f14-99a9-748d7dea3ab8'[39m
+[05 Jan, 2025 - 15:04:54:454] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:04:55:455] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:04:55:455] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:04:55:455] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 69.736 ms - correlation-id: 7c542d44-e5d4-4959-8def-0f22908d3ab1'[39m
+[05 Jan, 2025 - 15:04:55:455] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:04:55:455] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 64.975 ms - correlation-id: 2ffbba35-ab4a-47de-bebe-2ad41d02873e'[39m
+[05 Jan, 2025 - 15:04:57:457] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:04:57:457] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:04:57:457] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:04:57:457] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 67.380 ms - correlation-id: e20dc58f-50a5-4fc9-8df8-b240aee63e32'[39m
+[05 Jan, 2025 - 15:04:58:458] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:04:58:458] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 66.997 ms - correlation-id: 00632705-0287-4015-a0a5-7c633dbf80a0'[39m
+[05 Jan, 2025 - 15:05:00:50] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:05:01:51] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:05:01:51] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:05:01:51] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 65.960 ms - correlation-id: 8ee83a1f-7db0-40d2-ace4-8b458185a899'[39m
+[05 Jan, 2025 - 15:05:01:51] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:05:01:51] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.892 ms - correlation-id: 91da6f4a-c3ce-48fd-92be-6cc61f5af25f'[39m
+[05 Jan, 2025 - 15:06:34:634] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:06:35:635] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:06:35:635] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:06:35:635] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.751 ms - correlation-id: e17c3f3b-d1ef-4c7f-92e4-6f93271b1a06'[39m
+[05 Jan, 2025 - 15:06:35:635] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:06:35:635] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.252 ms - correlation-id: 7c199c66-a6b3-4d7b-beba-30301b1b46b2'[39m
+[05 Jan, 2025 - 15:13:10:1310] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:13:10:1310] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:13:11:1311] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:13:11:1311] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 307.790 ms - correlation-id: ca4cd40b-3881-45fb-9234-f4d28ed095dd'[39m
+[05 Jan, 2025 - 15:13:11:1311] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:13:11:1311] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.765 ms - correlation-id: 303a1b9a-28e4-4dbf-9b6c-30b3cf528be4'[39m
+[05 Jan, 2025 - 15:13:12:1312] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 58.198 ms - correlation-id: 379c0be6-fb75-4d40-addb-bda714898de4'[39m
+[05 Jan, 2025 - 15:13:12:1312] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:13:25:1325] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 254.830 ms - correlation-id: c48b469b-0d27-410f-84b8-bd5f344c38a9'[39m
+[05 Jan, 2025 - 15:13:27:1327] [35mhttp[39m: [35m- ::1 - POST - /api/v1/sessions/ - 400 - 4.085 ms - correlation-id: 8838e903-26f1-4c08-b5c0-1e8f05a2ad41'[39m
+[05 Jan, 2025 - 15:13:27:1327] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:14:18:1418] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:14:19:1419] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:14:19:1419] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:14:19:1419] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 57.663 ms - correlation-id: be256588-1519-4183-b014-72a24f60ae78'[39m
+[05 Jan, 2025 - 15:14:19:1419] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:14:19:1419] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 54.249 ms - correlation-id: 65ae5baf-29a2-4888-993f-cea96b092633'[39m
+[05 Jan, 2025 - 15:14:24:1424] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 64.393 ms - correlation-id: e80fa276-621f-447d-ad99-347a49e815a3'[39m
+[05 Jan, 2025 - 15:14:24:1424] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:14:32:1432] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 224.585 ms - correlation-id: f053e8ff-362a-46f8-904a-6e6fda27ec72'[39m
+[05 Jan, 2025 - 15:15:04:154] [35mhttp[39m: [35m- ::1 - POST - /api/v1/sessions/ - 400 - 0.798 ms - correlation-id: a6561773-4ae2-4a7a-a350-2e3840b9cf65'[39m
+[05 Jan, 2025 - 15:15:05:155] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:15:05:155] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:15:05:155] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 63.265 ms - correlation-id: 4be23689-aff5-4262-85b1-0384ced305ed'[39m
+[05 Jan, 2025 - 15:15:05:155] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:15:05:155] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.021 ms - correlation-id: 804bac7e-800f-4db4-8d48-926fd050cb59'[39m
+[05 Jan, 2025 - 15:15:26:1526] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 71.204 ms - correlation-id: 9f118885-cebb-4fb5-805f-06e15e683f50'[39m
+[05 Jan, 2025 - 15:15:26:1526] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:15:32:1532] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 246.568 ms - correlation-id: 470f1b69-fae7-4f7b-8105-1be0a19ec493'[39m
+[05 Jan, 2025 - 15:16:45:1645] [35mhttp[39m: [35m- ::1 - POST - /api/v1/sessions/ - 400 - 1.567 ms - correlation-id: 818c9f41-7546-4b8b-88ed-ce5bb8897ace'[39m
+[05 Jan, 2025 - 15:16:46:1646] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:19:34:1934] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:19:35:1935] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:19:35:1935] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:19:35:1935] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 63.166 ms - correlation-id: aecd6daa-2c55-41e4-8476-119277f15398'[39m
+[05 Jan, 2025 - 15:19:35:1935] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:19:35:1935] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 85.323 ms - correlation-id: 0bc48b63-7672-4f85-9629-95e32060cddd'[39m
+[05 Jan, 2025 - 15:19:37:1937] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 68.925 ms - correlation-id: 59879859-b0d3-4f38-99d0-13a76f7fd024'[39m
+[05 Jan, 2025 - 15:19:37:1937] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:19:44:1944] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 239.708 ms - correlation-id: 61fd532e-ae25-40f7-b88d-c2776fb0a8a7'[39m
+[05 Jan, 2025 - 15:19:48:1948] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:19:48:1948] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:19:48:1948] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 68.136 ms - correlation-id: e260c4a3-6d5c-45f7-8c51-93b447dc1f30'[39m
+[05 Jan, 2025 - 15:19:48:1948] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:19:49:1949] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.318 ms - correlation-id: 78583a67-71b9-4260-982e-c7703c9be881'[39m
+[05 Jan, 2025 - 15:20:10:2010] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:20:11:2011] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:20:11:2011] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:20:11:2011] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.036 ms - correlation-id: 58a8c22f-2d23-469c-bf3d-fc7fa2be3ac8'[39m
+[05 Jan, 2025 - 15:20:11:2011] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:20:11:2011] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.165 ms - correlation-id: 8a2009ec-895a-4dc6-9aa6-c52fa9cd74e9'[39m
+[05 Jan, 2025 - 15:20:14:2014] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 68.370 ms - correlation-id: 0dc69c7e-1c64-4b5a-a697-3c4a0466608e'[39m
+[05 Jan, 2025 - 15:20:14:2014] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:20:27:2027] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 305.234 ms - correlation-id: cca55a7d-1a16-4aa3-817e-c01d5ceed2e4'[39m
+[05 Jan, 2025 - 15:20:27:2027] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:20:27:2027] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:20:27:2027] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 58.433 ms - correlation-id: ae7a4b56-cb99-459f-873a-0714fc733fa5'[39m
+[05 Jan, 2025 - 15:20:27:2027] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:20:27:2027] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 55.828 ms - correlation-id: f494aa6d-23c3-464e-aac6-b305f270bff3'[39m
+[05 Jan, 2025 - 15:22:03:223] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:22:03:223] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:22:03:223] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:22:03:223] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.902 ms - correlation-id: 3b73dac3-7f81-40ce-a8a8-cbc57fb0662e'[39m
+[05 Jan, 2025 - 15:22:03:223] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:22:03:223] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 120.632 ms - correlation-id: 1b917210-b5d8-4e2b-96c7-92a4d66cd437'[39m
+[05 Jan, 2025 - 15:22:05:225] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 65.626 ms - correlation-id: 2d6b6f26-13fc-4c75-a672-0969f957f70f'[39m
+[05 Jan, 2025 - 15:22:05:225] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:22:12:2212] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 241.015 ms - correlation-id: 1e8d9d9f-5042-4779-83e4-873afee02968'[39m
+[05 Jan, 2025 - 15:22:12:2212] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:22:12:2212] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:22:12:2212] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 60.972 ms - correlation-id: 3057662c-6771-4112-a0e5-c6343787ef08'[39m
+[05 Jan, 2025 - 15:22:12:2212] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:22:12:2212] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.339 ms - correlation-id: eaea24f9-b153-4398-b25c-f9fd300171bd'[39m
+[05 Jan, 2025 - 15:22:31:2231] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:22:31:2231] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:22:31:2231] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:22:32:2232] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.591 ms - correlation-id: ebd8b203-041e-40ae-af3a-2b9fcd6664e9'[39m
+[05 Jan, 2025 - 15:22:32:2232] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:22:32:2232] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.846 ms - correlation-id: c19da3d1-e070-4cdc-b718-0b8feae5e641'[39m
+[05 Jan, 2025 - 15:22:33:2233] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 69.747 ms - correlation-id: 19babc7e-4cec-43eb-af9d-a738e773c027'[39m
+[05 Jan, 2025 - 15:22:33:2233] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:22:42:2242] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 238.796 ms - correlation-id: 08b13a67-f0c1-4edb-a06f-fe5ba1fcb945'[39m
+[05 Jan, 2025 - 15:22:42:2242] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:22:42:2242] [35mhttp[39m: [35m- ::1 - POST - /api/v1/sessions/ - 500 - 0.575 ms - correlation-id: 6c6a8e6a-4286-4a02-887d-08719796faa0'[39m
+[05 Jan, 2025 - 15:22:53:2253] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 289.448 ms - correlation-id: 0afb4299-3561-4cec-b219-69b2d1249d81'[39m
+[05 Jan, 2025 - 15:22:53:2253] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:22:53:2253] [35mhttp[39m: [35m- ::1 - POST - /api/v1/sessions/ - 500 - 0.342 ms - correlation-id: 48823a4d-b32c-4c0c-b5dc-9efaf1579177'[39m
+[05 Jan, 2025 - 15:23:07:237] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 224.695 ms - correlation-id: 469ee029-7ad7-400d-a9dd-b9a185f0244c'[39m
+[05 Jan, 2025 - 15:23:07:237] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:24:20:2420] [35mhttp[39m: [35m- ::1 - POST - /api/v1/sessions/ - 500 - 72997.929 ms - correlation-id: caeb7f6f-476b-4bb8-89e8-af379839e0b9'[39m
+[05 Jan, 2025 - 15:24:27:2427] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 243.841 ms - correlation-id: 8ab6369c-76a6-4902-b0c6-7ade645ff9d6'[39m
+[05 Jan, 2025 - 15:24:27:2427] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:24:30:2430] [35mhttp[39m: [35m- ::1 - POST - /api/v1/sessions/ - 500 - 2340.786 ms - correlation-id: dd1245f0-bfda-42a0-98f5-1ba5d54308c6'[39m
+[05 Jan, 2025 - 15:24:54:2454] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 235.157 ms - correlation-id: f854f264-34ae-46ca-9ed5-2c4566eca348'[39m
+[05 Jan, 2025 - 15:24:54:2454] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:26:41:2641] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[05 Jan, 2025 - 15:26:41:2641] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[05 Jan, 2025 - 15:26:41:2641] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[05 Jan, 2025 - 15:26:41:2641] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[05 Jan, 2025 - 15:26:42:2642] [34minfo[39m: [34mMongoDB connected successfully![39m
+[05 Jan, 2025 - 15:26:46:2646] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:26:46:2646] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:26:46:2646] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:26:46:2646] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:26:46:2646] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:26:49:2649] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 249.443 ms - correlation-id: 7fdf75ab-9647-4629-b0fd-d374f07e2349'[39m
+[05 Jan, 2025 - 15:26:49:2649] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:27:09:279] [35mhttp[39m: [35m- ::1 - POST - /api/v1/sessions/ - 500 - 19827.346 ms - correlation-id: 276609ce-0ff9-49fc-8263-a05416bfacdf'[39m
+[05 Jan, 2025 - 15:27:14:2714] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[05 Jan, 2025 - 15:27:14:2714] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[05 Jan, 2025 - 15:27:14:2714] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[05 Jan, 2025 - 15:27:14:2714] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[05 Jan, 2025 - 15:27:14:2714] [34minfo[39m: [34mMongoDB connected successfully![39m
+[05 Jan, 2025 - 15:27:32:2732] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:27:32:2732] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:27:32:2732] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:27:32:2732] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:27:32:2732] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:27:32:2732] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:27:34:2734] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 220.608 ms - correlation-id: c86142cc-1716-4394-bce0-7c943b64282a'[39m
+[05 Jan, 2025 - 15:27:34:2734] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:28:19:2819] [35mhttp[39m: [35m- ::1 - POST - /api/v1/sessions/ - 500 - 45318.074 ms - correlation-id: 6fe6a875-853d-4dbb-87fb-e381f72734f5'[39m
+[05 Jan, 2025 - 15:28:23:2823] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[05 Jan, 2025 - 15:28:23:2823] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[05 Jan, 2025 - 15:28:23:2823] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[05 Jan, 2025 - 15:28:23:2823] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[05 Jan, 2025 - 15:28:24:2824] [34minfo[39m: [34mMongoDB connected successfully![39m
+[05 Jan, 2025 - 15:28:28:2828] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:28:28:2828] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:28:28:2828] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:28:28:2828] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:28:28:2828] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:28:28:2828] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:28:28:2828] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:28:32:2832] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 226.705 ms - correlation-id: a260de90-f9af-4b4d-8b82-26c7d1ce9da8'[39m
+[05 Jan, 2025 - 15:28:32:2832] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:28:37:2837] [35mhttp[39m: [35m- ::1 - POST - /api/v1/sessions/ - 201 - 4854.336 ms - correlation-id: 95581df1-41e4-4c8a-91ed-740a17d89b68'[39m
+[05 Jan, 2025 - 15:28:37:2837] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:28:37:2837] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 100.044 ms - correlation-id: d698ecef-541d-4779-b722-9b00f4afc116'[39m
+[05 Jan, 2025 - 15:28:37:2837] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:28:37:2837] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.409 ms - correlation-id: d52c45ab-d122-4fea-85dc-c1acd9a5901c'[39m
+[05 Jan, 2025 - 15:33:33:3333] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 81.705 ms - correlation-id: 88e4475b-7016-45e8-906c-f9e0954ca5c2'[39m
+[05 Jan, 2025 - 15:33:33:3333] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:33:36:3336] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:33:36:3336] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:33:36:3336] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:33:36:3336] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:33:36:3336] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:33:36:3336] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:33:36:3336] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:33:46:3346] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 261.414 ms - correlation-id: 2fab2f4f-ebf3-45e1-982a-b129a2dd401f'[39m
+[05 Jan, 2025 - 15:33:46:3346] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:33:48:3348] [35mhttp[39m: [35m- ::1 - POST - /api/v1/sessions/ - 201 - 2331.487 ms - correlation-id: e8373e96-7071-4e0a-93f7-cf11de00d8a7'[39m
+[05 Jan, 2025 - 15:33:48:3348] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:33:48:3348] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 59.549 ms - correlation-id: 3f7b9a18-a08a-4ab8-9e8a-bc9a8595eddd'[39m
+[05 Jan, 2025 - 15:33:48:3348] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:33:48:3348] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.952 ms - correlation-id: 5d1f080a-289d-4dce-92f4-10e144bea687'[39m
+[05 Jan, 2025 - 15:35:15:3515] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 74.559 ms - correlation-id: 6c29981d-0e5d-40a9-9da1-c9893fe11bbd'[39m
+[05 Jan, 2025 - 15:35:15:3515] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:35:21:3521] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 235.012 ms - correlation-id: 6a6a2bbe-07ec-441c-822d-1f4111ca4d0f'[39m
+[05 Jan, 2025 - 15:35:21:3521] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:35:22:3522] [35mhttp[39m: [35m- ::1 - POST - /api/v1/sessions/ - 201 - 31.273 ms - correlation-id: 23e5a8aa-806f-4934-a8b5-02c2901f6de0'[39m
+[05 Jan, 2025 - 15:35:22:3522] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:35:22:3522] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 62.915 ms - correlation-id: a4a2cdc9-fc8a-4346-82ce-cbda86b64c02'[39m
+[05 Jan, 2025 - 15:35:22:3522] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:35:22:3522] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 55.203 ms - correlation-id: d76a76d9-9bec-4be9-989b-987a827e4479'[39m
+[05 Jan, 2025 - 15:38:06:386] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 63.037 ms - correlation-id: 62008317-dbba-4cf7-b616-334584ed4410'[39m
+[05 Jan, 2025 - 15:38:06:386] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:38:15:3815] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 245.149 ms - correlation-id: cb84a6cb-b6cd-414a-8ad6-899647c50c34'[39m
+[05 Jan, 2025 - 15:38:15:3815] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:38:15:3815] [35mhttp[39m: [35m- ::1 - POST - /api/v1/sessions/ - 201 - 31.762 ms - correlation-id: c2dfa91b-e03a-4f10-8f98-0733c14d3387'[39m
+[05 Jan, 2025 - 15:38:15:3815] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:38:15:3815] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 62.240 ms - correlation-id: 610e6bd7-a29a-4132-b385-d6d85c99411e'[39m
+[05 Jan, 2025 - 15:38:15:3815] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:38:15:3815] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.604 ms - correlation-id: 99d4c36e-da91-4726-941d-90f25b6ae3da'[39m
+[05 Jan, 2025 - 15:38:54:3854] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:38:54:3854] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:38:54:3854] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:38:54:3854] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.525 ms - correlation-id: 6a7fc5ee-2661-435b-b7c4-39c11fd3666b'[39m
+[05 Jan, 2025 - 15:38:54:3854] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:38:54:3854] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.047 ms - correlation-id: 5da03117-baac-4098-89f1-7379c45a7556'[39m
+[05 Jan, 2025 - 15:39:11:3911] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 15:39:12:3912] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 15:39:12:3912] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:39:12:3912] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 65.305 ms - correlation-id: ad87fe35-2e93-4459-8c43-106e761be91b'[39m
+[05 Jan, 2025 - 15:39:12:3912] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 15:39:12:3912] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.819 ms - correlation-id: 48cae6ae-3dba-4034-928a-13ffb7cc6ee5'[39m
+[05 Jan, 2025 - 16:03:57:357] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:03:58:358] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:03:58:358] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:03:58:358] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.375 ms - correlation-id: 1d847d66-06a3-4218-91da-151d895cd9b4'[39m
+[05 Jan, 2025 - 16:03:58:358] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:03:58:358] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.603 ms - correlation-id: fb01d89a-a047-4842-8d23-6d6a07153f47'[39m
+[05 Jan, 2025 - 16:07:38:738] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:07:39:739] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:07:40:740] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:07:40:740] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 364.322 ms - correlation-id: 44f36c98-45a0-4a99-8ba1-fbb6f2c536b7'[39m
+[05 Jan, 2025 - 16:07:40:740] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:07:40:740] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.128 ms - correlation-id: 46039765-a56e-45c6-894f-3aec33f9b97f'[39m
+[05 Jan, 2025 - 16:43:56:4356] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 55.966 ms - correlation-id: 336e7c5e-70ff-499f-9b70-e6d7da959848'[39m
+[05 Jan, 2025 - 16:44:46:4446] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:44:47:4447] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:44:47:4447] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:44:47:4447] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.442 ms - correlation-id: e8ba3a63-e980-4885-8dae-042c52f36e9e'[39m
+[05 Jan, 2025 - 16:44:47:4447] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:44:47:4447] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.631 ms - correlation-id: 66c4bed8-277c-4c4b-98f6-b37e838265f0'[39m
+[05 Jan, 2025 - 16:45:00:450] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:45:00:450] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:45:00:450] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:45:00:450] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 73.415 ms - correlation-id: 7751d60b-586d-4ad4-80d1-10a63049bdc1'[39m
+[05 Jan, 2025 - 16:45:01:451] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:45:01:451] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.847 ms - correlation-id: a3376999-f640-4d0b-8633-206c71217a89'[39m
+[05 Jan, 2025 - 16:46:22:4622] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:46:23:4623] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:46:23:4623] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:46:23:4623] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 64.344 ms - correlation-id: 4d7e705d-2ee2-4e75-9a9e-0557e0bdcf9b'[39m
+[05 Jan, 2025 - 16:46:23:4623] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:46:23:4623] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.789 ms - correlation-id: d9b00e43-5903-4ed7-9e2b-8724c0798d25'[39m
+[05 Jan, 2025 - 16:46:32:4632] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:46:32:4632] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:46:32:4632] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:46:32:4632] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.607 ms - correlation-id: 02c85992-b193-4343-87c6-92b554d3810e'[39m
+[05 Jan, 2025 - 16:46:32:4632] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:46:32:4632] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 55.862 ms - correlation-id: 660d1656-39d5-4d34-907c-d4eda45c9eb9'[39m
+[05 Jan, 2025 - 16:46:55:4655] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:46:55:4655] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:46:55:4655] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.052 ms - correlation-id: a20eb4b2-7f74-4209-a2cb-e465f26813a9'[39m
+[05 Jan, 2025 - 16:47:05:475] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:47:05:475] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:47:05:475] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 66.326 ms - correlation-id: 51716966-5f8e-42a3-bb10-bc5618951111'[39m
+[05 Jan, 2025 - 16:47:05:475] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:47:05:475] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.873 ms - correlation-id: 2c25869e-28b8-42b4-8e59-764ae721421e'[39m
+[05 Jan, 2025 - 16:47:05:475] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:47:05:475] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.518 ms - correlation-id: 9f094d3d-d0ff-4fab-be07-884be079e64d'[39m
+[05 Jan, 2025 - 16:47:24:4724] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:47:25:4725] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:47:25:4725] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:47:25:4725] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.750 ms - correlation-id: 39715d20-b8d2-4ca9-91b4-0d672b9eb347'[39m
+[05 Jan, 2025 - 16:47:25:4725] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:47:25:4725] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.891 ms - correlation-id: d6b265ef-a05b-4855-85b8-7633e25a435d'[39m
+[05 Jan, 2025 - 16:47:25:4725] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:47:25:4725] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.542 ms - correlation-id: a3cc8527-fb1c-4777-84fe-c9461fb0c60f'[39m
+[05 Jan, 2025 - 16:47:30:4730] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:47:30:4730] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:47:30:4730] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:47:30:4730] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.145 ms - correlation-id: 7dbdcb5d-46db-4af2-8b1e-3645e054e5b3'[39m
+[05 Jan, 2025 - 16:47:30:4730] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:47:30:4730] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 75.530 ms - correlation-id: 365279ee-1d9e-4cec-97b7-97edb4f5d612'[39m
+[05 Jan, 2025 - 16:47:30:4730] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:47:30:4730] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.221 ms - correlation-id: 06e336bc-b609-4889-915b-e1ec97d699e8'[39m
+[05 Jan, 2025 - 16:48:08:488] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:48:08:488] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:48:08:488] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 500 - 13.015 ms - correlation-id: 6a096101-d67d-43ae-89c7-809348f7ef6b'[39m
+[05 Jan, 2025 - 16:48:08:488] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:48:08:488] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.879 ms - correlation-id: 468e3aec-141a-4f42-804e-11d5eaea25d0'[39m
+[05 Jan, 2025 - 16:48:08:488] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:48:08:488] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.826 ms - correlation-id: aa301c71-c1a6-4587-b9f4-de28dfad4380'[39m
+[05 Jan, 2025 - 16:48:15:4815] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:48:15:4815] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:48:15:4815] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 500 - 0.897 ms - correlation-id: 94440c4f-71b7-45bb-9eb4-867ea8e5e33f'[39m
+[05 Jan, 2025 - 16:48:15:4815] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:48:15:4815] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.195 ms - correlation-id: bc7d6267-1f7d-4678-9b91-a33beed56e4d'[39m
+[05 Jan, 2025 - 16:48:15:4815] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:48:15:4815] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.871 ms - correlation-id: 8d151c7e-9528-41fd-b397-a61b76913d5e'[39m
+[05 Jan, 2025 - 16:48:21:4821] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:48:21:4821] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:48:21:4821] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 500 - 2.381 ms - correlation-id: 75415e11-113c-4abd-8e81-83e1acaa11c6'[39m
+[05 Jan, 2025 - 16:48:21:4821] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:48:21:4821] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.728 ms - correlation-id: 7fa23c33-2a0f-4aa4-a061-7ded28d97716'[39m
+[05 Jan, 2025 - 16:48:22:4822] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:48:22:4822] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 54.867 ms - correlation-id: c94c505b-69da-45ad-a9c2-5a054bc20f5d'[39m
+[05 Jan, 2025 - 16:48:44:4844] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:48:45:4845] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:48:45:4845] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 500 - 0.799 ms - correlation-id: 38462cd5-54b9-41fe-a8fc-3a22c22173d1'[39m
+[05 Jan, 2025 - 16:48:45:4845] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:48:45:4845] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.453 ms - correlation-id: ce0f07bc-013d-4f36-b64e-08c07a1fed7e'[39m
+[05 Jan, 2025 - 16:48:45:4845] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:48:45:4845] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.698 ms - correlation-id: c3d28c34-d467-4985-9f22-9ef61cb67587'[39m
+[05 Jan, 2025 - 16:52:36:5236] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[05 Jan, 2025 - 16:52:36:5236] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[05 Jan, 2025 - 16:52:36:5236] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[05 Jan, 2025 - 16:52:36:5236] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[05 Jan, 2025 - 16:52:37:5237] [34minfo[39m: [34mMongoDB connected successfully![39m
+[05 Jan, 2025 - 16:52:44:5244] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:52:44:5244] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 200 - 2474.245 ms - correlation-id: c70c270e-906b-4659-b9f0-a1e35712cddd'[39m
+[05 Jan, 2025 - 16:52:44:5244] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 2503.150 ms - correlation-id: 294d347d-3c23-442a-a1ad-7e93f6ecc4d7'[39m
+[05 Jan, 2025 - 16:52:44:5244] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:52:44:5244] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 78.897 ms - correlation-id: 727c8e1c-bdb7-45e0-bbee-fe3484d8b24f'[39m
+[05 Jan, 2025 - 16:52:45:5245] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:54:08:548] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:54:09:549] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:54:09:549] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:54:11:5411] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 2137.438 ms - correlation-id: e9875b8d-a6a9-405e-97fa-cbd0823199bc'[39m
+[05 Jan, 2025 - 16:54:11:5411] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 2168.235 ms - correlation-id: 83020bb4-4e14-49fa-9eaa-33640db0fdfa'[39m
+[05 Jan, 2025 - 16:54:11:5411] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:54:11:5411] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 123.258 ms - correlation-id: 4e9b6a49-03f5-4ec5-bdcc-09550e88ddf6'[39m
+[05 Jan, 2025 - 16:55:18:5518] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:55:31:5531] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:55:31:5531] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:55:31:5531] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 153.828 ms - correlation-id: 6651dcb4-1285-429e-9817-657ec4155036'[39m
+[05 Jan, 2025 - 16:55:31:5531] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 160.604 ms - correlation-id: 455f5e30-2023-4e98-891f-75361d20fb16'[39m
+[05 Jan, 2025 - 16:55:31:5531] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:55:31:5531] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 66.921 ms - correlation-id: 7dd7bacd-f9f6-4499-b6e5-501a15a522b2'[39m
+[05 Jan, 2025 - 16:56:32:5632] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:56:33:5633] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:56:33:5633] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:56:33:5633] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.388 ms - correlation-id: a9923809-7a4a-46c4-98e5-82a4bfa16ad9'[39m
+[05 Jan, 2025 - 16:56:33:5633] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 60.103 ms - correlation-id: 55718ac0-0fdd-4fc6-b4d4-f62687f18c98'[39m
+[05 Jan, 2025 - 16:56:33:5633] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:56:33:5633] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 156.448 ms - correlation-id: 762f858a-1ecf-44a4-ac2e-3e0b861b60e7'[39m
+[05 Jan, 2025 - 16:56:43:5643] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:56:43:5643] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:56:43:5643] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:56:43:5643] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 59.840 ms - correlation-id: 20cc916b-7f30-49d5-b006-ade3c577f5c6'[39m
+[05 Jan, 2025 - 16:56:43:5643] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 65.881 ms - correlation-id: 10c42bfd-b853-4d64-9e35-085177b215f1'[39m
+[05 Jan, 2025 - 16:56:43:5643] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:56:43:5643] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.066 ms - correlation-id: 122714ff-b190-4e94-ae87-a75618f9b63c'[39m
+[05 Jan, 2025 - 16:57:18:5718] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:57:19:5719] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:57:19:5719] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:57:19:5719] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.323 ms - correlation-id: 81e5f389-5325-48c3-a6fb-526fb74af55d'[39m
+[05 Jan, 2025 - 16:57:19:5719] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 58.741 ms - correlation-id: 4793ed02-4b2c-4f5b-aa6a-fd8aaefdfb2f'[39m
+[05 Jan, 2025 - 16:57:19:5719] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:57:19:5719] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.097 ms - correlation-id: 5d6218a3-07aa-46e0-ab28-c0a69c697b75'[39m
+[05 Jan, 2025 - 16:57:23:5723] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:57:24:5724] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:57:24:5724] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:57:24:5724] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 64.997 ms - correlation-id: 7d8c4b63-d1d1-4d81-9c45-9738e040b1d9'[39m
+[05 Jan, 2025 - 16:57:24:5724] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 60.309 ms - correlation-id: 3c7a0e6e-8b25-4f10-9782-cd6cd6afc503'[39m
+[05 Jan, 2025 - 16:57:24:5724] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:57:24:5724] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 55.697 ms - correlation-id: 1b0109c8-8d18-4f7e-ba2c-844f18c58ad9'[39m
+[05 Jan, 2025 - 16:57:27:5727] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:57:28:5728] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:57:28:5728] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:57:28:5728] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.188 ms - correlation-id: 825f4078-5b79-46ca-8a0a-2ba83f18048c'[39m
+[05 Jan, 2025 - 16:57:28:5728] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 61.113 ms - correlation-id: a7c262ee-6bbd-4ff2-b916-554e65530349'[39m
+[05 Jan, 2025 - 16:57:28:5728] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:57:28:5728] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.215 ms - correlation-id: ef4e5096-f992-4226-b08d-80f56b11fa72'[39m
+[05 Jan, 2025 - 16:58:21:5821] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:58:22:5822] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:58:22:5822] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:58:22:5822] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 59.035 ms - correlation-id: ef990a7f-a2f8-4847-accf-b60a7f98544f'[39m
+[05 Jan, 2025 - 16:58:22:5822] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 68.338 ms - correlation-id: 45d314cd-7f47-4e82-bef0-559c287ad327'[39m
+[05 Jan, 2025 - 16:58:22:5822] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:58:22:5822] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.606 ms - correlation-id: 9bc8b47d-4f31-4205-b33b-1f96294e45f1'[39m
+[05 Jan, 2025 - 16:58:38:5838] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:58:39:5839] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:58:39:5839] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:58:39:5839] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 55.943 ms - correlation-id: 095faf89-abca-4b0c-bd02-5f08cb063276'[39m
+[05 Jan, 2025 - 16:58:39:5839] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 55.271 ms - correlation-id: 42e11031-a93a-4115-a8f9-dbae58e11045'[39m
+[05 Jan, 2025 - 16:58:39:5839] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:58:39:5839] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.247 ms - correlation-id: 86a0cde7-cf1b-4377-ab59-7adfbfded939'[39m
+[05 Jan, 2025 - 16:58:42:5842] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:58:42:5842] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:58:42:5842] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:58:42:5842] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.778 ms - correlation-id: deafea3a-7f94-4466-86ab-aadd11e43375'[39m
+[05 Jan, 2025 - 16:58:42:5842] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 60.710 ms - correlation-id: 1e7af28b-039d-462c-9fed-e2fc0c06428d'[39m
+[05 Jan, 2025 - 16:58:42:5842] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:58:42:5842] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 55.814 ms - correlation-id: e9ed894c-43a5-4b2d-91d5-2520bbd65dad'[39m
+[05 Jan, 2025 - 16:58:44:5844] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:58:45:5845] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:58:45:5845] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:58:45:5845] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 63.280 ms - correlation-id: 932324c1-e048-4dd0-b301-38ec2b046a04'[39m
+[05 Jan, 2025 - 16:58:45:5845] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 70.112 ms - correlation-id: 5cff95a2-ffa3-419d-a27f-9137bbd79596'[39m
+[05 Jan, 2025 - 16:58:45:5845] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:58:45:5845] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.732 ms - correlation-id: 1c1b4fd9-5c8a-471e-8b83-23240641e0af'[39m
+[05 Jan, 2025 - 16:59:16:5916] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:59:16:5916] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:59:16:5916] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:59:16:5916] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.566 ms - correlation-id: 876424f7-fca8-4129-a6c4-c04e0b46a575'[39m
+[05 Jan, 2025 - 16:59:16:5916] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 56.483 ms - correlation-id: 06841075-1e47-455a-9c4c-64249eeaa2e2'[39m
+[05 Jan, 2025 - 16:59:16:5916] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:59:16:5916] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.015 ms - correlation-id: 13b6d089-d3b7-4a1f-94e4-7b73c246bea6'[39m
+[05 Jan, 2025 - 16:59:19:5919] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 16:59:19:5919] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 16:59:19:5919] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:59:19:5919] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.392 ms - correlation-id: 085983fa-e53f-4cd3-9ed1-039a8b9d4954'[39m
+[05 Jan, 2025 - 16:59:19:5919] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 65.290 ms - correlation-id: dd61e141-c875-4d80-ab4b-ac1b9a5ad3ba'[39m
+[05 Jan, 2025 - 16:59:19:5919] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 16:59:19:5919] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.131 ms - correlation-id: 78bf206b-0032-403b-a260-5381a3aefec0'[39m
+[05 Jan, 2025 - 17:00:05:05] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:00:06:06] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:00:06:06] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:00:06:06] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 71.325 ms - correlation-id: 84dc9e2f-00c3-4ca4-8742-2634cd5c9740'[39m
+[05 Jan, 2025 - 17:00:06:06] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 70.632 ms - correlation-id: cc66057e-d777-4be3-84ee-847b7512400e'[39m
+[05 Jan, 2025 - 17:00:06:06] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:00:06:06] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.164 ms - correlation-id: 0d1acab8-ef41-4ce1-a3ee-f09a37ced679'[39m
+[05 Jan, 2025 - 17:00:18:018] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:00:19:019] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:00:19:019] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:00:19:019] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 68.255 ms - correlation-id: 8da4b4b5-478c-4c7d-8e85-f5f7b67a22d5'[39m
+[05 Jan, 2025 - 17:00:19:019] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 64.894 ms - correlation-id: 1b6d815d-2a34-40cd-b52b-b14aa9d910ba'[39m
+[05 Jan, 2025 - 17:00:19:019] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:00:19:019] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.817 ms - correlation-id: 386786a9-a382-43b3-8d58-c0a7cff73a46'[39m
+[05 Jan, 2025 - 17:00:23:023] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:00:23:023] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:00:23:023] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:00:23:023] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 56.711 ms - correlation-id: 71d214e4-8184-4767-b4d7-ddea69afbc25'[39m
+[05 Jan, 2025 - 17:00:23:023] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 65.751 ms - correlation-id: 41e626b8-bf8a-470e-8631-f234c5c46e24'[39m
+[05 Jan, 2025 - 17:00:23:023] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:00:23:023] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.455 ms - correlation-id: e9339567-a1a8-4b93-87c5-8b8afdcdfea0'[39m
+[05 Jan, 2025 - 17:00:49:049] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:00:50:050] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:00:50:050] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:00:50:050] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.334 ms - correlation-id: 0ce14118-9864-4eb2-b761-92401452dbf1'[39m
+[05 Jan, 2025 - 17:00:50:050] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 61.340 ms - correlation-id: 41910f35-c4a5-49ba-b4c0-d65cc2adb14d'[39m
+[05 Jan, 2025 - 17:00:50:050] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:00:50:050] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.148 ms - correlation-id: 54326a39-eb19-4f60-93af-c68c4b28d583'[39m
+[05 Jan, 2025 - 17:00:59:059] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:00:59:059] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:00:59:059] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:00:59:059] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.156 ms - correlation-id: 55f78ec7-4186-4c28-a7ee-eb16eec3a50a'[39m
+[05 Jan, 2025 - 17:00:59:059] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 65.051 ms - correlation-id: 8560c03d-55a8-4297-9c4a-8961c89f130f'[39m
+[05 Jan, 2025 - 17:00:59:059] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:00:59:059] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.124 ms - correlation-id: a1fc214e-1bd1-4895-b508-b355d6da8d48'[39m
+[05 Jan, 2025 - 17:01:35:135] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:01:35:135] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:01:35:135] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:01:35:135] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 54.247 ms - correlation-id: de123d2f-4c67-42fe-854e-055d3e4bb86d'[39m
+[05 Jan, 2025 - 17:01:35:135] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.508 ms - correlation-id: 3a088281-8c52-4b00-a4f9-10f17fb014b5'[39m
+[05 Jan, 2025 - 17:01:35:135] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:01:35:135] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.565 ms - correlation-id: 8b48d06b-ea86-46af-b5d9-45674ed6477c'[39m
+[05 Jan, 2025 - 17:01:55:155] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:01:55:155] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:01:55:155] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:01:55:155] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 67.681 ms - correlation-id: 52eed5fb-8231-45c1-88ec-369dfd363149'[39m
+[05 Jan, 2025 - 17:01:55:155] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 68.774 ms - correlation-id: d2080165-3847-4cd1-b809-55dc243c2cd7'[39m
+[05 Jan, 2025 - 17:01:55:155] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:01:56:156] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.304 ms - correlation-id: 1607714d-1273-4e69-9e1c-f023134f4a7e'[39m
+[05 Jan, 2025 - 17:03:11:311] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:04:00:40] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:04:00:40] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:04:00:40] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.348 ms - correlation-id: 919bfb31-cbda-477b-904c-2316d0d037a6'[39m
+[05 Jan, 2025 - 17:04:00:40] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 61.450 ms - correlation-id: 6969a35d-9e11-4d75-9f24-8a6e7eb16840'[39m
+[05 Jan, 2025 - 17:04:00:40] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:04:00:40] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 55.399 ms - correlation-id: c093bb77-937d-4d3f-9355-edc1d5977d05'[39m
+[05 Jan, 2025 - 17:04:14:414] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:04:14:414] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:04:14:414] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:04:14:414] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 59.177 ms - correlation-id: 8e984edf-7bd8-469d-bba5-6ca31ae6c484'[39m
+[05 Jan, 2025 - 17:04:14:414] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 66.288 ms - correlation-id: 29f83cf3-5431-437e-8f0c-b10ecef6b8fc'[39m
+[05 Jan, 2025 - 17:04:14:414] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:04:14:414] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.525 ms - correlation-id: f0b49f0a-a91d-45ab-8b38-e9e14939d48c'[39m
+[05 Jan, 2025 - 17:04:54:454] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:04:54:454] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:04:54:454] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:04:54:454] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.947 ms - correlation-id: 2d6770a8-c0b8-438f-933a-faba085d9fb5'[39m
+[05 Jan, 2025 - 17:04:54:454] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 63.182 ms - correlation-id: 4f95e53d-89a7-4982-b33f-3b500ad3eb76'[39m
+[05 Jan, 2025 - 17:04:54:454] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:04:54:454] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.363 ms - correlation-id: b2de962d-922f-4bfd-b2e8-96158992606b'[39m
+[05 Jan, 2025 - 17:08:00:80] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:08:01:81] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:08:01:81] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:08:01:81] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.803 ms - correlation-id: aa8cf60b-266e-4f59-b5be-ce88119a1981'[39m
+[05 Jan, 2025 - 17:08:01:81] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 62.543 ms - correlation-id: 4d0f60d2-3f81-419f-8ca6-d387711bcb1b'[39m
+[05 Jan, 2025 - 17:08:01:81] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:08:01:81] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.480 ms - correlation-id: 0053bd7a-8ec2-4a4a-9616-69bc092dfd4e'[39m
+[05 Jan, 2025 - 17:15:56:1556] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:15:57:1557] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:15:57:1557] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:15:57:1557] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 58.061 ms - correlation-id: 8fd94d4e-5d52-440c-bd99-e609fdfdf5bf'[39m
+[05 Jan, 2025 - 17:15:57:1557] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 66.429 ms - correlation-id: a8b70c42-8953-4ad5-ad60-70675b7aa1ca'[39m
+[05 Jan, 2025 - 17:15:57:1557] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:15:57:1557] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 68.537 ms - correlation-id: 23ff1170-adb6-49ad-b5ae-8e0cb80eef0f'[39m
+[05 Jan, 2025 - 17:17:23:1723] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:17:24:1724] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:17:24:1724] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:17:24:1724] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.746 ms - correlation-id: 280de619-76a3-4c35-8055-361a48183c25'[39m
+[05 Jan, 2025 - 17:17:24:1724] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 56.535 ms - correlation-id: bfdd7496-cb64-4f68-821e-63a70f7fa035'[39m
+[05 Jan, 2025 - 17:17:24:1724] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:17:24:1724] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 55.214 ms - correlation-id: a16a00fe-4689-4799-ad3f-466375ba3810'[39m
+[05 Jan, 2025 - 17:17:36:1736] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:17:37:1737] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:17:37:1737] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:17:37:1737] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.955 ms - correlation-id: eae5db06-ed34-4963-bb6e-f600d4ae4e4d'[39m
+[05 Jan, 2025 - 17:17:37:1737] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 62.214 ms - correlation-id: 5941153f-b723-43e6-b75b-3f0c6f1cb54d'[39m
+[05 Jan, 2025 - 17:17:37:1737] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:17:37:1737] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.319 ms - correlation-id: d72e71ce-8379-47f5-95e0-9921a5cf09a2'[39m
+[05 Jan, 2025 - 17:17:45:1745] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:17:45:1745] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:17:45:1745] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:17:45:1745] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 54.664 ms - correlation-id: 583196f7-321c-44b3-8728-be397cb5d57b'[39m
+[05 Jan, 2025 - 17:17:45:1745] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.222 ms - correlation-id: 9d664c6a-7f87-473f-8a4f-a96a9c3c87cc'[39m
+[05 Jan, 2025 - 17:17:45:1745] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:17:45:1745] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 66.195 ms - correlation-id: f8096727-3d7b-42d7-b195-a294debdfdd2'[39m
+[05 Jan, 2025 - 17:18:10:1810] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:18:11:1811] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:18:11:1811] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:18:11:1811] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 69.344 ms - correlation-id: da108548-759a-410c-bb02-39b04827e205'[39m
+[05 Jan, 2025 - 17:18:11:1811] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 58.450 ms - correlation-id: fe319be6-a4d3-475c-ad63-1c717f2075d3'[39m
+[05 Jan, 2025 - 17:18:11:1811] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:18:11:1811] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.941 ms - correlation-id: 413feae4-b297-4f9f-a77a-96f182e89be7'[39m
+[05 Jan, 2025 - 17:18:27:1827] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:18:28:1828] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:18:28:1828] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:18:28:1828] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 54.387 ms - correlation-id: 9d246f05-3cbc-4156-89ff-aa20e53006a5'[39m
+[05 Jan, 2025 - 17:18:28:1828] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.645 ms - correlation-id: 71ff66a7-9930-48ad-ad1f-a811811f5701'[39m
+[05 Jan, 2025 - 17:18:28:1828] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:18:28:1828] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.083 ms - correlation-id: ecaee725-2541-41a2-b0c1-8e6ddaea0f13'[39m
+[05 Jan, 2025 - 17:21:43:2143] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:21:44:2144] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:21:44:2144] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:21:44:2144] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 58.957 ms - correlation-id: 8c201482-90ee-43ed-9285-cc4cf8e8c543'[39m
+[05 Jan, 2025 - 17:21:44:2144] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 70.809 ms - correlation-id: 50de6ac2-0154-4d1b-ab96-f8ce280826ea'[39m
+[05 Jan, 2025 - 17:21:44:2144] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:21:44:2144] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.319 ms - correlation-id: a5edf1a7-a0f5-4a82-9051-5f69fd58e16a'[39m
+[05 Jan, 2025 - 17:21:46:2146] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:21:47:2147] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:21:47:2147] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:21:47:2147] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.360 ms - correlation-id: a8f0f29a-052f-4bc6-89a3-46479a07418b'[39m
+[05 Jan, 2025 - 17:21:47:2147] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 62.964 ms - correlation-id: ae7eb7ef-9da4-4781-a78c-f347864163cf'[39m
+[05 Jan, 2025 - 17:21:47:2147] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:21:47:2147] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.112 ms - correlation-id: 50ed4241-1f33-4fd8-b7fd-ba4d3a62aaa1'[39m
+[05 Jan, 2025 - 17:21:49:2149] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:21:49:2149] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:21:49:2149] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:21:49:2149] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.949 ms - correlation-id: 668ad562-2d3d-4b36-9df5-a359115c9e47'[39m
+[05 Jan, 2025 - 17:21:49:2149] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 77.171 ms - correlation-id: b05dd020-73bf-497c-9998-3c37522f01f2'[39m
+[05 Jan, 2025 - 17:21:49:2149] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:21:49:2149] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.047 ms - correlation-id: 3904ab28-6a4d-4aa4-9a50-bf8215cd0df7'[39m
+[05 Jan, 2025 - 17:21:51:2151] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:21:51:2151] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:21:51:2151] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:21:51:2151] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 54.055 ms - correlation-id: addc3402-0a11-4d2a-a04e-a7fd4af21a6f'[39m
+[05 Jan, 2025 - 17:21:51:2151] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.200 ms - correlation-id: 37e82003-e9b1-4d63-92eb-65fc84b9dc9d'[39m
+[05 Jan, 2025 - 17:21:51:2151] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:21:51:2151] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.111 ms - correlation-id: 151a1f80-c325-42b3-b529-2c07b83af0d5'[39m
+[05 Jan, 2025 - 17:22:45:2245] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:22:46:2246] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:22:46:2246] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:22:46:2246] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 77.607 ms - correlation-id: b917d2d6-3d5c-4bd7-8bad-5beea6eebd7e'[39m
+[05 Jan, 2025 - 17:22:46:2246] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 85.744 ms - correlation-id: 33f3a430-9164-4aed-931c-087aa57279f2'[39m
+[05 Jan, 2025 - 17:22:46:2246] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:22:46:2246] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 75.278 ms - correlation-id: dac03fb7-97c3-402a-b7fa-76aba826d55b'[39m
+[05 Jan, 2025 - 17:22:51:2251] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[05 Jan, 2025 - 17:22:51:2251] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[05 Jan, 2025 - 17:22:51:2251] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[05 Jan, 2025 - 17:22:51:2251] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[05 Jan, 2025 - 17:22:51:2251] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:22:51:2251] [34minfo[39m: [34mMongoDB connected successfully![39m
+[05 Jan, 2025 - 17:23:02:232] [35mhttp[39m: [35m- ::1 - POST - /api/v1/chat/c/:receiverId - 500 - 41.882 ms - correlation-id: 7e27ad27-bf3a-4641-8119-b1ab24560ac1'[39m
+[05 Jan, 2025 - 17:23:08:238] [35mhttp[39m: [35m- ::1 - POST - /api/v1/chat/c/:receiverId - 500 - 49.603 ms - correlation-id: aa3b0f82-20ce-4a81-b2ad-d7bd7eebc3be'[39m
+[05 Jan, 2025 - 17:23:30:2330] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:23:31:2331] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:23:31:2331] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:23:31:2331] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 66.075 ms - correlation-id: 0f4d304f-91b2-4acd-8040-70598c1d696a'[39m
+[05 Jan, 2025 - 17:23:31:2331] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 74.294 ms - correlation-id: dd140a0a-8780-47cd-8582-b18ae1da9a34'[39m
+[05 Jan, 2025 - 17:23:31:2331] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:23:31:2331] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 78.279 ms - correlation-id: 2fad3a3d-c3b2-48de-a5bc-4db4dc9f65df'[39m
+[05 Jan, 2025 - 17:24:08:248] [35mhttp[39m: [35m- ::1 - POST - /api/v1/chat/c/:receiverId - 500 - 47.763 ms - correlation-id: c539a99a-cfce-400f-a477-55256dcfc46f'[39m
+[05 Jan, 2025 - 17:24:10:2410] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:24:10:2410] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:24:10:2410] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:24:10:2410] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.953 ms - correlation-id: 4cfdcf51-93be-48e8-84f3-ccc4a77b8c66'[39m
+[05 Jan, 2025 - 17:24:10:2410] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 68.326 ms - correlation-id: 318d7c17-3bcf-46b5-acd3-941e0ca45051'[39m
+[05 Jan, 2025 - 17:24:10:2410] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:24:10:2410] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.298 ms - correlation-id: 03b73871-d523-4f41-9a4e-1afd4f5a488a'[39m
+[05 Jan, 2025 - 17:24:23:2423] [35mhttp[39m: [35m- ::1 - POST - /api/v1/chat/c/:receiverId - 500 - 48.493 ms - correlation-id: 86dccd9e-6491-463b-870c-110b8e28cb43'[39m
+[05 Jan, 2025 - 17:24:24:2424] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:24:25:2425] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:24:25:2425] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:24:25:2425] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 77.627 ms - correlation-id: d104824b-da83-405f-a1ec-a938a880bbd1'[39m
+[05 Jan, 2025 - 17:24:25:2425] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 83.249 ms - correlation-id: 52e48912-dce1-44a9-8fcf-960633eef0f0'[39m
+[05 Jan, 2025 - 17:24:25:2425] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:24:25:2425] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 78.756 ms - correlation-id: 72c91ebd-27b0-48fd-83c9-1995ad41f452'[39m
+[05 Jan, 2025 - 17:24:38:2438] [35mhttp[39m: [35m- ::1 - POST - /api/v1/chat/c/:receiverId - 500 - 46.058 ms - correlation-id: eebb1c2b-55f2-4bb1-9bd2-0908710dfcd5'[39m
+[05 Jan, 2025 - 17:24:44:2444] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:24:44:2444] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:24:44:2444] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:24:44:2444] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 66.957 ms - correlation-id: 0442a5dc-0864-4197-8116-be9945e88c4c'[39m
+[05 Jan, 2025 - 17:24:44:2444] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 91.449 ms - correlation-id: 93942780-e5ea-4cda-aabb-76a811a7aa31'[39m
+[05 Jan, 2025 - 17:24:44:2444] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:24:44:2444] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 80.519 ms - correlation-id: d6a87135-8ee7-43d0-9429-93b9e999a81e'[39m
+[05 Jan, 2025 - 17:25:18:2518] [35mhttp[39m: [35m- ::1 - POST - /api/v1/chat/c/:receiverId - 500 - 40.971 ms - correlation-id: b4bc29a7-890a-44d6-9b8c-dacd4b27a85e'[39m
+[05 Jan, 2025 - 17:25:43:2543] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[05 Jan, 2025 - 17:25:43:2543] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[05 Jan, 2025 - 17:25:43:2543] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[05 Jan, 2025 - 17:25:43:2543] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[05 Jan, 2025 - 17:25:43:2543] [34minfo[39m: [34mMongoDB connected successfully![39m
+[05 Jan, 2025 - 17:25:43:2543] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:25:48:2548] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:25:49:2549] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:25:49:2549] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:25:49:2549] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 78.439 ms - correlation-id: a8175b3c-7f0d-4168-b044-e5a263b373a7'[39m
+[05 Jan, 2025 - 17:25:49:2549] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 70.157 ms - correlation-id: 8786ab7c-9ed2-47f1-9ac9-224a9bc3224f'[39m
+[05 Jan, 2025 - 17:25:49:2549] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:25:49:2549] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.843 ms - correlation-id: 576c2b5c-7e88-4d3d-8e34-6b128231b217'[39m
+[05 Jan, 2025 - 17:25:54:2554] [35mhttp[39m: [35m- ::1 - POST - /api/v1/chat/c/:receiverId - 500 - 31.912 ms - correlation-id: 0a3794cf-25a1-42f0-a278-ebb4c55e3530'[39m
+[05 Jan, 2025 - 17:26:01:261] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:26:01:261] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:26:01:261] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:26:01:261] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.336 ms - correlation-id: 76ecb9cb-8e8c-4481-889d-dfe9e5b320e2'[39m
+[05 Jan, 2025 - 17:26:01:261] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 59.066 ms - correlation-id: 98bf1071-8438-44fd-b973-9ad98d382dd0'[39m
+[05 Jan, 2025 - 17:26:01:261] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:26:01:261] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.536 ms - correlation-id: b52ff2eb-a860-4c2b-ada4-d35632205690'[39m
+[05 Jan, 2025 - 17:26:07:267] [35mhttp[39m: [35m- ::1 - POST - /api/v1/chat/c/:receiverId - 500 - 42.215 ms - correlation-id: 9b063408-3a58-4397-b6e8-40ca155c4e50'[39m
+[05 Jan, 2025 - 17:27:33:2733] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:27:33:2733] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:27:33:2733] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:27:40:2740] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 7309.566 ms - correlation-id: cac8d3b1-11b9-4e40-8f40-84e186ff8dbd'[39m
+[05 Jan, 2025 - 17:27:40:2740] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - - - - ms - correlation-id: 0280f904-5861-49fa-add0-f60ec56551fa'[39m
+[05 Jan, 2025 - 17:27:40:2740] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:27:40:2740] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:27:40:2740] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:27:40:2740] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 56.080 ms - correlation-id: 01017123-f7e5-4e5a-8c70-be5d06dd47e5'[39m
+[05 Jan, 2025 - 17:27:40:2740] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:27:41:2741] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 55.870 ms - correlation-id: 98a8b59f-ec3e-4061-a10e-d22ba48250b0'[39m
+[05 Jan, 2025 - 17:27:42:2742] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 200 - 1400.369 ms - correlation-id: 0beba26b-f6fc-4395-95e9-a46221a3adb4'[39m
+[05 Jan, 2025 - 17:27:57:2757] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:27:57:2757] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:27:57:2757] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:27:57:2757] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 56.071 ms - correlation-id: d47d55e2-f8c2-4fb1-8537-b0af342ee4eb'[39m
+[05 Jan, 2025 - 17:27:57:2757] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.386 ms - correlation-id: 38ec258c-e288-4519-b9a3-a3a29d2cbbc5'[39m
+[05 Jan, 2025 - 17:27:57:2757] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:27:57:2757] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.057 ms - correlation-id: 4842be0a-6e7b-4cef-8a92-90db7d0f1817'[39m
+[05 Jan, 2025 - 17:28:02:282] [35mhttp[39m: [35m- ::1 - POST - /api/v1/chat/c/:receiverId - 500 - 41.455 ms - correlation-id: 0a498ea5-4e3c-43b2-8f9f-d20e7b1a3e9c'[39m
+[05 Jan, 2025 - 17:28:49:2849] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:28:50:2850] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:28:50:2850] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:28:50:2850] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 54.429 ms - correlation-id: 618d8f7e-5dc0-45b7-a946-6f42b7b99234'[39m
+[05 Jan, 2025 - 17:28:50:2850] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 56.429 ms - correlation-id: ea3a068d-5848-4c54-9a2b-fd550ac07256'[39m
+[05 Jan, 2025 - 17:28:50:2850] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:28:50:2850] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.177 ms - correlation-id: d5feb93b-fa55-49d3-8315-42e6fa7176ca'[39m
+[05 Jan, 2025 - 17:28:56:2856] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:28:56:2856] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:28:56:2856] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:28:56:2856] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 68.540 ms - correlation-id: 07e94f05-f160-4680-9ca9-f91ceba813a7'[39m
+[05 Jan, 2025 - 17:28:56:2856] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 67.140 ms - correlation-id: 7da719d2-412a-4ada-903d-24d05825c291'[39m
+[05 Jan, 2025 - 17:28:56:2856] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:28:56:2856] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.278 ms - correlation-id: ac7b49d8-ccc6-40b9-bef4-b8842bd99f98'[39m
+[05 Jan, 2025 - 17:29:01:291] [35mhttp[39m: [35m- ::1 - POST - /api/v1/chat/c/677640916c50a0e8bd2f99ea - 500 - 43.629 ms - correlation-id: ecfa66a6-293b-4c87-9357-4de4c168812c'[39m
+[05 Jan, 2025 - 17:29:26:2926] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[05 Jan, 2025 - 17:29:26:2926] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[05 Jan, 2025 - 17:29:26:2926] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[05 Jan, 2025 - 17:29:26:2926] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[05 Jan, 2025 - 17:29:26:2926] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:29:26:2926] [34minfo[39m: [34mMongoDB connected successfully![39m
+[05 Jan, 2025 - 17:29:32:2932] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:29:33:2933] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:29:33:2933] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:29:33:2933] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 78.290 ms - correlation-id: c00537a3-30fa-425d-a12d-9af0002c890e'[39m
+[05 Jan, 2025 - 17:29:33:2933] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 82.704 ms - correlation-id: 5143605b-4001-4ea8-ba44-37d8b03b7e22'[39m
+[05 Jan, 2025 - 17:29:33:2933] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:29:33:2933] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 68.879 ms - correlation-id: df37b2bc-b4fe-4d81-b46c-dde4330f8006'[39m
+[05 Jan, 2025 - 17:29:38:2938] [35mhttp[39m: [35m- ::1 - POST - /api/v1/chat/c/677640916c50a0e8bd2f99ea - 500 - 38.615 ms - correlation-id: f030b508-1a9e-4bd6-a571-e47ebbc870db'[39m
+[05 Jan, 2025 - 17:30:14:3014] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:30:15:3015] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:30:15:3015] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:30:15:3015] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 62.791 ms - correlation-id: b0b48390-4e1e-48e0-b8a7-d9d25e54abd4'[39m
+[05 Jan, 2025 - 17:30:15:3015] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 80.232 ms - correlation-id: 6d7060de-9021-4223-baaa-db2a97a8f09f'[39m
+[05 Jan, 2025 - 17:30:15:3015] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:30:15:3015] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 73.918 ms - correlation-id: 47faaff3-a2ba-4af6-a6ce-76ae9cabec36'[39m
+[05 Jan, 2025 - 17:30:19:3019] [35mhttp[39m: [35m- ::1 - POST - /api/v1/chat/c/677640916c50a0e8bd2f99ea - 500 - 58.699 ms - correlation-id: f1481336-84e8-4272-a431-3c7d62937939'[39m
+[05 Jan, 2025 - 17:30:43:3043] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:30:43:3043] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:30:43:3043] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:30:43:3043] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 69.902 ms - correlation-id: 0934ecdc-4d7c-490f-a723-081397ebb48b'[39m
+[05 Jan, 2025 - 17:30:43:3043] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 146.757 ms - correlation-id: eb378fc6-3fae-40c7-9b7f-dce1d500e90b'[39m
+[05 Jan, 2025 - 17:30:43:3043] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:30:44:3044] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 141.335 ms - correlation-id: 21baa814-2917-42c2-bf50-60b30b4a0cd0'[39m
+[05 Jan, 2025 - 17:30:50:3050] [35mhttp[39m: [35m- ::1 - POST - /api/v1/chat/c/677640916c50a0e8bd2f99ea - 500 - 53.096 ms - correlation-id: 32fe3141-a76f-4258-98c3-9d5cad3691b8'[39m
+[05 Jan, 2025 - 17:31:02:312] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:31:03:313] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:31:03:313] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:31:03:313] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 95.408 ms - correlation-id: 9227133e-e607-4724-9a75-68d4ba2801ed'[39m
+[05 Jan, 2025 - 17:31:03:313] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 105.424 ms - correlation-id: 3969a196-2fb2-488b-ab60-dd0b57164306'[39m
+[05 Jan, 2025 - 17:31:03:313] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:31:03:313] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 97.426 ms - correlation-id: 842395ee-2e43-40ea-98b6-f63f6a94f234'[39m
+[05 Jan, 2025 - 17:31:31:3131] [35mhttp[39m: [35m- ::1 - POST - /api/v1/chat/c/677640916c50a0e8bd2f99ea - 500 - 62.592 ms - correlation-id: c88e66ec-a90f-406a-9de9-c92c7390f56e'[39m
+[05 Jan, 2025 - 17:31:49:3149] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[05 Jan, 2025 - 17:31:49:3149] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[05 Jan, 2025 - 17:31:49:3149] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[05 Jan, 2025 - 17:31:49:3149] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[05 Jan, 2025 - 17:31:49:3149] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:31:50:3150] [34minfo[39m: [34mMongoDB connected successfully![39m
+[05 Jan, 2025 - 17:31:52:3152] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:31:53:3153] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:31:53:3153] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:31:53:3153] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 75.766 ms - correlation-id: 170adc6d-d93e-4804-9b91-15d052f5bfbd'[39m
+[05 Jan, 2025 - 17:31:53:3153] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 88.005 ms - correlation-id: 0cffa631-18b0-4560-816f-37fd83131431'[39m
+[05 Jan, 2025 - 17:31:53:3153] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:31:53:3153] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 78.883 ms - correlation-id: 372ecc13-84f3-49dc-9379-81ddf1ef8f75'[39m
+[05 Jan, 2025 - 17:32:34:3234] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[05 Jan, 2025 - 17:32:34:3234] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[05 Jan, 2025 - 17:32:34:3234] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[05 Jan, 2025 - 17:32:34:3234] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[05 Jan, 2025 - 17:32:35:3235] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:32:36:3236] [34minfo[39m: [34mMongoDB connected successfully![39m
+[05 Jan, 2025 - 17:32:49:3249] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:32:49:3249] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:32:49:3249] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:32:49:3249] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 88.756 ms - correlation-id: f68428e5-49a9-4c29-8970-de1a7cb4b554'[39m
+[05 Jan, 2025 - 17:32:49:3249] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 88.720 ms - correlation-id: 99ed0ce8-c886-4548-a60c-e99322521c20'[39m
+[05 Jan, 2025 - 17:32:49:3249] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:32:49:3249] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 75.824 ms - correlation-id: 4424bbff-5066-454a-8493-fde06882c710'[39m
+[05 Jan, 2025 - 17:33:37:3337] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[05 Jan, 2025 - 17:33:37:3337] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[05 Jan, 2025 - 17:33:37:3337] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[05 Jan, 2025 - 17:33:37:3337] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[05 Jan, 2025 - 17:33:37:3337] [34minfo[39m: [34mMongoDB connected successfully![39m
+[05 Jan, 2025 - 17:33:41:3341] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:33:41:3341] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:33:41:3341] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 67.469 ms - correlation-id: 21e4de0f-85e3-4e29-8887-6d4a7ea521a7'[39m
+[05 Jan, 2025 - 17:33:41:3341] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 67.525 ms - correlation-id: 0c2d3090-2715-4788-83d7-8d3c607809ce'[39m
+[05 Jan, 2025 - 17:33:41:3341] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:33:41:3341] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.691 ms - correlation-id: 26b34144-644f-40c6-8086-0b9ba48aa1fc'[39m
+[05 Jan, 2025 - 17:33:49:3349] [35mhttp[39m: [35m- ::1 - POST - /api/v1/chat/c/677640916c50a0e8bd2f99ea - 200 - 33.541 ms - correlation-id: 8557b038-a957-48e5-81f2-5cdf85c1141b'[39m
+[05 Jan, 2025 - 17:33:59:3359] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:33:59:3359] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:33:59:3359] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:34:00:340] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 85.376 ms - correlation-id: 96ca1e63-b854-47fc-94c3-bf4a43af7f94'[39m
+[05 Jan, 2025 - 17:34:00:340] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 94.893 ms - correlation-id: 36cc8a12-3928-4b42-8a91-66a1a1e0cd47'[39m
+[05 Jan, 2025 - 17:34:00:340] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:34:00:340] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 65.924 ms - correlation-id: 03e2ec86-2abb-4bb8-a556-c4c140454051'[39m
+[05 Jan, 2025 - 17:34:02:342] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:34:02:342] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:34:02:342] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:34:02:342] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 67.471 ms - correlation-id: 0c8a76c9-1b6a-46b3-a2ff-bff7aed5a9c6'[39m
+[05 Jan, 2025 - 17:34:02:342] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 61.298 ms - correlation-id: c06e7b2f-7463-49f2-8ede-0eafdabfeb09'[39m
+[05 Jan, 2025 - 17:34:02:342] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:34:02:342] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.590 ms - correlation-id: 41ea48f6-903e-46da-8a12-b812e592e9f3'[39m
+[05 Jan, 2025 - 17:35:17:3517] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:35:18:3518] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:35:18:3518] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:35:18:3518] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 73.257 ms - correlation-id: d62b0ac1-9d26-49d4-8fec-1da54f05a9dd'[39m
+[05 Jan, 2025 - 17:35:18:3518] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 70.065 ms - correlation-id: 53111468-373f-47d1-97df-e17440374aaf'[39m
+[05 Jan, 2025 - 17:35:18:3518] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:35:18:3518] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.218 ms - correlation-id: 7ee9779f-7614-451c-bc68-dfce15ad1466'[39m
+[05 Jan, 2025 - 17:35:22:3522] [35mhttp[39m: [35m- ::1 - POST - /api/v1/chat/c/677640916c50a0e8bd2f99ea - 200 - 34.013 ms - correlation-id: 5d01b544-b2e1-4cc0-ac1f-e02fb6d97b28'[39m
+[05 Jan, 2025 - 17:35:38:3538] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[05 Jan, 2025 - 17:35:38:3538] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[05 Jan, 2025 - 17:35:38:3538] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[05 Jan, 2025 - 17:35:38:3538] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[05 Jan, 2025 - 17:35:38:3538] [34minfo[39m: [34mMongoDB connected successfully![39m
+[05 Jan, 2025 - 17:35:38:3538] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:35:41:3541] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:35:41:3541] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:35:41:3541] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:35:41:3541] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 75.447 ms - correlation-id: 90156567-8ca0-48cf-98b2-655d60630833'[39m
+[05 Jan, 2025 - 17:35:41:3541] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 82.559 ms - correlation-id: 3354ab5a-6fb7-421c-8b67-371084a262dc'[39m
+[05 Jan, 2025 - 17:35:41:3541] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:35:41:3541] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.486 ms - correlation-id: 38f854e0-e4ea-45ae-b1a4-68ff8d41d48d'[39m
+[05 Jan, 2025 - 17:35:46:3546] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[05 Jan, 2025 - 17:35:46:3546] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[05 Jan, 2025 - 17:35:46:3546] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[05 Jan, 2025 - 17:35:46:3546] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[05 Jan, 2025 - 17:35:47:3547] [34minfo[39m: [34mMongoDB connected successfully![39m
+[05 Jan, 2025 - 17:35:47:3547] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:35:51:3551] [35mhttp[39m: [35m- ::1 - POST - /api/v1/chat/c/677640916c50a0e8bd2f99ea - 200 - 43.438 ms - correlation-id: 34a0ca96-96ba-450d-875f-4c2b23653a30'[39m
+[05 Jan, 2025 - 17:36:28:3628] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:36:29:3629] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:36:29:3629] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:36:29:3629] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 96.555 ms - correlation-id: e03a0661-c6f5-4fe5-9bce-0d92e0752fa7'[39m
+[05 Jan, 2025 - 17:36:29:3629] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 110.999 ms - correlation-id: cf33ab91-2086-4f72-be55-bc9c4065f7ae'[39m
+[05 Jan, 2025 - 17:36:29:3629] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:36:29:3629] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 74.762 ms - correlation-id: 6af1a79d-02a0-4347-b705-eae5e41a4264'[39m
+[05 Jan, 2025 - 17:36:30:3630] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:36:31:3631] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:36:31:3631] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:36:31:3631] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.648 ms - correlation-id: e8d39779-4de1-4d71-a988-ffd6b8852e99'[39m
+[05 Jan, 2025 - 17:36:31:3631] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 64.819 ms - correlation-id: d49a578d-e01f-4994-b570-80e29beb18b1'[39m
+[05 Jan, 2025 - 17:36:31:3631] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:36:31:3631] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.447 ms - correlation-id: e713ed31-bd26-4d4b-8e10-b216ba003074'[39m
+[05 Jan, 2025 - 17:36:33:3633] [35mhttp[39m: [35m- ::1 - POST - /api/v1/chat/c/677640916c50a0e8bd2f99ea - 200 - 35.402 ms - correlation-id: 86b01f2b-81b3-46bd-911c-7f2fae14f24f'[39m
+[05 Jan, 2025 - 17:38:35:3835] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[05 Jan, 2025 - 17:38:35:3835] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[05 Jan, 2025 - 17:38:35:3835] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[05 Jan, 2025 - 17:38:35:3835] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[05 Jan, 2025 - 17:38:36:3836] [34minfo[39m: [34mMongoDB connected successfully![39m
+[05 Jan, 2025 - 17:38:38:3838] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:38:43:3843] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:38:43:3843] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:38:43:3843] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:38:43:3843] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 87.172 ms - correlation-id: 2731bcde-c303-4b0c-9d57-bea1ef5915ba'[39m
+[05 Jan, 2025 - 17:38:43:3843] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 86.568 ms - correlation-id: 243fe915-7079-4f8b-96d6-213995b65210'[39m
+[05 Jan, 2025 - 17:38:43:3843] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:38:43:3843] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 72.968 ms - correlation-id: dc0a643b-674a-412c-b633-a734bf12d8cf'[39m
+[05 Jan, 2025 - 17:38:49:3849] [35mhttp[39m: [35m- ::1 - POST - /api/v1/chat/c/677640916c50a0e8bd2f99ea - 200 - 37.126 ms - correlation-id: a511acd9-1a69-419a-a034-3e20ff566167'[39m
+[05 Jan, 2025 - 17:40:13:4013] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:40:13:4013] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:40:13:4013] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 401 - 33.548 ms - correlation-id: 88645d51-f7e9-4c4a-87b6-d3c5fe8a0ea6'[39m
+[05 Jan, 2025 - 17:40:13:4013] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 401 - 44.903 ms - correlation-id: 66fbba80-6d53-4687-8a08-4c5983829148'[39m
+[05 Jan, 2025 - 17:40:13:4013] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/refresh-token - 500 - 2.246 ms - correlation-id: f4badf9a-1080-4ef0-831b-655795f3e3f6'[39m
+[05 Jan, 2025 - 17:40:13:4013] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/refresh-token - 500 - 2.259 ms - correlation-id: 1c48bda5-1feb-47b6-96fd-4843eb1344a5'[39m
+[05 Jan, 2025 - 17:40:13:4013] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 401 - 40.635 ms - correlation-id: 0eb70a41-3a00-4286-a22a-830a0b884f23'[39m
+[05 Jan, 2025 - 17:40:13:4013] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/refresh-token - 500 - 0.346 ms - correlation-id: 11c69543-0e1b-4167-9312-7fe05d3fc40e'[39m
+[05 Jan, 2025 - 17:40:15:4015] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:40:37:4037] [34minfo[39m: [34mMail sent[39m
+[05 Jan, 2025 - 17:40:37:4037] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/register - 200 - 4006.908 ms - correlation-id: 378471d5-92cb-4b8b-bbb2-558c80fcb28f'[39m
+[05 Jan, 2025 - 17:40:49:4049] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 260.346 ms - correlation-id: 71d8c990-8e59-4716-a134-4c301660a2f9'[39m
+[05 Jan, 2025 - 17:40:49:4049] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:41:11:4111] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:41:11:4111] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:41:11:4111] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:41:11:4111] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 61.539 ms - correlation-id: 2fe9fcbe-e36d-402e-940f-d48d7dd93c12'[39m
+[05 Jan, 2025 - 17:41:12:4112] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 81.623 ms - correlation-id: 50f1b366-e6bf-48b6-b58b-40a62e560c94'[39m
+[05 Jan, 2025 - 17:41:12:4112] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:41:12:4112] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.358 ms - correlation-id: 68ef8ef7-4dc8-4ebc-a2fe-fadbb9a11ba1'[39m
+[05 Jan, 2025 - 17:41:19:4119] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 71.957 ms - correlation-id: f0dd2a8e-9bff-44c7-b8d5-14f777ef0040'[39m
+[05 Jan, 2025 - 17:41:19:4119] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:41:53:4153] [34minfo[39m: [34mMail sent[39m
+[05 Jan, 2025 - 17:41:53:4153] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/register - 200 - 4118.734 ms - correlation-id: 76eddd9e-6603-45b4-808b-24e9d574de7f'[39m
+[05 Jan, 2025 - 17:42:07:427] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 213.097 ms - correlation-id: 47f85439-6086-4d3c-90e0-d6daf478ba41'[39m
+[05 Jan, 2025 - 17:42:07:427] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:43:21:4321] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:43:22:4322] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:43:22:4322] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:43:22:4322] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 60.756 ms - correlation-id: 1f3584fd-f107-4893-b1a8-7ecc6834660c'[39m
+[05 Jan, 2025 - 17:43:22:4322] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 82.055 ms - correlation-id: 4f959b2a-9301-4b89-bd56-a0d5f4f3d1ed'[39m
+[05 Jan, 2025 - 17:43:22:4322] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:43:22:4322] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 66.503 ms - correlation-id: 19e56e8a-3d38-4d66-915b-ba3a4442b0b3'[39m
+[05 Jan, 2025 - 17:43:30:4330] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:43:30:4330] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:43:30:4330] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:43:30:4330] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 70.049 ms - correlation-id: 9899d0ad-473c-4367-85e5-851e78598069'[39m
+[05 Jan, 2025 - 17:43:30:4330] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 90.464 ms - correlation-id: e0a7d4e2-3c87-4403-9fe2-1d3d25737f25'[39m
+[05 Jan, 2025 - 17:43:30:4330] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:43:30:4330] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 87.062 ms - correlation-id: b67c03cb-c546-43fd-861e-81bc38e2876a'[39m
+[05 Jan, 2025 - 17:43:40:4340] [35mhttp[39m: [35m- ::1 - POST - /api/v1/chat/c/677a7705c47c79e082b095a6 - 200 - 50.155 ms - correlation-id: 1b99cf5b-365e-418a-b0cc-60f5dde4ea7c'[39m
+[05 Jan, 2025 - 17:43:59:4359] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 106.059 ms - correlation-id: f0b463d0-ec7f-4ed0-af34-8371ee8e1cb6'[39m
+[05 Jan, 2025 - 17:43:59:4359] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:44:46:4446] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 288.694 ms - correlation-id: c86103cb-8519-4981-9950-d2075d768c64'[39m
+[05 Jan, 2025 - 17:44:46:4446] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:44:46:4446] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:44:46:4446] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 75.154 ms - correlation-id: 1a597df0-7cd1-4242-b517-079f91e6c74f'[39m
+[05 Jan, 2025 - 17:44:46:4446] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 147.382 ms - correlation-id: d57af3a9-b499-453d-8ecc-977f700fc50f'[39m
+[05 Jan, 2025 - 17:44:46:4446] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:44:46:4446] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 88.950 ms - correlation-id: 168110c1-685e-4897-8e9d-72bc60acc0a8'[39m
+[05 Jan, 2025 - 17:44:50:4450] [35mhttp[39m: [35m- ::1 - POST - /api/v1/chat/c/677a7705c47c79e082b095a6 - 200 - 60.033 ms - correlation-id: 05209aa1-482c-43e3-8542-06b1939f7069'[39m
+[05 Jan, 2025 - 17:45:04:454] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:45:04:454] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:45:04:454] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:45:04:454] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 59.093 ms - correlation-id: 010e49cd-e386-4d5e-99f4-04467c87731c'[39m
+[05 Jan, 2025 - 17:45:04:454] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 74.395 ms - correlation-id: 55c1bfe6-769f-4618-9487-d52c7dbd8781'[39m
+[05 Jan, 2025 - 17:45:04:454] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:45:04:454] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 71.297 ms - correlation-id: ac0bb323-86e9-4b78-8366-b24740b9e2ed'[39m
+[05 Jan, 2025 - 17:46:23:4623] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[05 Jan, 2025 - 17:46:23:4623] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[05 Jan, 2025 - 17:46:23:4623] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[05 Jan, 2025 - 17:46:23:4623] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[05 Jan, 2025 - 17:46:23:4623] [34minfo[39m: [34mMongoDB connected successfully![39m
+[05 Jan, 2025 - 17:46:24:4624] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:46:27:4627] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:46:27:4627] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:46:27:4627] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:46:27:4627] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 58.410 ms - correlation-id: 95d13d2e-47a2-4c56-baa0-e4e2a814c02c'[39m
+[05 Jan, 2025 - 17:46:27:4627] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 70.113 ms - correlation-id: efc65b35-5275-4fb3-b2e2-3d4a7a1198c8'[39m
+[05 Jan, 2025 - 17:46:27:4627] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:46:27:4627] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 64.213 ms - correlation-id: fa8ad65d-535f-4d9a-a858-a87cc3a72652'[39m
+[05 Jan, 2025 - 17:46:31:4631] [35mhttp[39m: [35m- ::1 - POST - /api/v1/chat/c/677a7705c47c79e082b095a6 - 201 - 2297.817 ms - correlation-id: 515931e8-2bae-478c-9b96-5f0e29674bc7'[39m
+[05 Jan, 2025 - 17:46:40:4640] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:46:40:4640] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:46:40:4640] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:46:40:4640] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 55.571 ms - correlation-id: 8948d003-c196-4eb3-8c11-08ed54b08601'[39m
+[05 Jan, 2025 - 17:46:40:4640] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:46:40:4640] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 200 - 84.056 ms - correlation-id: e9d858d5-8b9c-410e-8b9e-f4b2243acd73'[39m
+[05 Jan, 2025 - 17:46:40:4640] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:46:40:4640] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.717 ms - correlation-id: 53266675-bc6e-4f1b-a222-1d28216afc04'[39m
+[05 Jan, 2025 - 17:46:54:4654] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:46:54:4654] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:46:54:4654] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 61.402 ms - correlation-id: d27b32d4-3733-49a5-8884-9ce1acd1a930'[39m
+[05 Jan, 2025 - 17:46:54:4654] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:46:54:4654] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 84.674 ms - correlation-id: 0a8f2345-14ff-4681-944a-4b3613ca2756'[39m
+[05 Jan, 2025 - 17:46:54:4654] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:46:54:4654] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 86.320 ms - correlation-id: 62127911-0407-4825-9cda-3599e2c80fea'[39m
+[05 Jan, 2025 - 17:47:00:470] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:47:00:470] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:47:00:470] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 58.138 ms - correlation-id: 8c493796-38df-4ec3-b9ad-e36363733eb7'[39m
+[05 Jan, 2025 - 17:47:00:470] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 67.211 ms - correlation-id: a7118f63-16a2-4839-91b1-151d70e885df'[39m
+[05 Jan, 2025 - 17:47:00:470] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:47:00:470] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:47:00:470] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 69.027 ms - correlation-id: e10770e1-df82-4819-9184-31243bd02eb1'[39m
+[05 Jan, 2025 - 17:47:05:475] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:47:05:475] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:47:05:475] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.580 ms - correlation-id: b2d6f17d-6dd2-4cca-b44c-c49c871b4c63'[39m
+[05 Jan, 2025 - 17:47:05:475] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 82.595 ms - correlation-id: edd0ae88-7a5b-4ef6-af3e-ab4b998ceec8'[39m
+[05 Jan, 2025 - 17:47:05:475] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:47:05:475] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:47:05:475] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.124 ms - correlation-id: fee997ec-7a06-42d6-80e5-284222b641b2'[39m
+[05 Jan, 2025 - 17:47:37:4737] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:47:37:4737] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:47:37:4737] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 64.837 ms - correlation-id: 5a679a9e-a104-4f13-9d0f-467a934f5f27'[39m
+[05 Jan, 2025 - 17:47:37:4737] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 120.812 ms - correlation-id: 8d9259b4-7cc1-44c1-8798-cdcdd5d17a30'[39m
+[05 Jan, 2025 - 17:47:38:4738] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:47:38:4738] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 82.047 ms - correlation-id: 662e2354-2f9b-4a8b-b4c3-907e9706ec6c'[39m
+[05 Jan, 2025 - 17:47:46:4746] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:47:46:4746] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:47:46:4746] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:47:46:4746] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.445 ms - correlation-id: 21b5b3dd-c0a9-4086-978c-78e42d532334'[39m
+[05 Jan, 2025 - 17:47:46:4746] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 61.344 ms - correlation-id: c9516077-879f-4eb9-8a10-a725ceab1c74'[39m
+[05 Jan, 2025 - 17:47:46:4746] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:47:46:4746] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.100 ms - correlation-id: 8c2b0876-b2a3-4b06-b317-3558e92ae867'[39m
+[05 Jan, 2025 - 17:47:57:4757] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:47:57:4757] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:47:57:4757] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:47:57:4757] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 67.245 ms - correlation-id: 89d3e105-e084-4230-b444-135657a5f3b0'[39m
+[05 Jan, 2025 - 17:47:57:4757] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 84.283 ms - correlation-id: 81c83a96-30da-45f9-87e1-a60313968822'[39m
+[05 Jan, 2025 - 17:47:57:4757] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:47:57:4757] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.994 ms - correlation-id: 436aca74-01be-4855-8773-c21d67bce05f'[39m
+[05 Jan, 2025 - 17:48:24:4824] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:48:24:4824] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:48:24:4824] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:48:59:4859] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 35195.478 ms - correlation-id: b4ac4f81-9f54-44e5-91fa-3a7eb07c4f9d'[39m
+[05 Jan, 2025 - 17:48:59:4859] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 35203.598 ms - correlation-id: 747e8a27-d8ec-4f8e-953c-2da60f9a128d'[39m
+[05 Jan, 2025 - 17:49:11:4911] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[05 Jan, 2025 - 17:49:11:4911] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[05 Jan, 2025 - 17:49:11:4911] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[05 Jan, 2025 - 17:49:11:4911] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[05 Jan, 2025 - 17:49:11:4911] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:49:11:4911] [34minfo[39m: [34mMongoDB connected successfully![39m
+[05 Jan, 2025 - 17:49:19:4919] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:49:19:4919] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:49:19:4919] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:49:19:4919] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 65.842 ms - correlation-id: 660297e7-e81f-48a4-9650-d6007fae360e'[39m
+[05 Jan, 2025 - 17:49:19:4919] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 200 - 68.024 ms - correlation-id: 2968f569-b7fd-4180-9042-44b31e7a3015'[39m
+[05 Jan, 2025 - 17:49:19:4919] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:49:19:4919] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.854 ms - correlation-id: c9daacda-5467-4de3-ad6f-4ac34c6d88f1'[39m
+[05 Jan, 2025 - 17:50:15:5015] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:50:15:5015] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:50:15:5015] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:50:16:5016] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.228 ms - correlation-id: 9b0e3ff7-b0d5-4887-94c3-dafb74f07ed1'[39m
+[05 Jan, 2025 - 17:50:16:5016] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 62.565 ms - correlation-id: cd04bd69-a656-4175-a302-f0faea8b31df'[39m
+[05 Jan, 2025 - 17:50:16:5016] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:50:16:5016] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.141 ms - correlation-id: 5eb3d130-0361-43d9-9f29-d6835c1a266f'[39m
+[05 Jan, 2025 - 17:54:36:5436] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:54:36:5436] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:54:36:5436] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:54:36:5436] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 61.545 ms - correlation-id: f6a423f8-dc62-41ad-a5a8-599149010002'[39m
+[05 Jan, 2025 - 17:54:36:5436] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 83.137 ms - correlation-id: ed6d393b-e05a-49af-ade7-ea9b6b35b009'[39m
+[05 Jan, 2025 - 17:54:36:5436] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:54:36:5436] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.104 ms - correlation-id: 1ce58fc2-54de-4642-b248-93c8a43f652a'[39m
+[05 Jan, 2025 - 17:54:47:5447] [34minfo[39m: [34mUser disconnected:[39m
+[05 Jan, 2025 - 17:54:47:5447] [34minfo[39m: [34mUser connected:[39m
+[05 Jan, 2025 - 17:54:47:5447] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:54:47:5447] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.542 ms - correlation-id: 0d4aef8d-5b5b-4a1d-9ba2-2b764912a6a8'[39m
+[05 Jan, 2025 - 17:54:47:5447] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 70.197 ms - correlation-id: bf06eb2e-842c-4faf-b7ac-c7dc257214c0'[39m
+[05 Jan, 2025 - 17:54:47:5447] [34minfo[39m: [34mFetching all users[39m
+[05 Jan, 2025 - 17:54:47:5447] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.238 ms - correlation-id: b93cee8a-127b-4aa7-84f8-eadef4cfb029'[39m

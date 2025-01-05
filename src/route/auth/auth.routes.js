@@ -4,7 +4,6 @@ import { validateRequest } from '../../validation/auth/requestValidator.js';
 import { loginUserSchema } from '../../validation/auth/authValidationSchema.js';
 import { AuthController } from '../../controllers/index.js';
 import AppLogger from '../../logger/app.logger.js';
-
 const router = Router();
 
 // Auth Routes

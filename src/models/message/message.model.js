@@ -1,20 +1,30 @@
-import mongoose from 'mongoose';
+import mongoose, { Schema } from 'mongoose';
 
-const messageSchema = new mongoose.Schema(
+// TODO: Add image and pdf file sharing in the next version
+const chatMessageSchema = new Schema(
   {
-    type: { type: String, enum: ['DM', 'GROUP'], required: true }, // 'DM' for direct message, 'GROUP' for group message
-    from: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true }, // Sender's User ID
-    to: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }, // Recipient's User ID (for DMs)
-    groupId: { type: mongoose.Schema.Types.ObjectId, ref: 'Group' }, // Group ID (for group messages)
-    content: { type: String, required: true }, // Text or URL (if it's a media file)
-    attachments: [{ type: String }], // URLs for any attached files
-    isRead: { type: Boolean, default: false }, // Tracks if the message has been read
-    createdAt: { type: Date, default: Date.now },
+    sender: {
+      type: Schema.Types.ObjectId,
+      ref: 'User',
+    },
+    content: {
+      type: String,
+    },
+    attachments: {
+      type: [
+        {
+          url: String,
+          localPath: String,
+        },
+      ],
+      default: [],
+    },
+    chat: {
+      type: Schema.Types.ObjectId,
+      ref: 'Chat',
+    },
   },
   { timestamps: true },
 );
 
-messageSchema.index({ from: 1, to: 1, createdAt: -1 });
-messageSchema.index({ groupId: 1, createdAt: -1 });
-
-export const Message = mongoose.model('Message', messageSchema);
+export const ChatMessage = mongoose.model('ChatMessage', chatMessageSchema);

@@ -28,8 +28,10 @@ dotenv.config({
 const app = express();
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
+  pingTimeout: 60000,
   cors: {
-    origin: '*',
+    origin: process.env.CORS_ORIGIN,
+    credentials: true,
   },
 });
 
@@ -59,6 +61,8 @@ app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Credentials', true);
   next();
 });
+
+app.set('io', io); // using set method to mount the `io` instance on the app to avoid usage of `global`
 
 // global middlewares
 app.use(
@@ -100,10 +104,10 @@ io.on('connection', (socket) => {
 // Import all routes
 import userRouter from './route/user/user.routes.js';
 import authRouter from './route/auth/auth.routes.js';
-import groupRoutes from './route/group/group.routes.js';
+import chatRoutes from './route/chat/chat.routes.js';
 import messageRoutes from './route/message/message.routes.js';
-import sessionRoutes from './route/session/session.routes.js';
 import AppLogger from './logger/app.logger.js';
+import { initializeSocketIO } from './socket/index.js';
 
 // * healthcheck
 app.use('/api/v1/healthcheck', healthcheckRouter);
@@ -112,9 +116,10 @@ app.use('/api/v1/healthcheck', healthcheckRouter);
 app.use('/api/v1/user', userRouter);
 app.use('/api/v1/auth', authRouter);
 
-app.use('/api/v1/sessions', sessionRoutes);
-app.use('/api/v1/groups', groupRoutes);
+app.use('/api/v1/chat', chatRoutes);
 app.use('/api/v1/messages', messageRoutes);
+
+initializeSocketIO(io);
 
 // common error handling middleware
 app.use(errorHandler);
