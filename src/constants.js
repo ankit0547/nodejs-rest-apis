@@ -28,6 +28,10 @@ export const ChatEventEnum = Object.freeze({
   TYPING_EVENT: 'typing',
   // ? when message is deleted
   MESSAGE_DELETE_EVENT: 'messageDeleted',
+  // ? when user is online
+  USER_ONLINE_EVENT: 'userOnline',
+  // ? when user is online
+  UPDAT_USER_ONLINE_EVENT: 'update-user-status',
 });
 
 export const AvailableChatEvents = Object.values(ChatEventEnum);

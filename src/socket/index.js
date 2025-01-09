@@ -5,45 +5,8 @@ import { AvailableChatEvents, ChatEventEnum } from '../constants.js';
 // import { User } from '../models/apps/auth/user.models.js';
 import { ApiError } from '../utils/ApiError.js';
 import { UserModel } from '../models/index.js';
+import AppLogger from '../logger/app.logger.js';
 
-/**
- * @description This function is responsible to allow user to join the chat represented by chatId (chatId). event happens when user switches between the chats
- * @param {Socket<import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, any>} socket
- */
-const mountJoinChatEvent = (socket) => {
-  socket.on(ChatEventEnum.JOIN_CHAT_EVENT, (chatId) => {
-    console.log(`User joined the chat 🤝. chatId: `, chatId);
-    // joining the room with the chatId will allow specific events to be fired where we don't bother about the users like typing events
-    // E.g. When user types we don't want to emit that event to specific participant.
-    // We want to just emit that to the chat where the typing is happening
-    socket.join(chatId);
-  });
-};
-
-/**
- * @description This function is responsible to emit the typing event to the other participants of the chat
- * @param {Socket<import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, any>} socket
- */
-const mountParticipantTypingEvent = (socket) => {
-  socket.on(ChatEventEnum.TYPING_EVENT, (chatId) => {
-    socket.in(chatId).emit(ChatEventEnum.TYPING_EVENT, chatId);
-  });
-};
-
-/**
- * @description This function is responsible to emit the stopped typing event to the other participants of the chat
- * @param {Socket<import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, any>} socket
- */
-const mountParticipantStoppedTypingEvent = (socket) => {
-  socket.on(ChatEventEnum.STOP_TYPING_EVENT, (chatId) => {
-    socket.in(chatId).emit(ChatEventEnum.STOP_TYPING_EVENT, chatId);
-  });
-};
-
-/**
- *
- * @param {Server<import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, import("socket.io/dist/typed-events").DefaultEventsMap, any>} io
- */
 const initializeSocketIO = (io) => {
   return io.on('connection', async (socket) => {
     try {
@@ -57,9 +20,14 @@ const initializeSocketIO = (io) => {
         token = socket.handshake.auth?.token;
       }
 
+      // if (!token) {
+      //   // Token is required for the socket to work
+      //   throw new ApiError(401, 'Un-authorized handshake. Token is missing');
+      // }
       if (!token) {
-        // Token is required for the socket to work
-        throw new ApiError(401, 'Un-authorized handshake. Token is missing');
+        console.log('No auth token received');
+        socket.disconnect(); // Disconnect if no token
+        return;
       }
 
       const decodedToken = jwt.verify(token, process.env.ACCESS_TOKEN_SECRET); // decode the token
@@ -73,24 +41,44 @@ const initializeSocketIO = (io) => {
         throw new ApiError(401, 'Un-authorized handshake. Token is invalid');
       }
       socket.user = user; // mount te user object to the socket
-
-      // We are creating a room with user id so that if user is joined but does not have any active chat going on.
-      // still we want to emit some socket events to the user.
-      // so that the client can catch the event and show the notifications.
-      socket.join(user._id.toString());
-      socket.emit(ChatEventEnum.CONNECTED_EVENT); // emit the connected event so that client is aware
-      console.log('User connected 🗼. userId: ', user._id.toString());
-
-      // Common events that needs to be mounted on the initialization
-      mountJoinChatEvent(socket);
-      mountParticipantTypingEvent(socket);
-      mountParticipantStoppedTypingEvent(socket);
-
-      socket.on(ChatEventEnum.DISCONNECT_EVENT, () => {
-        console.log('user has disconnected 🚫. userId: ' + socket.user?._id);
-        if (socket.user?._id) {
-          socket.leave(socket.user._id);
+      const userId = user._id.toString();
+      if (userId) {
+        // Mark user as online
+        if (!user[userId]) {
+          user[userId] = { sockets: [], status: 'online' };
         }
+        user[userId].sockets.push(socket.id);
+        user[userId].status = 'online';
+
+        socket.broadcast.emit('userStatusChange', { userId, status: 'online' });
+
+        console.log(`User ${userId} is online with socket ${socket.id}`);
+      }
+
+      console.info(
+        'User connected 🗼. userId: ',
+        user._id.toString(),
+        socket.id,
+      );
+
+      // When a user disconnects
+      socket.on('disconnect', () => {
+        if (userId && user[userId]) {
+          user[userId].sockets = user[userId].sockets.filter(
+            (id) => id !== socket.id,
+          );
+
+          if (user[userId].sockets.length === 0) {
+            user[userId].status = 'offline';
+            socket.broadcast.emit('userStatusChange', {
+              userId,
+              status: 'offline',
+            });
+
+            console.log(`User ${userId} is offline`);
+          }
+        }
+        console.log('User disconnected:', user._id.toString(), socket.id);
       });
     } catch (error) {
       socket.emit(

@@ -28,12 +28,25 @@ dotenv.config({
 const app = express();
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
-  pingTimeout: 60000,
+  pingInterval: 1000,
+  transports: ['websocket'],
   cors: {
-    origin: process.env.CORS_ORIGIN,
+    origin: process.env.WS_CORS_ORIGIN,
     credentials: true,
   },
+  methods: ['GET', 'POST'],
 });
+app.set('io', io); // using set method to mount the `io` instance on the app to avoid usage of `global`
+
+initializeSocketIO(io);
+
+// io.use((socket, next) => {
+//   const token = socket.handshake.auth.token;
+//   if (token === 'YOUR_EXPECTED_TOKEN') {
+//     return next();
+//   }
+//   return next(new Error('Unauthorized'));
+// });
 
 // Initialize Swagger
 loadSwaggerDocument();
@@ -62,8 +75,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.set('io', io); // using set method to mount the `io` instance on the app to avoid usage of `global`
-
 // global middlewares
 app.use(
   cors({
@@ -84,22 +95,22 @@ app.use(cookieParser());
 app.use(HTTPLoggerMiddleware);
 
 // Socket.IO for real-time
-io.on('connection', (socket) => {
-  AppLogger.info('User connected:', socket.id);
+// io.on('connection', (socket) => {
+//   AppLogger.info('User connected:', socket.id);
 
-  socket.on('joinChat', (chatId) => {
-    socket.join(chatId);
-    AppLogger.info(`User joined chat: ${chatId}`);
-  });
+//   socket.on('joinChat', (chatId) => {
+//     socket.join(chatId);
+//     AppLogger.info(`User joined chat: ${chatId}`);
+//   });
 
-  socket.on('sendMessage', (message) => {
-    io.to(message.chat).emit('messageReceived', message);
-  });
+//   socket.on('sendMessage', (message) => {
+//     io.to(message.chat).emit('messageReceived', message);
+//   });
 
-  socket.on('disconnect', () => {
-    AppLogger.info('User disconnected:', socket.id);
-  });
-});
+//   socket.on('disconnect', () => {
+//     AppLogger.info('User disconnected:', socket.id);
+//   });
+// });
 
 // Import all routes
 import userRouter from './route/user/user.routes.js';
@@ -118,8 +129,6 @@ app.use('/api/v1/auth', authRouter);
 
 app.use('/api/v1/chat', chatRoutes);
 app.use('/api/v1/messages', messageRoutes);
-
-initializeSocketIO(io);
 
 // common error handling middleware
 app.use(errorHandler);
