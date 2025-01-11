@@ -4,7 +4,7 @@ import { Server, Socket } from 'socket.io';
 import { AvailableChatEvents, ChatEventEnum } from '../constants.js';
 // import { User } from '../models/apps/auth/user.models.js';
 import { ApiError } from '../utils/ApiError.js';
-import { UserModel } from '../models/index.js';
+import { UserModel, UserStatusModel } from '../models/index.js';
 import AppLogger from '../logger/app.logger.js';
 
 const initializeSocketIO = (io) => {
@@ -25,7 +25,7 @@ const initializeSocketIO = (io) => {
       //   throw new ApiError(401, 'Un-authorized handshake. Token is missing');
       // }
       if (!token) {
-        console.log('No auth token received');
+        AppLogger.error('No auth token received');
         socket.disconnect(); // Disconnect if no token
         return;
       }
@@ -41,44 +41,57 @@ const initializeSocketIO = (io) => {
         throw new ApiError(401, 'Un-authorized handshake. Token is invalid');
       }
       socket.user = user; // mount te user object to the socket
+
       const userId = user._id.toString();
+
+      // Broadcast the full list of online users to all clients
+      const broadcastOnlineUsers = () => {
+        UserStatusModel.find({ status: 'online' })
+          .then((users) => {
+            const onlineUsers = users.map((user) => ({
+              userId: user.userId,
+              status: user.status,
+            }));
+            io.emit('userStatusChange', onlineUsers);
+          })
+          .catch((error) =>
+            AppLogger.error('Error broadcasting online users:', error),
+          );
+      };
       if (userId) {
-        // Mark user as online
-        if (!user[userId]) {
-          user[userId] = { sockets: [], status: 'online' };
-        }
-        user[userId].sockets.push(socket.id);
-        user[userId].status = 'online';
-
-        socket.broadcast.emit('userStatusChange', { userId, status: 'online' });
-
-        console.log(`User ${userId} is online with socket ${socket.id}`);
+        // Update user status to online
+        UserStatusModel.findOneAndUpdate(
+          { userId },
+          {
+            socketId: socket.id,
+            status: 'online',
+          },
+          { upsert: true, new: true },
+        )
+          .then(() => {
+            AppLogger.info(`User ${userId} is online`);
+            broadcastOnlineUsers();
+          })
+          .catch((error) =>
+            AppLogger.error('Error updating user status:', error),
+          );
+        AppLogger.info(`User ${userId} is online with socket ${socket.id}`);
       }
-
-      console.info(
-        'User connected 🗼. userId: ',
-        user._id.toString(),
-        socket.id,
-      );
 
       // When a user disconnects
       socket.on('disconnect', () => {
-        if (userId && user[userId]) {
-          user[userId].sockets = user[userId].sockets.filter(
-            (id) => id !== socket.id,
-          );
-
-          if (user[userId].sockets.length === 0) {
-            user[userId].status = 'offline';
-            socket.broadcast.emit('userStatusChange', {
-              userId,
-              status: 'offline',
-            });
-
-            console.log(`User ${userId} is offline`);
-          }
+        if (userId) {
+          // Remove user status on disconnect
+          UserStatusModel.findOneAndUpdate({ userId }, { status: 'offline' })
+            .then(() => {
+              AppLogger.info(`User ${userId} is offline`);
+              broadcastOnlineUsers();
+            })
+            .catch((error) =>
+              AppLogger.error('Error updating user status:', error),
+            );
         }
-        console.log('User disconnected:', user._id.toString(), socket.id);
+        AppLogger.info('User disconnected:', user._id.toString(), socket.id);
       });
     } catch (error) {
       socket.emit(

@@ -1993,3 +1993,796 @@
 [05 Jan, 2025 - 17:54:47:5447] [35mhttp[39m: [35m- ::1 - GET - /api/v1/chat/ - 304 - 70.197 ms - correlation-id: bf06eb2e-842c-4faf-b7ac-c7dc257214c0'[39m
 [05 Jan, 2025 - 17:54:47:5447] [34minfo[39m: [34mFetching all users[39m
 [05 Jan, 2025 - 17:54:47:5447] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.238 ms - correlation-id: b93cee8a-127b-4aa7-84f8-eadef4cfb029'[39m
+[11 Jan, 2025 - 13:33:21:3321] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 13:33:21:3321] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 13:33:21:3321] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 13:33:21:3321] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 13:33:21:3321] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 13:34:02:342] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 249.072 ms - correlation-id: 2f1a2274-78e6-4ba0-b2d5-d26a0405ac5c'[39m
+[11 Jan, 2025 - 13:34:02:342] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:34:02:342] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 61.396 ms - correlation-id: 62a31033-a5e9-41b2-9da0-958d5c243003'[39m
+[11 Jan, 2025 - 13:34:02:342] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:34:02:342] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.355 ms - correlation-id: 4897202f-5d92-4ea9-829c-39a2a9f9c124'[39m
+[11 Jan, 2025 - 13:36:24:3624] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:36:24:3624] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 64.216 ms - correlation-id: bc225240-44ee-4da4-bc30-da8acb8d94f2'[39m
+[11 Jan, 2025 - 13:36:24:3624] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:36:24:3624] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.053 ms - correlation-id: 1283b306-70db-4ab2-bb1b-2ec49e53a287'[39m
+[11 Jan, 2025 - 13:45:22:4522] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:45:22:4522] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.429 ms - correlation-id: 28e845d5-f6fb-4eb9-8d3b-c5541f0947e8'[39m
+[11 Jan, 2025 - 13:45:22:4522] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:45:22:4522] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.492 ms - correlation-id: 096b78b6-dae8-47dc-b90b-a576f53e82cb'[39m
+[11 Jan, 2025 - 13:45:34:4534] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:45:34:4534] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.517 ms - correlation-id: e0ad4ea5-ffa5-4901-b275-e08e20bb6223'[39m
+[11 Jan, 2025 - 13:45:34:4534] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:45:34:4534] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.211 ms - correlation-id: b08e3aec-16bc-4656-b3fa-87d5332daa92'[39m
+[11 Jan, 2025 - 13:47:40:4740] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:47:40:4740] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 91.428 ms - correlation-id: 8b79ee6a-5014-4fa8-8cb0-888fcc13c67b'[39m
+[11 Jan, 2025 - 13:47:40:4740] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:47:40:4740] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.141 ms - correlation-id: 1f3900e5-6762-4429-b4d8-0526ff58d1a2'[39m
+[11 Jan, 2025 - 13:48:22:4822] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 401 - 20.273 ms - correlation-id: 886bf77e-7fb7-4457-876c-ee4be81f6140'[39m
+[11 Jan, 2025 - 13:48:22:4822] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/refresh-token - 500 - 1.711 ms - correlation-id: c4d84f11-e7ff-4712-8ebc-2a34fcc260c9'[39m
+[11 Jan, 2025 - 13:48:22:4822] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/refresh-token - 500 - 1.492 ms - correlation-id: 8d818a22-7462-46f7-a35b-81cb9bc0332c'[39m
+[11 Jan, 2025 - 13:48:23:4823] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 401 - 2.566 ms - correlation-id: 6492be83-7a22-4dce-bfee-bfec597c6ae1'[39m
+[11 Jan, 2025 - 13:48:23:4823] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/refresh-token - 500 - 0.481 ms - correlation-id: 6263491e-43b8-4d08-a8d7-cc0f52849aff'[39m
+[11 Jan, 2025 - 13:48:25:4825] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 401 - 1.200 ms - correlation-id: 47717180-4a7e-44d8-84c6-e09d999e70de'[39m
+[11 Jan, 2025 - 13:48:25:4825] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/refresh-token - 500 - 1.207 ms - correlation-id: 462922ff-8748-4d16-a000-f91768366e9d'[39m
+[11 Jan, 2025 - 13:48:25:4825] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 401 - 0.634 ms - correlation-id: 8604c808-321b-476e-83c5-f306b7dcea5d'[39m
+[11 Jan, 2025 - 13:48:25:4825] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/refresh-token - 500 - 0.634 ms - correlation-id: 7bb4ec16-1506-4c1e-b69e-208744c2abba'[39m
+[11 Jan, 2025 - 13:48:25:4825] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 401 - 0.820 ms - correlation-id: 8229124c-1a9a-49a0-b74a-70d50bcb6aba'[39m
+[11 Jan, 2025 - 13:48:25:4825] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/refresh-token - 500 - 0.893 ms - correlation-id: 63742722-996a-448c-92a6-c3241559c9b7'[39m
+[11 Jan, 2025 - 13:48:26:4826] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 401 - 0.830 ms - correlation-id: 7346fc02-96c4-4865-9a49-7b6f669f0ebd'[39m
+[11 Jan, 2025 - 13:48:26:4826] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/refresh-token - 500 - 0.930 ms - correlation-id: a203dde2-5b74-4e4e-89cb-b79b54c73470'[39m
+[11 Jan, 2025 - 13:48:26:4826] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 401 - 0.791 ms - correlation-id: d7a1c573-f68a-4af8-a293-bc4397855cb5'[39m
+[11 Jan, 2025 - 13:48:26:4826] [35mhttp[39m: [35m- ::1 - POST - /api/v1/user/refresh-token - 500 - 0.921 ms - correlation-id: 91000802-0f73-4621-ace6-cf3fb8a2c5cb'[39m
+[11 Jan, 2025 - 13:49:20:4920] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 254.391 ms - correlation-id: d35be1b1-b229-4ab3-b731-f155cba77af1'[39m
+[11 Jan, 2025 - 13:49:21:4921] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:49:21:4921] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 58.896 ms - correlation-id: ac625160-7276-41c8-8b38-f99bb8fd4e97'[39m
+[11 Jan, 2025 - 13:49:56:4956] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 89.582 ms - correlation-id: 48bbb0ae-475a-4066-a85c-29099382d935'[39m
+[11 Jan, 2025 - 13:50:35:5035] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 13:50:35:5035] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 13:50:35:5035] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 13:50:35:5035] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 13:50:35:5035] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 13:50:44:5044] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:50:44:5044] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 81.641 ms - correlation-id: ee361b91-f517-46c9-aaf8-c1317d410fbc'[39m
+[11 Jan, 2025 - 13:50:44:5044] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:50:44:5044] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.314 ms - correlation-id: b918dd04-2bf8-453c-b5bf-6644dbdc816f'[39m
+[11 Jan, 2025 - 13:50:55:5055] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 242.343 ms - correlation-id: b85a5fb3-753b-43fe-bd0c-808242d35a70'[39m
+[11 Jan, 2025 - 13:50:55:5055] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:50:55:5055] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 57.602 ms - correlation-id: b4dbf519-d501-4d39-8b85-2f1da949750e'[39m
+[11 Jan, 2025 - 13:51:09:519] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 76.256 ms - correlation-id: c9816237-1272-4a52-815f-8548c0ffd298'[39m
+[11 Jan, 2025 - 13:52:46:5246] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:52:46:5246] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 59.437 ms - correlation-id: cbda6e84-9a0b-47b8-a168-d0ff336fe448'[39m
+[11 Jan, 2025 - 13:52:46:5246] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:52:46:5246] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.767 ms - correlation-id: 22a61f4d-f7af-45f8-932e-7f02aa7db3fa'[39m
+[11 Jan, 2025 - 13:53:01:531] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:53:01:531] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 68.472 ms - correlation-id: 2141e7ac-4f22-4e40-b5df-fef2381813f5'[39m
+[11 Jan, 2025 - 13:53:01:531] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:53:01:531] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.627 ms - correlation-id: 2a682035-82e1-4a44-befe-85f80f26f80d'[39m
+[11 Jan, 2025 - 13:53:05:535] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:53:05:535] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 145.797 ms - correlation-id: 061aa00f-77fd-482b-9d6c-a6202554d132'[39m
+[11 Jan, 2025 - 13:53:05:535] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:53:05:535] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 74.883 ms - correlation-id: 8fb6428e-a195-47cb-bcfe-93370e7158d9'[39m
+[11 Jan, 2025 - 13:53:22:5322] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:53:22:5322] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.363 ms - correlation-id: ee82b8fe-c201-481c-9728-0f096b9614d0'[39m
+[11 Jan, 2025 - 13:53:22:5322] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:53:22:5322] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 67.700 ms - correlation-id: 9f00abf4-9c24-4041-9365-7a4151fdc07d'[39m
+[11 Jan, 2025 - 13:53:35:5335] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:53:35:5335] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 66.715 ms - correlation-id: 5367b83b-886e-419e-b4c4-e9db24b14098'[39m
+[11 Jan, 2025 - 13:53:35:5335] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:53:35:5335] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 65.910 ms - correlation-id: 77b7890c-6d1e-49c5-b67c-eb05301267a9'[39m
+[11 Jan, 2025 - 13:53:48:5348] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 255.774 ms - correlation-id: 5293a3e4-132e-4f97-ab2d-b5d746c81802'[39m
+[11 Jan, 2025 - 13:53:48:5348] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:53:48:5348] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 59.343 ms - correlation-id: 91b4d953-f1b4-4f6c-9daa-fb52c591d1cb'[39m
+[11 Jan, 2025 - 13:54:31:5431] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:54:31:5431] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 66.570 ms - correlation-id: 9e09eee4-a726-4f55-a482-5671acc4d581'[39m
+[11 Jan, 2025 - 13:54:31:5431] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:54:31:5431] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.970 ms - correlation-id: d82948b3-f43f-4b23-a591-4a2768360a39'[39m
+[11 Jan, 2025 - 13:56:29:5629] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:56:29:5629] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.489 ms - correlation-id: 9824cbfb-314e-44f3-b0bf-8ffee4772f45'[39m
+[11 Jan, 2025 - 13:56:29:5629] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:56:29:5629] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.461 ms - correlation-id: 109ceecc-ddb6-44c2-bcd2-6bbf84962dc0'[39m
+[11 Jan, 2025 - 13:56:37:5637] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 70.261 ms - correlation-id: b3c69d90-05dc-4617-8d32-fb2c1559b164'[39m
+[11 Jan, 2025 - 13:56:42:5642] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:56:42:5642] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.967 ms - correlation-id: 80f411c9-06c3-475f-ab85-47ce3504d483'[39m
+[11 Jan, 2025 - 13:56:42:5642] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:56:42:5642] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.453 ms - correlation-id: 03f4c1f8-8b6b-4254-a005-16aeb4ab8e0a'[39m
+[11 Jan, 2025 - 13:56:58:5658] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 241.434 ms - correlation-id: ca153fb8-5ada-4f42-a528-d4fd4349b932'[39m
+[11 Jan, 2025 - 13:56:58:5658] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:56:58:5658] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 61.784 ms - correlation-id: 6fc403e7-db8b-45b9-b9dc-172b56183b6f'[39m
+[11 Jan, 2025 - 13:58:00:580] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 74.801 ms - correlation-id: e8c30436-7a8b-4a18-ba5e-c081b2c11b0c'[39m
+[11 Jan, 2025 - 13:58:07:587] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 233.971 ms - correlation-id: 2e0cf984-7acb-4249-a9f8-37029a008761'[39m
+[11 Jan, 2025 - 13:58:07:587] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:58:07:587] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 57.792 ms - correlation-id: e6300582-69b0-4c05-b34f-ad167dd88963'[39m
+[11 Jan, 2025 - 13:59:00:590] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:59:00:590] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 60.957 ms - correlation-id: 051135bb-ee78-44cc-b4a6-07a471306cfd'[39m
+[11 Jan, 2025 - 13:59:00:590] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:59:00:590] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.404 ms - correlation-id: 64988ad3-9f7d-42b9-8091-bcf4e5a08201'[39m
+[11 Jan, 2025 - 13:59:20:5920] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 67.413 ms - correlation-id: 6c6fad8c-f069-419e-bbb7-64e5050c88f6'[39m
+[11 Jan, 2025 - 13:59:35:5935] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 251.815 ms - correlation-id: fea6cdec-8840-4c3b-9f4b-76a33a6e22fb'[39m
+[11 Jan, 2025 - 13:59:35:5935] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 13:59:35:5935] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 55.354 ms - correlation-id: 4231711c-1bd4-4687-8908-5c2eebca003e'[39m
+[11 Jan, 2025 - 14:01:24:124] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:01:24:124] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 59.409 ms - correlation-id: 5684f5b0-cf6c-491c-ae94-63b3cf483839'[39m
+[11 Jan, 2025 - 14:01:24:124] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:01:24:124] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.434 ms - correlation-id: 1166ee49-b2f6-498c-80cb-0895f4abd84e'[39m
+[11 Jan, 2025 - 14:09:24:924] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:09:24:924] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 237.285 ms - correlation-id: 738fe23f-c674-48a8-9d7e-3a9d6a293649'[39m
+[11 Jan, 2025 - 14:09:24:924] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:09:24:924] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 54.839 ms - correlation-id: fff0b247-de1e-4841-9418-71e24830c398'[39m
+[11 Jan, 2025 - 14:09:25:925] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:09:25:925] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.544 ms - correlation-id: f7861384-b50d-44cc-9623-268937f8ab9e'[39m
+[11 Jan, 2025 - 14:09:47:947] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:09:47:947] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.789 ms - correlation-id: dcf1fb72-3584-4303-b51e-6ce8090f7ffc'[39m
+[11 Jan, 2025 - 14:09:47:947] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:09:47:947] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 65.854 ms - correlation-id: ed6a814a-bf19-4c77-b75c-143c3786ad09'[39m
+[11 Jan, 2025 - 14:11:33:1133] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:11:33:1133] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 84.585 ms - correlation-id: ad6768e1-8861-4762-8497-0c1388cce3f5'[39m
+[11 Jan, 2025 - 14:11:33:1133] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:11:33:1133] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.307 ms - correlation-id: af701367-aa03-40a6-99cf-2721666a1b2f'[39m
+[11 Jan, 2025 - 14:11:33:1133] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:11:33:1133] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.484 ms - correlation-id: 5583c978-9121-47eb-9c05-a2d56200fa41'[39m
+[11 Jan, 2025 - 14:11:34:1134] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:11:34:1134] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 279.194 ms - correlation-id: edb3539a-fd9f-4559-ad4a-f5decaa9b8f4'[39m
+[11 Jan, 2025 - 14:11:36:1136] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:11:36:1136] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 64.329 ms - correlation-id: c694c01f-19d6-4d1b-9f4c-ef3bbb549fec'[39m
+[11 Jan, 2025 - 14:11:36:1136] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:11:36:1136] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:11:36:1136] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.994 ms - correlation-id: 78a333d4-d0c7-438d-9b2f-b702d46bb208'[39m
+[11 Jan, 2025 - 14:11:36:1136] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.059 ms - correlation-id: aed8b2f4-2f27-46ef-9ddf-fb3c7e1fdc3c'[39m
+[11 Jan, 2025 - 14:11:36:1136] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:11:36:1136] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 238.726 ms - correlation-id: 3af59611-a291-434f-b289-f8d4fcbbc94b'[39m
+[11 Jan, 2025 - 14:11:40:1140] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:11:40:1140] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.987 ms - correlation-id: 8c15b9f7-d1bd-4bd5-bc57-568b85769a5d'[39m
+[11 Jan, 2025 - 14:11:40:1140] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:11:41:1141] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.534 ms - correlation-id: 3d17958f-e919-4ecb-bba1-8a6b7497ade3'[39m
+[11 Jan, 2025 - 14:12:26:1226] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:12:26:1226] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.634 ms - correlation-id: ba5ae070-c6c2-4f7c-a7df-51c2927879a6'[39m
+[11 Jan, 2025 - 14:12:26:1226] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:12:26:1226] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.454 ms - correlation-id: d2de11be-4a95-4c1c-a3a8-565f9e3025c3'[39m
+[11 Jan, 2025 - 14:12:54:1254] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:12:54:1254] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.803 ms - correlation-id: 767b3d91-25f8-4eac-a61f-8aba9aceeb94'[39m
+[11 Jan, 2025 - 14:12:54:1254] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:12:54:1254] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.980 ms - correlation-id: 5080c504-6971-41ff-8e92-0a2a8d42cfec'[39m
+[11 Jan, 2025 - 14:13:50:1350] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:13:50:1350] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 65.023 ms - correlation-id: 0dfa7551-171b-49ef-a8bd-c75b9bb55dce'[39m
+[11 Jan, 2025 - 14:13:50:1350] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:13:50:1350] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.360 ms - correlation-id: b874de00-0d61-4f4d-a7f1-1b3631d28105'[39m
+[11 Jan, 2025 - 14:14:15:1415] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:14:15:1415] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 90.326 ms - correlation-id: f05f8e06-e13f-4288-803e-7b4417bc50cc'[39m
+[11 Jan, 2025 - 14:14:15:1415] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:14:15:1415] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 64.435 ms - correlation-id: 6da2a4e7-b7fc-4759-896d-c7d16a44bc17'[39m
+[11 Jan, 2025 - 14:14:18:1418] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:14:18:1418] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 69.758 ms - correlation-id: da64ab88-02fc-49a1-b13e-f2a9d66f86de'[39m
+[11 Jan, 2025 - 14:14:18:1418] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:14:18:1418] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.353 ms - correlation-id: 69ad2365-e20c-4078-bb2a-2940474fd084'[39m
+[11 Jan, 2025 - 14:14:56:1456] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:14:56:1456] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.248 ms - correlation-id: 572ec581-6bf8-43a1-a28b-bee06a146c77'[39m
+[11 Jan, 2025 - 14:14:56:1456] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:14:56:1456] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.538 ms - correlation-id: 8d5cc52f-712a-41df-a011-2a2cc5929309'[39m
+[11 Jan, 2025 - 14:15:23:1523] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:15:23:1523] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.883 ms - correlation-id: d946b14f-b1bd-408c-a286-f60284c6e5a3'[39m
+[11 Jan, 2025 - 14:15:23:1523] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:15:23:1523] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.736 ms - correlation-id: 9beef55b-8c88-4f88-97bc-84b0eba8b656'[39m
+[11 Jan, 2025 - 14:15:42:1542] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:15:42:1542] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 65.955 ms - correlation-id: 9e51790a-a29a-4911-9beb-a0bc1d88822b'[39m
+[11 Jan, 2025 - 14:15:42:1542] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:15:42:1542] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.042 ms - correlation-id: ed93160a-5ea2-464d-bd44-09ab1fe79452'[39m
+[11 Jan, 2025 - 14:15:48:1548] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:15:48:1548] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:15:48:1548] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 82.215 ms - correlation-id: a4c97f0e-0570-429b-bd50-aa4a60428c30'[39m
+[11 Jan, 2025 - 14:15:48:1548] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 95.733 ms - correlation-id: b77dc5d4-034e-4be5-838d-83fe13769c16'[39m
+[11 Jan, 2025 - 14:15:49:1549] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 69.150 ms - correlation-id: 1e6d8771-a92b-4299-b0d1-e8cc136c68a8'[39m
+[11 Jan, 2025 - 14:16:02:162] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 251.544 ms - correlation-id: 3c14bc7f-c866-4aae-9f4e-c0c622dbe0e7'[39m
+[11 Jan, 2025 - 14:16:02:162] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:16:02:162] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 62.869 ms - correlation-id: 373c45f8-2103-4483-b873-b9add8996515'[39m
+[11 Jan, 2025 - 14:17:08:178] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:17:08:178] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:17:08:178] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 95.959 ms - correlation-id: 86705c0e-3182-4fcc-bb04-fe648537c7d8'[39m
+[11 Jan, 2025 - 14:17:08:178] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 90.058 ms - correlation-id: 41efc6ad-e6ef-4b1b-91c8-381c6b99d5c9'[39m
+[11 Jan, 2025 - 14:17:09:179] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:17:09:179] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 94.166 ms - correlation-id: 61df7436-1e20-428a-8b54-4eb55e2179f5'[39m
+[11 Jan, 2025 - 14:17:09:179] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:17:09:179] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 64.986 ms - correlation-id: 6817f6c4-bfd4-484a-93d1-f8170e81e160'[39m
+[11 Jan, 2025 - 14:17:55:1755] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:17:55:1755] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.298 ms - correlation-id: 79fbbbed-5ee7-495d-ae27-c8b1f21a7ce5'[39m
+[11 Jan, 2025 - 14:17:55:1755] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:17:55:1755] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.712 ms - correlation-id: 35a2885e-9685-4be5-9f44-ebac6fb551bf'[39m
+[11 Jan, 2025 - 14:19:23:1923] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 14:19:23:1923] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 14:19:23:1923] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 14:19:23:1923] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 14:19:23:1923] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 14:19:31:1931] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:19:31:1931] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 83.176 ms - correlation-id: e58bbeca-0667-4f11-8926-fa552ff13bdd'[39m
+[11 Jan, 2025 - 14:19:31:1931] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:19:31:1931] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.993 ms - correlation-id: f398a895-c9f1-4335-bed2-aa1609ffc037'[39m
+[11 Jan, 2025 - 14:20:33:2033] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:20:33:2033] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 73.391 ms - correlation-id: 1c75951d-9f78-415f-8d6c-f14eba4b20c5'[39m
+[11 Jan, 2025 - 14:20:33:2033] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:20:33:2033] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.636 ms - correlation-id: 4c7c17bb-685c-45d0-a4ff-98afbd7228ba'[39m
+[11 Jan, 2025 - 14:20:49:2049] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:20:49:2049] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.994 ms - correlation-id: 6596d503-7fa6-4cde-9911-bbc1cf5611fa'[39m
+[11 Jan, 2025 - 14:20:49:2049] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:20:49:2049] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.487 ms - correlation-id: b09092a2-dd38-4a33-a74a-0018dc61bb8f'[39m
+[11 Jan, 2025 - 14:23:52:2352] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:23:52:2352] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 64.403 ms - correlation-id: ac078950-f2cc-4bc2-8a38-e7201d1da5b4'[39m
+[11 Jan, 2025 - 14:23:52:2352] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:23:52:2352] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.005 ms - correlation-id: 50810d73-d02c-48bb-a03b-ba97da3951f2'[39m
+[11 Jan, 2025 - 14:24:36:2436] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:24:36:2436] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.122 ms - correlation-id: 0dcaf995-7a51-441c-9096-c8eb8e8cce70'[39m
+[11 Jan, 2025 - 14:24:36:2436] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:24:36:2436] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.013 ms - correlation-id: f0bfc7e7-6af4-450a-bc80-606683f69025'[39m
+[11 Jan, 2025 - 14:25:08:258] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:25:08:258] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 77.542 ms - correlation-id: a317e4f3-9f3d-41ba-a1cf-7c6d04172247'[39m
+[11 Jan, 2025 - 14:25:08:258] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:25:08:258] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.333 ms - correlation-id: 513e3a55-8729-4237-98cc-eda83f1710ed'[39m
+[11 Jan, 2025 - 14:25:40:2540] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:25:40:2540] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 68.709 ms - correlation-id: 6ac271a1-b995-460d-988e-55b37c381480'[39m
+[11 Jan, 2025 - 14:25:40:2540] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:25:40:2540] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.110 ms - correlation-id: 4b7dbfd6-0795-48c3-b2a5-99ba03d704ca'[39m
+[11 Jan, 2025 - 14:25:51:2551] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:25:51:2551] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.758 ms - correlation-id: b3e027a5-9d67-4bcf-bfb0-5b4e53c18439'[39m
+[11 Jan, 2025 - 14:25:51:2551] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:25:51:2551] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.527 ms - correlation-id: f91f54d2-dcc4-44c6-a721-dcca6fbdef8f'[39m
+[11 Jan, 2025 - 14:26:11:2611] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:26:11:2611] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.812 ms - correlation-id: 940b02af-8eef-4f2e-90b6-c37e21757860'[39m
+[11 Jan, 2025 - 14:26:11:2611] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:26:11:2611] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.047 ms - correlation-id: baf7a42a-a77d-4fe3-b4a9-ec93161f1c42'[39m
+[11 Jan, 2025 - 14:26:51:2651] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:26:51:2651] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 67.240 ms - correlation-id: 7d86aae4-f14a-4404-960c-06166deab120'[39m
+[11 Jan, 2025 - 14:26:51:2651] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:26:51:2651] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 72.832 ms - correlation-id: e7ac323f-288e-4783-9192-bcd7d499364f'[39m
+[11 Jan, 2025 - 14:27:06:276] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:27:06:276] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.369 ms - correlation-id: 5078fd25-2588-4684-b8ef-40ca0dc88b56'[39m
+[11 Jan, 2025 - 14:27:06:276] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:27:06:276] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.738 ms - correlation-id: c9c5c38d-ea61-454e-9932-2faeb9abdfa9'[39m
+[11 Jan, 2025 - 14:28:23:2823] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:28:23:2823] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 64.666 ms - correlation-id: 3be71324-5e48-4b9a-aac6-b5080573b052'[39m
+[11 Jan, 2025 - 14:28:23:2823] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:28:23:2823] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.993 ms - correlation-id: 30aef5dc-46f4-49d8-9bf2-d3939abaf6dc'[39m
+[11 Jan, 2025 - 14:28:32:2832] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:28:32:2832] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:28:32:2832] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 82.064 ms - correlation-id: a6974e0e-0785-4d36-9b0a-d58015284777'[39m
+[11 Jan, 2025 - 14:28:32:2832] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 79.238 ms - correlation-id: e661918a-8d2c-4da8-a6c8-7ad6b9840045'[39m
+[11 Jan, 2025 - 14:28:34:2834] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 59.608 ms - correlation-id: d151fdc3-f983-4ea9-b697-99e9f9a78342'[39m
+[11 Jan, 2025 - 14:28:57:2857] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 258.817 ms - correlation-id: ccaf37e9-0dd0-42d0-b2e9-dc4868a95d75'[39m
+[11 Jan, 2025 - 14:28:57:2857] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:28:57:2857] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 58.905 ms - correlation-id: 37c80251-6e4f-41cb-b890-09b5a38cd7d6'[39m
+[11 Jan, 2025 - 14:29:12:2912] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:29:12:2912] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 62.106 ms - correlation-id: 75693d07-090d-4fdc-b08a-7b2300fd7bbc'[39m
+[11 Jan, 2025 - 14:29:12:2912] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:29:12:2912] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.250 ms - correlation-id: 630a791f-7fb6-421c-8c66-f070596c0419'[39m
+[11 Jan, 2025 - 14:29:17:2917] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:29:17:2917] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 66.193 ms - correlation-id: e75a31f9-2369-4599-aa2e-05148f0d7229'[39m
+[11 Jan, 2025 - 14:29:17:2917] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:29:17:2917] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.476 ms - correlation-id: f3cb01b9-9782-4064-b9df-eaaa55db3901'[39m
+[11 Jan, 2025 - 14:30:54:3054] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 14:30:54:3054] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 14:30:54:3054] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 14:30:54:3054] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 14:30:54:3054] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 14:32:18:3218] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 14:32:18:3218] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 14:32:18:3218] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 14:32:18:3218] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 14:32:18:3218] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 14:32:26:3226] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:32:26:3226] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 68.964 ms - correlation-id: dc9a40c9-991d-43a4-a1c7-22adf273e938'[39m
+[11 Jan, 2025 - 14:32:26:3226] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:32:26:3226] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 64.010 ms - correlation-id: 66a2f083-3e94-4e47-b129-e1002c8ac78d'[39m
+[11 Jan, 2025 - 14:34:54:3454] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:34:54:3454] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.853 ms - correlation-id: 9d96430a-c84d-4b90-b2a9-e556ae344557'[39m
+[11 Jan, 2025 - 14:34:54:3454] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:34:54:3454] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.715 ms - correlation-id: dd709989-f6cf-470b-ad20-ff3c48995019'[39m
+[11 Jan, 2025 - 14:35:07:357] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:35:07:357] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.188 ms - correlation-id: 5d1f6674-195f-46f8-8be9-2bd3c56dce77'[39m
+[11 Jan, 2025 - 14:35:07:357] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:35:07:357] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.211 ms - correlation-id: 8db993f0-d62b-489f-935b-7a163887492f'[39m
+[11 Jan, 2025 - 14:36:01:361] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 61.301 ms - correlation-id: 4898d135-252c-41eb-951c-6bb77b629281'[39m
+[11 Jan, 2025 - 14:36:16:3616] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:36:16:3616] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 62.471 ms - correlation-id: c296bb7a-fa14-4667-8721-bccc130791f9'[39m
+[11 Jan, 2025 - 14:36:16:3616] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:36:17:3617] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.509 ms - correlation-id: 84e6d835-5d4b-46b9-bb1e-6e44ccb1c810'[39m
+[11 Jan, 2025 - 14:36:57:3657] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 370.606 ms - correlation-id: 384ea65b-08ea-4dae-8ec9-8e0c68a23009'[39m
+[11 Jan, 2025 - 14:36:58:3658] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:36:58:3658] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 142.967 ms - correlation-id: cab5134b-d65b-4090-96ca-a389aff28912'[39m
+[11 Jan, 2025 - 14:37:10:3710] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 137.258 ms - correlation-id: 8f232448-1546-4eb4-a07c-542278023437'[39m
+[11 Jan, 2025 - 14:37:31:3731] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 213.163 ms - correlation-id: 1fbcad69-d1d4-49db-8be8-74b66df0dadb'[39m
+[11 Jan, 2025 - 14:37:31:3731] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:37:31:3731] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 65.184 ms - correlation-id: 12132f77-5f57-46c7-857c-5b69fec3fea0'[39m
+[11 Jan, 2025 - 14:37:31:3731] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:37:31:3731] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.217 ms - correlation-id: 5a487522-152c-469e-a152-177c203b3852'[39m
+[11 Jan, 2025 - 14:38:22:3822] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:38:22:3822] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.233 ms - correlation-id: fa307a5e-b398-4fdc-9702-98745c51c00a'[39m
+[11 Jan, 2025 - 14:38:22:3822] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:38:22:3822] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.683 ms - correlation-id: c7f3b045-73b9-48ab-a199-89a876b4ded5'[39m
+[11 Jan, 2025 - 14:43:11:4311] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:43:11:4311] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 66.778 ms - correlation-id: e132adb2-21d4-4fce-ae7c-36bd601a7710'[39m
+[11 Jan, 2025 - 14:43:11:4311] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:43:11:4311] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 71.001 ms - correlation-id: 9f787fb2-2137-48cb-9398-b246bcb1882e'[39m
+[11 Jan, 2025 - 14:43:24:4324] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:43:24:4324] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 304.861 ms - correlation-id: 844f87f2-7c5b-4361-a650-b8c776d4a10c'[39m
+[11 Jan, 2025 - 14:43:24:4324] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:43:24:4324] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 69.782 ms - correlation-id: e99e253f-a24c-4a89-9459-98acd6c25bd7'[39m
+[11 Jan, 2025 - 14:44:07:447] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:44:07:447] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 61.657 ms - correlation-id: 3d3836c5-486b-44b3-99fd-3ac5e67ec412'[39m
+[11 Jan, 2025 - 14:44:07:447] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:44:07:447] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 278.408 ms - correlation-id: 53ea9436-0ffe-4267-a9f0-112f033bce5d'[39m
+[11 Jan, 2025 - 14:44:07:447] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:44:07:447] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.672 ms - correlation-id: 4876620c-b785-4b7b-9d43-d3c72241f5be'[39m
+[11 Jan, 2025 - 14:44:21:4421] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:44:21:4421] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:44:21:4421] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.361 ms - correlation-id: aac16ed8-d843-4bc3-b75d-d692b37ec998'[39m
+[11 Jan, 2025 - 14:44:21:4421] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 59.075 ms - correlation-id: bf90533a-45b6-47a8-b2f1-b7ba6f04b9f2'[39m
+[11 Jan, 2025 - 14:44:21:4421] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:44:21:4421] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.833 ms - correlation-id: d6819d58-92ff-4fdd-8d93-fe1ae845a76b'[39m
+[11 Jan, 2025 - 14:44:21:4421] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:44:21:4421] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 64.265 ms - correlation-id: ffb2e6c8-31a0-4083-8860-6336fd468219'[39m
+[11 Jan, 2025 - 14:44:29:4429] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:44:29:4429] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 73.194 ms - correlation-id: 0189878f-f2e4-456f-8dda-49ef615bc420'[39m
+[11 Jan, 2025 - 14:44:29:4429] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:44:29:4429] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 64.080 ms - correlation-id: 56dc6581-004c-4916-b9de-8f956e433937'[39m
+[11 Jan, 2025 - 14:44:46:4446] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 14:44:46:4446] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 14:44:46:4446] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 14:44:46:4446] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 14:44:47:4447] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 14:44:52:4452] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:44:52:4452] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 77.443 ms - correlation-id: 183d9b2f-827b-4d46-bc1b-e84bb73545d0'[39m
+[11 Jan, 2025 - 14:44:52:4452] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:44:52:4452] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.445 ms - correlation-id: 5dbb7075-ca3d-43b8-a7dc-1aaa34d69ce6'[39m
+[11 Jan, 2025 - 14:45:21:4521] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 69.100 ms - correlation-id: e1d2cd0b-84cf-4f5e-8d46-38b51a8fc0f1'[39m
+[11 Jan, 2025 - 14:45:27:4527] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 69.968 ms - correlation-id: 7d8c8403-a62e-4333-ac5e-943df174c424'[39m
+[11 Jan, 2025 - 14:45:44:4544] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 234.684 ms - correlation-id: 9b2192c5-1ad0-4e93-b01a-4e842e5945b3'[39m
+[11 Jan, 2025 - 14:45:44:4544] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:45:44:4544] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 61.535 ms - correlation-id: 1df98d8a-25b0-48c5-abd8-f81b49c5345e'[39m
+[11 Jan, 2025 - 14:45:54:4554] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 221.379 ms - correlation-id: 46ae2984-b255-4943-bef6-8fc74f534c15'[39m
+[11 Jan, 2025 - 14:45:54:4554] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:45:54:4554] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 295.144 ms - correlation-id: 6c875c0c-f0e7-4411-bcfd-7b147a222723'[39m
+[11 Jan, 2025 - 14:45:54:4554] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:45:54:4554] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 71.643 ms - correlation-id: 0b6fd7be-9f5c-4d94-8c26-690891a733ce'[39m
+[11 Jan, 2025 - 14:47:13:4713] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:47:13:4713] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:47:13:4713] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 64.699 ms - correlation-id: 5c07c1a0-2665-4b19-9b75-c75d555d240a'[39m
+[11 Jan, 2025 - 14:47:13:4713] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 71.319 ms - correlation-id: d74b1d67-cdc5-4469-8993-7b6ea34fd215'[39m
+[11 Jan, 2025 - 14:47:24:4724] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 70.127 ms - correlation-id: 7c8297b3-251a-4ec3-a600-631c33c46b3b'[39m
+[11 Jan, 2025 - 14:47:39:4739] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 229.579 ms - correlation-id: 29143729-260b-48a1-b4e4-dd0619dc62f6'[39m
+[11 Jan, 2025 - 14:47:39:4739] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:47:39:4739] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 80.338 ms - correlation-id: d2ae8453-23b8-4d94-9857-5d4fbc7008b0'[39m
+[11 Jan, 2025 - 14:47:39:4739] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:47:39:4739] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 308.423 ms - correlation-id: 9e9a6bd7-5e19-40dd-80a1-99d70409debf'[39m
+[11 Jan, 2025 - 14:47:57:4757] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 74.526 ms - correlation-id: bc02768e-b20e-471a-95e6-d8a0f28bbf06'[39m
+[11 Jan, 2025 - 14:48:05:485] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 217.754 ms - correlation-id: b10104cf-62db-4b09-beab-10fffd32ea22'[39m
+[11 Jan, 2025 - 14:48:34:4834] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:48:34:4834] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - - - - ms - correlation-id: 67101624-8f9c-4c80-9946-37c3adbd8a14'[39m
+[11 Jan, 2025 - 14:49:09:499] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:49:09:499] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:49:09:499] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - - - - ms - correlation-id: 09e0942f-5aed-4d0a-805a-0fb32529c5cd'[39m
+[11 Jan, 2025 - 14:49:09:499] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - - - - ms - correlation-id: e81d3185-bbb2-4618-93d6-ec2a2d864224'[39m
+[11 Jan, 2025 - 14:51:47:5147] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 14:51:47:5147] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 14:51:47:5147] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 14:51:47:5147] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 14:51:47:5147] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 14:52:00:520] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:52:00:520] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 71.179 ms - correlation-id: 67afbaa9-9da6-4dd6-8ccb-db9875939fe1'[39m
+[11 Jan, 2025 - 14:52:00:520] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:52:00:520] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.636 ms - correlation-id: 151d3d87-7448-4e79-a6f5-127e4b04f8ed'[39m
+[11 Jan, 2025 - 14:52:06:526] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 14:52:06:526] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 67.560 ms - correlation-id: cd721e99-9a2b-4f05-b9c1-8284c0335fcd'[39m
+[11 Jan, 2025 - 15:08:54:854] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 15:08:54:854] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 15:08:54:854] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 15:08:54:854] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 15:08:55:855] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 15:09:07:97] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 71.325 ms - correlation-id: 1c2775b0-eb11-4c8e-b392-a08bc4841cd0'[39m
+[11 Jan, 2025 - 15:09:12:912] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 65.229 ms - correlation-id: 6c113629-2d92-4500-90c1-a12bcce19d4a'[39m
+[11 Jan, 2025 - 15:09:24:924] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 224.793 ms - correlation-id: e958cf98-236f-4d3f-9462-ddfb248e6891'[39m
+[11 Jan, 2025 - 15:09:24:924] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:09:24:924] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 66.218 ms - correlation-id: e92ea6d0-c7fe-48c1-8e12-626d0f86356a'[39m
+[11 Jan, 2025 - 15:09:35:935] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 211.955 ms - correlation-id: 2d15aeb7-43a7-4851-abac-40cd6ee6d00a'[39m
+[11 Jan, 2025 - 15:09:35:935] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:09:35:935] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 64.471 ms - correlation-id: d394e155-5a0d-44a4-b287-88658f0adafa'[39m
+[11 Jan, 2025 - 15:09:36:936] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:09:36:936] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.617 ms - correlation-id: fea1955e-dfb3-401b-aef5-27697b8c486f'[39m
+[11 Jan, 2025 - 15:11:06:116] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 15:11:06:116] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 15:11:06:116] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 15:11:06:116] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 15:11:06:116] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 15:11:13:1113] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:11:13:1113] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 82.710 ms - correlation-id: 338b6637-c71c-4073-9af5-85d0819e576b'[39m
+[11 Jan, 2025 - 15:11:13:1113] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:11:13:1113] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.380 ms - correlation-id: 766418ff-2427-46fb-a34d-f6506b92023a'[39m
+[11 Jan, 2025 - 15:12:52:1252] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:12:52:1252] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 81.434 ms - correlation-id: 3d2e6ee6-223e-40fc-b4a7-e17ec40d2a88'[39m
+[11 Jan, 2025 - 15:12:52:1252] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:12:52:1252] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 66.184 ms - correlation-id: 6857e984-b4b2-48c2-922d-23d885713806'[39m
+[11 Jan, 2025 - 15:13:46:1346] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:13:46:1346] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.676 ms - correlation-id: b9ff65d2-3feb-4742-a818-3ec2088f4536'[39m
+[11 Jan, 2025 - 15:13:46:1346] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:13:46:1346] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 53.284 ms - correlation-id: b957428b-b9b0-4d96-9800-dc482ecf18b8'[39m
+[11 Jan, 2025 - 15:13:52:1352] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:13:52:1352] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.391 ms - correlation-id: cb421171-84a6-4cdb-b676-cbac06eaabee'[39m
+[11 Jan, 2025 - 15:13:53:1353] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:13:53:1353] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.561 ms - correlation-id: 33d6bae1-0300-4b7b-8231-5b9cd46c0b66'[39m
+[11 Jan, 2025 - 15:14:11:1411] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:14:11:1411] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:14:11:1411] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 57.578 ms - correlation-id: cd7ed723-7d45-4dcf-ade0-b544c82892e0'[39m
+[11 Jan, 2025 - 15:14:11:1411] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 60.494 ms - correlation-id: 07e6a4f0-4a67-4af8-ad8f-188f3e876229'[39m
+[11 Jan, 2025 - 15:14:15:1415] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:14:15:1415] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:14:15:1415] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.639 ms - correlation-id: f316f93d-b9e1-477b-8be7-8f462a6ad6d3'[39m
+[11 Jan, 2025 - 15:14:15:1415] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.507 ms - correlation-id: 81af74b4-39fa-4601-9f1d-f56b4309a4ed'[39m
+[11 Jan, 2025 - 15:14:17:1417] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 58.534 ms - correlation-id: 9cd31d2c-d80d-4feb-b01c-f244dad5e423'[39m
+[11 Jan, 2025 - 15:14:21:1421] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 60.194 ms - correlation-id: 7f0a0637-6fa3-40c1-b009-38b2e71de51f'[39m
+[11 Jan, 2025 - 15:18:28:1828] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 250.454 ms - correlation-id: 6c213018-92a0-4b87-bd68-2c4c45209736'[39m
+[11 Jan, 2025 - 15:18:28:1828] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:18:28:1828] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 56.374 ms - correlation-id: 35418d66-a688-4739-b4d3-b5e739d879b3'[39m
+[11 Jan, 2025 - 15:18:46:1846] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 212.433 ms - correlation-id: 37b52cd8-19e8-4e68-ae1f-5996dc1ac222'[39m
+[11 Jan, 2025 - 15:18:46:1846] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:18:46:1846] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 61.765 ms - correlation-id: 2c4991ba-8fab-46f3-950e-24914b124356'[39m
+[11 Jan, 2025 - 15:18:46:1846] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:18:46:1846] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 89.765 ms - correlation-id: 1ebc5fd3-0816-48fe-9d1e-54bf03b9b702'[39m
+[11 Jan, 2025 - 15:20:13:2013] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:20:13:2013] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.964 ms - correlation-id: 83007cac-3d8e-4e17-8db2-e96d88dab594'[39m
+[11 Jan, 2025 - 15:20:13:2013] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:20:13:2013] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.566 ms - correlation-id: 31942dad-6f70-4aa4-a7d1-96ecdb3fbcc1'[39m
+[11 Jan, 2025 - 15:29:02:292] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:29:02:292] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.500 ms - correlation-id: e408c072-91c8-4647-89c0-a52264b1df83'[39m
+[11 Jan, 2025 - 15:29:02:292] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:29:02:292] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.701 ms - correlation-id: e36a356a-4ba9-4eef-aa19-8affeccfb223'[39m
+[11 Jan, 2025 - 15:29:09:299] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:29:09:299] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.839 ms - correlation-id: c77ed919-8e1b-4b24-af67-1245aa69d7f6'[39m
+[11 Jan, 2025 - 15:29:09:299] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:29:10:2910] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 55.938 ms - correlation-id: 33424554-8a6f-4366-92d0-0e55f75ad8d3'[39m
+[11 Jan, 2025 - 15:29:26:2926] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 75.206 ms - correlation-id: 0b3a3990-478a-4774-87a1-dacc124385d7'[39m
+[11 Jan, 2025 - 15:30:02:302] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/login - 200 - 229.259 ms - correlation-id: 67da5a49-6de4-4f71-b0a4-c95bd2ca3537'[39m
+[11 Jan, 2025 - 15:30:02:302] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:30:02:302] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 75.630 ms - correlation-id: 138e234c-2262-4923-98e3-53b0e8e20da9'[39m
+[11 Jan, 2025 - 15:30:58:3058] [35mhttp[39m: [35m- ::1 - POST - /api/v1/auth/logout - 200 - 68.603 ms - correlation-id: 1b850e34-110c-4393-a7c6-d5edfe662c66'[39m
+[11 Jan, 2025 - 15:39:04:394] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 15:39:04:394] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 15:39:04:394] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 15:39:04:394] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 15:39:05:395] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 15:39:05:395] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:39:05:395] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:39:51:3951] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 15:39:51:3951] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 15:39:51:3951] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 15:39:51:3951] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 15:39:52:3952] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 15:39:52:3952] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online with socket Bk-jH_Y4su-kryFmAAAB[39m
+[11 Jan, 2025 - 15:39:52:3952] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:39:52:3952] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:40:21:4021] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 15:40:21:4021] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 15:40:22:4022] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 15:40:22:4022] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 15:40:22:4022] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 15:40:23:4023] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket x8iZwrVwUHe_sGIdAAAB[39m
+[11 Jan, 2025 - 15:40:23:4023] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:40:23:4023] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:41:07:417] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 15:41:07:417] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 15:41:07:417] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 15:41:07:417] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 15:41:07:417] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 15:41:10:4110] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket CIOSHKLMmMdAnfcFAAAB[39m
+[11 Jan, 2025 - 15:41:10:4110] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:41:10:4110] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:41:40:4140] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 15:41:40:4140] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 15:41:40:4140] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 15:41:40:4140] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 15:41:40:4140] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 15:41:41:4141] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket 1gzDuDLt_a9Cl8sCAAAB[39m
+[11 Jan, 2025 - 15:41:41:4141] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:41:41:4141] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:41:44:4144] [34minfo[39m: [34mUser disconnected:[39m
+[11 Jan, 2025 - 15:41:44:4144] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is offline[39m
+[11 Jan, 2025 - 15:41:44:4144] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:41:44:4144] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket ZXgcUVE6f711EudcAAAD[39m
+[11 Jan, 2025 - 15:41:44:4144] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:41:44:4144] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 60.333 ms - correlation-id: 54e842a4-c9a3-45db-8248-dbda6b44d9b8'[39m
+[11 Jan, 2025 - 15:41:44:4144] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:41:44:4144] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:41:44:4144] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:41:44:4144] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.367 ms - correlation-id: 40cb48b2-8f43-48aa-ad98-63e972667a43'[39m
+[11 Jan, 2025 - 15:42:09:429] [34minfo[39m: [34mUser disconnected:[39m
+[11 Jan, 2025 - 15:42:10:4210] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is offline[39m
+[11 Jan, 2025 - 15:42:10:4210] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:42:34:4234] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 15:42:34:4234] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 15:42:34:4234] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 15:42:34:4234] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 15:42:34:4234] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 15:42:44:4244] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket rjHK4ESw1X3SvvwwAAAB[39m
+[11 Jan, 2025 - 15:42:44:4244] [34minfo[39m: [34mUser disconnected:[39m
+[11 Jan, 2025 - 15:42:45:4245] [34minfo[39m: [34mUser undefined is online[39m
+[11 Jan, 2025 - 15:42:45:4245] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is offline[39m
+[11 Jan, 2025 - 15:42:45:4245] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket _mAxSe57_A4Im9DCAAAD[39m
+[11 Jan, 2025 - 15:42:45:4245] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:42:45:4245] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:42:45:4245] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:42:45:4245] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 200 - 101.152 ms - correlation-id: 7b6a8132-e403-4a9e-bad1-8d8cbe74a77a'[39m
+[11 Jan, 2025 - 15:42:45:4245] [34minfo[39m: [34mUser undefined is online[39m
+[11 Jan, 2025 - 15:42:45:4245] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:42:45:4245] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:42:45:4245] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 55.596 ms - correlation-id: ecbda9f9-58c4-4ea3-a6a5-754b7eada962'[39m
+[11 Jan, 2025 - 15:43:19:4319] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 15:43:19:4319] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 15:43:19:4319] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 15:43:19:4319] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 15:43:19:4319] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 15:43:20:4320] [37mdebug[39m: [37m[37mdebug[37m[39m
+[11 Jan, 2025 - 15:43:20:4320] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket _9taTIEIIjPIprNOAAAB[39m
+[11 Jan, 2025 - 15:43:20:4320] [34minfo[39m: [34mUser undefined is online[39m
+[11 Jan, 2025 - 15:43:20:4320] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:43:23:4323] [34minfo[39m: [34mUser disconnected:[39m
+[11 Jan, 2025 - 15:43:23:4323] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is offline[39m
+[11 Jan, 2025 - 15:43:23:4323] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:43:23:4323] [37mdebug[39m: [37m[37mdebug[37m[39m
+[11 Jan, 2025 - 15:43:23:4323] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket 5r7G_nG50K_aAfOwAAAD[39m
+[11 Jan, 2025 - 15:43:23:4323] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:43:23:4323] [34minfo[39m: [34mUser undefined is online[39m
+[11 Jan, 2025 - 15:43:23:4323] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 63.334 ms - correlation-id: 9a1cfdda-de7b-4edd-8634-836d84dabc19'[39m
+[11 Jan, 2025 - 15:43:24:4324] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:43:24:4324] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:43:24:4324] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 64.449 ms - correlation-id: 74b31b02-5cdf-4a50-8103-ee06d67cce40'[39m
+[11 Jan, 2025 - 15:43:42:4342] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 15:43:42:4342] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 15:43:42:4342] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 15:43:42:4342] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 15:43:43:4343] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 15:43:43:4343] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket TjRqmP7mTNE_KDRfAAAB[39m
+[11 Jan, 2025 - 15:43:43:4343] [34minfo[39m: [34mUser undefined is online[39m
+[11 Jan, 2025 - 15:43:43:4343] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:43:46:4346] [34minfo[39m: [34mUser disconnected:[39m
+[11 Jan, 2025 - 15:43:46:4346] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is offline[39m
+[11 Jan, 2025 - 15:43:46:4346] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:43:46:4346] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket R5c4B8y2aKUcadgPAAAD[39m
+[11 Jan, 2025 - 15:43:46:4346] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:43:46:4346] [34minfo[39m: [34mUser undefined is online[39m
+[11 Jan, 2025 - 15:43:46:4346] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.238 ms - correlation-id: c6a1f81a-db22-4c58-8f54-d831d8d3dc00'[39m
+[11 Jan, 2025 - 15:43:46:4346] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:43:46:4346] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:43:46:4346] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.575 ms - correlation-id: 4a24e126-6d63-42b6-a636-f3a22505ebfb'[39m
+[11 Jan, 2025 - 15:43:55:4355] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 15:43:55:4355] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 15:43:55:4355] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 15:43:55:4355] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 15:43:56:4356] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 15:43:56:4356] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket xfpJp3gXj3OaUXDDAAAB[39m
+[11 Jan, 2025 - 15:43:56:4356] [34minfo[39m: [34mUser {[39m
+[34m  _id: new ObjectId('677a76b9c47c79e082b09587'),[39m
+[34m  firstName: 'Ankit',[39m
+[34m  lastName: 'Sharma',[39m
+[34m  email: 'ankit.ecom@gmail.com',[39m
+[34m  avatar: {[39m
+[34m    url: 'https://www.gravatar.com/avatar/?d=identicon',[39m
+[34m    localPath: '',[39m
+[34m    _id: new ObjectId('677a76b9c47c79e082b09586')[39m
+[34m  },[39m
+[34m  isOnline: false,[39m
+[34m  status: 'Active',[39m
+[34m  isEmailVerified: false,[39m
+[34m  createdAt: 2025-01-05T12:10:33.706Z,[39m
+[34m  updatedAt: 2025-01-11T09:48:46.232Z,[39m
+[34m  username: 'anksha',[39m
+[34m  __v: 0[39m
+[34m} is online[39m
+[11 Jan, 2025 - 15:43:56:4356] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:43:57:4357] [34minfo[39m: [34mUser disconnected:[39m
+[11 Jan, 2025 - 15:43:57:4357] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is offline[39m
+[11 Jan, 2025 - 15:43:57:4357] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:43:58:4358] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket De80DXTkA4D1ISKuAAAD[39m
+[11 Jan, 2025 - 15:43:58:4358] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:43:58:4358] [34minfo[39m: [34mUser {[39m
+[34m  _id: new ObjectId('677a76b9c47c79e082b09587'),[39m
+[34m  firstName: 'Ankit',[39m
+[34m  lastName: 'Sharma',[39m
+[34m  email: 'ankit.ecom@gmail.com',[39m
+[34m  avatar: {[39m
+[34m    url: 'https://www.gravatar.com/avatar/?d=identicon',[39m
+[34m    localPath: '',[39m
+[34m    _id: new ObjectId('677a76b9c47c79e082b09586')[39m
+[34m  },[39m
+[34m  isOnline: false,[39m
+[34m  status: 'Active',[39m
+[34m  isEmailVerified: false,[39m
+[34m  createdAt: 2025-01-05T12:10:33.706Z,[39m
+[34m  updatedAt: 2025-01-11T09:48:46.232Z,[39m
+[34m  username: 'anksha',[39m
+[34m  __v: 0[39m
+[34m} is online[39m
+[11 Jan, 2025 - 15:43:58:4358] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.778 ms - correlation-id: e9c1ec0b-8405-451a-9ade-0b3e49a327c2'[39m
+[11 Jan, 2025 - 15:43:58:4358] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:43:58:4358] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:43:58:4358] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.366 ms - correlation-id: 6725b6b5-4daa-4471-a9b4-bcb99b8713d6'[39m
+[11 Jan, 2025 - 15:44:23:4423] [34minfo[39m: [34mUser disconnected:[39m
+[11 Jan, 2025 - 15:44:23:4423] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is offline[39m
+[11 Jan, 2025 - 15:44:23:4423] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:44:23:4423] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:44:23:4423] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket ipP9yiEW7LEdoipNAAAF[39m
+[11 Jan, 2025 - 15:44:23:4423] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.596 ms - correlation-id: 088bce08-c3c2-4289-9dbe-725bd18169fb'[39m
+[11 Jan, 2025 - 15:44:23:4423] [34minfo[39m: [34mUser {[39m
+[34m  _id: new ObjectId('677a76b9c47c79e082b09587'),[39m
+[34m  firstName: 'Ankit',[39m
+[34m  lastName: 'Sharma',[39m
+[34m  email: 'ankit.ecom@gmail.com',[39m
+[34m  avatar: {[39m
+[34m    url: 'https://www.gravatar.com/avatar/?d=identicon',[39m
+[34m    localPath: '',[39m
+[34m    _id: new ObjectId('677a76b9c47c79e082b09586')[39m
+[34m  },[39m
+[34m  isOnline: false,[39m
+[34m  status: 'Active',[39m
+[34m  isEmailVerified: false,[39m
+[34m  createdAt: 2025-01-05T12:10:33.706Z,[39m
+[34m  updatedAt: 2025-01-11T09:48:46.232Z,[39m
+[34m  username: 'anksha',[39m
+[34m  __v: 0[39m
+[34m} is online[39m
+[11 Jan, 2025 - 15:44:23:4423] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:44:23:4423] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:44:23:4423] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.682 ms - correlation-id: e3526bec-9eac-4a45-8ce3-415f862b8af2'[39m
+[11 Jan, 2025 - 15:44:27:4427] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 15:44:27:4427] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 15:44:27:4427] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 15:44:27:4427] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 15:44:28:4428] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 15:44:28:4428] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket pWTBjNBpX7YNxXjDAAAB[39m
+[11 Jan, 2025 - 15:44:28:4428] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:44:28:4428] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:44:32:4432] [34minfo[39m: [34mUser disconnected:[39m
+[11 Jan, 2025 - 15:44:32:4432] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is offline[39m
+[11 Jan, 2025 - 15:44:32:4432] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:44:32:4432] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket rn22ustbRlx29CXlAAAD[39m
+[11 Jan, 2025 - 15:44:32:4432] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:44:32:4432] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:44:32:4432] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 61.539 ms - correlation-id: 480f0ece-70ae-4e71-ae8b-d5678f8c6f3f'[39m
+[11 Jan, 2025 - 15:44:32:4432] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:44:32:4432] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:44:32:4432] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.137 ms - correlation-id: 13729adf-91a3-4a3b-9b8e-29ae7022d824'[39m
+[11 Jan, 2025 - 15:44:57:4457] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 15:44:57:4457] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 15:44:57:4457] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 15:44:57:4457] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 15:44:58:4458] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 15:44:58:4458] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket VRBNr-1h-omKDbg8AAAB[39m
+[11 Jan, 2025 - 15:44:58:4458] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:44:58:4458] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:45:24:4524] [34minfo[39m: [34mUser disconnected:[39m
+[11 Jan, 2025 - 15:45:24:4524] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is offline[39m
+[11 Jan, 2025 - 15:45:24:4524] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:45:24:4524] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket 69nvYWUTa8o6vGuAAAAD[39m
+[11 Jan, 2025 - 15:45:24:4524] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:45:24:4524] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.398 ms - correlation-id: 48337f5c-af76-40df-915c-fb752adc0129'[39m
+[11 Jan, 2025 - 15:45:24:4524] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:45:24:4524] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:45:24:4524] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:45:24:4524] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 55.843 ms - correlation-id: 34b32e66-50d9-4f77-8e12-086992aa633e'[39m
+[11 Jan, 2025 - 15:45:27:4527] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 15:45:27:4527] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 15:45:27:4527] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 15:45:27:4527] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 15:45:28:4528] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 15:45:28:4528] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket ebt4PAIZ_inuPP_BAAAB[39m
+[11 Jan, 2025 - 15:45:28:4528] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:45:28:4528] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:45:43:4543] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 15:45:43:4543] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 15:45:43:4543] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 15:45:43:4543] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 15:45:43:4543] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 15:45:43:4543] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket QbC715baejhVrNrGAAAB[39m
+[11 Jan, 2025 - 15:45:43:4543] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:45:57:4557] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:46:30:4630] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 15:46:30:4630] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 15:46:30:4630] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 15:46:30:4630] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 15:46:31:4631] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 15:46:31:4631] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket 5auts-r2gt4_6vC5AAAB[39m
+[11 Jan, 2025 - 15:46:31:4631] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:46:33:4633] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:47:49:4749] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 15:47:49:4749] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 15:47:49:4749] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 15:47:49:4749] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 15:47:49:4749] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 15:47:50:4750] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket alSHArQ3I505L3lrAAAB[39m
+[11 Jan, 2025 - 15:47:50:4750] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:48:25:4825] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:48:25:4825] [34minfo[39m: [34mUser disconnected:[39m
+[11 Jan, 2025 - 15:48:26:4826] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is offline[39m
+[11 Jan, 2025 - 15:48:26:4826] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket dMk2Q-xYLXbPIQQGAAAD[39m
+[11 Jan, 2025 - 15:48:29:4829] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:48:29:4829] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:48:32:4832] [31merror[39m: [31mError broadcasting online users: io is not defined[39m
+[11 Jan, 2025 - 15:49:35:4935] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 15:49:35:4935] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 15:49:35:4935] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 15:49:35:4935] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 15:49:35:4935] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 15:49:35:4935] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket QhpLt2yF6m_X8rjWAAAB[39m
+[11 Jan, 2025 - 15:49:35:4935] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:49:43:4943] [31merror[39m: [31mError broadcasting online users: app is not defined[39m
+[11 Jan, 2025 - 15:49:47:4947] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 15:49:47:4947] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 15:49:47:4947] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 15:49:47:4947] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 15:49:47:4947] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 15:49:47:4947] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket p1uyYLdc5rp0avO1AAAB[39m
+[11 Jan, 2025 - 15:49:47:4947] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:49:51:4951] [31merror[39m: [31mError broadcasting online users: app is not defined[39m
+[11 Jan, 2025 - 15:49:56:4956] [34minfo[39m: [34mUser disconnected:[39m
+[11 Jan, 2025 - 15:49:56:4956] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is offline[39m
+[11 Jan, 2025 - 15:49:56:4956] [31merror[39m: [31mError broadcasting online users: app is not defined[39m
+[11 Jan, 2025 - 15:49:56:4956] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket 9ULAW-Pfi0fb9sl9AAAD[39m
+[11 Jan, 2025 - 15:49:56:4956] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:49:56:4956] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.992 ms - correlation-id: f84bbbe6-1482-4b95-8def-9be09eaad014'[39m
+[11 Jan, 2025 - 15:49:56:4956] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:49:56:4956] [31merror[39m: [31mError broadcasting online users: app is not defined[39m
+[11 Jan, 2025 - 15:49:56:4956] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:49:56:4956] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 55.506 ms - correlation-id: 26b874bf-e25e-4786-b35a-84981d20feec'[39m
+[11 Jan, 2025 - 15:50:36:5036] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 15:50:36:5036] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 15:50:36:5036] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 15:50:36:5036] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 15:50:37:5037] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 15:50:37:5037] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket n459QmkLfncNKLTfAAAB[39m
+[11 Jan, 2025 - 15:50:37:5037] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:50:37:5037] [31merror[39m: [31mError broadcasting online users: Cannot read properties of undefined (reading 'emit')[39m
+[11 Jan, 2025 - 15:50:41:5041] [34minfo[39m: [34mUser disconnected:[39m
+[11 Jan, 2025 - 15:50:41:5041] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is offline[39m
+[11 Jan, 2025 - 15:50:41:5041] [33mwarn[39m: [33mUser 677a76b9c47c79e082b09587 is online with socket 0V7OYwTm_pAnsGtHAAAD[39m
+[11 Jan, 2025 - 15:50:41:5041] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:50:41:5041] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 57.153 ms - correlation-id: 2e2da137-ad42-4995-9c7b-9e8fafdc6d50'[39m
+[11 Jan, 2025 - 15:50:41:5041] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:50:41:5041] [31merror[39m: [31mError broadcasting online users: Cannot read properties of undefined (reading 'emit')[39m
+[11 Jan, 2025 - 15:50:41:5041] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:50:41:5041] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 56.239 ms - correlation-id: 4013993a-25fa-4522-83e3-528b2e270ba7'[39m
+[11 Jan, 2025 - 15:51:37:5137] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 15:51:37:5137] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 15:51:37:5137] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 15:51:37:5137] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 15:51:38:5138] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 15:51:38:5138] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:51:42:5142] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:51:42:5142] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:51:42:5142] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 65.165 ms - correlation-id: 10a45ff0-3d01-48bb-b055-7c7e30ce1aae'[39m
+[11 Jan, 2025 - 15:51:42:5142] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:51:42:5142] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 58.211 ms - correlation-id: ec314ec9-ab81-428b-af0c-fa40dbefd23b'[39m
+[11 Jan, 2025 - 15:52:01:521] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 15:52:01:521] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 15:52:01:521] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 15:52:01:521] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 15:52:01:521] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 15:52:01:521] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online with socket cWSyE5jxoCj7BDgyAAAB[39m
+[11 Jan, 2025 - 15:52:01:521] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:52:26:5226] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 15:52:26:5226] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 15:52:26:5226] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 15:52:26:5226] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 15:52:26:5226] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 15:52:29:5229] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online with socket p1nbShd0_PvCSnzUAAAB[39m
+[11 Jan, 2025 - 15:52:29:5229] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:53:04:534] [34minfo[39m: [34mSwagger file loaded successfully.[39m
+[11 Jan, 2025 - 15:53:04:534] [34minfo[39m: [34mAttempt 1 to connect to MongoDB...[39m
+[11 Jan, 2025 - 15:53:04:534] [34minfo[39m: [34m📑 Visit the documentation at: http://localhost:7800/docs[39m
+[11 Jan, 2025 - 15:53:04:534] [34minfo[39m: [34m⚙️  Server is running in development env on port: 7800 and connected to chatApp DB[39m
+[11 Jan, 2025 - 15:53:05:535] [34minfo[39m: [34mMongoDB connected successfully![39m
+[11 Jan, 2025 - 15:53:07:537] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online with socket _KS06HwOpWbm6UboAAAB[39m
+[11 Jan, 2025 - 15:53:07:537] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:53:08:538] [34minfo[39m: [34mUser disconnected:[39m
+[11 Jan, 2025 - 15:53:08:538] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is offline[39m
+[11 Jan, 2025 - 15:53:09:539] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online with socket mRrExiGSy3Y0-K9UAAAD[39m
+[11 Jan, 2025 - 15:53:09:539] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:53:09:539] [34minfo[39m: [34mUser 677a76b9c47c79e082b09587 is online[39m
+[11 Jan, 2025 - 15:53:09:539] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.566 ms - correlation-id: 4ab1b3e3-65e0-4eac-a867-4f2b2f1a05a0'[39m
+[11 Jan, 2025 - 15:53:09:539] [34minfo[39m: [34mFetching all users[39m
+[11 Jan, 2025 - 15:53:09:539] [35mhttp[39m: [35m- ::1 - GET - /api/v1/user/all - 304 - 60.059 ms - correlation-id: 7492472d-e35b-457c-8595-a16a686b5e1f'[39m
