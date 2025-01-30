@@ -40,14 +40,6 @@ app.set('io', io); // using set method to mount the `io` instance on the app to 
 
 initializeSocketIO(io);
 
-// io.use((socket, next) => {
-//   const token = socket.handshake.auth.token;
-//   if (token === 'YOUR_EXPECTED_TOKEN') {
-//     return next();
-//   }
-//   return next(new Error('Unauthorized'));
-// });
-
 // Initialize Swagger
 loadSwaggerDocument();
 // Watch for changes in the Swagger file
@@ -94,30 +86,12 @@ app.use(cookieParser());
 // app.use(logger());
 app.use(HTTPLoggerMiddleware);
 
-// Socket.IO for real-time
-// io.on('connection', (socket) => {
-//   AppLogger.info('User connected:', socket.id);
-
-//   socket.on('joinChat', (chatId) => {
-//     socket.join(chatId);
-//     AppLogger.info(`User joined chat: ${chatId}`);
-//   });
-
-//   socket.on('sendMessage', (message) => {
-//     io.to(message.chat).emit('messageReceived', message);
-//   });
-
-//   socket.on('disconnect', () => {
-//     AppLogger.info('User disconnected:', socket.id);
-//   });
-// });
-
 // Import all routes
 import userRouter from './route/user/user.routes.js';
 import authRouter from './route/auth/auth.routes.js';
 import chatRoutes from './route/chat/chat.routes.js';
 import messageRoutes from './route/message/message.routes.js';
-import AppLogger from './logger/app.logger.js';
+
 import { initializeSocketIO } from './socket/index.js';
 
 // * healthcheck

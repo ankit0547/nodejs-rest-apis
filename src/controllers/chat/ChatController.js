@@ -93,11 +93,7 @@ class ChatController {
         ...chatCommonAggregation(),
       ]);
       return res.json(
-        new ApiResponse(
-          200,
-          chats, // send access and refresh token in response if client decides to save them by themselves
-          'User chats fetched successfully!',
-        ),
+        new ApiResponse(200, chats, 'User chats fetched successfully!'),
       );
     } catch (err) {
       res.json(
@@ -111,73 +107,27 @@ class ChatController {
   async createOrGetAOneOnOneChat(req, res) {
     try {
       const { receiverId } = req.params;
+      const senderId = req.user._id;
 
-      // Check if it's a valid receiver
-      const receiver = await UserModel.findById(
-        new mongoose.Types.ObjectId(receiverId),
-      );
-
-      if (!receiver) {
-        throw new ApiError(404, 'Receiver does not exist');
-      }
-
-      // check if receiver is not the user who is requesting a chat
-      if (receiver._id.toString() === req.user._id.toString()) {
-        throw new ApiError(400, 'You cannot chat with yourself');
-      }
-
-      const chat = await ChatModel.aggregate([
-        {
-          $match: {
-            isGroupChat: false, // avoid group chats. This controller is responsible for one on one chats
-            // Also, filter chats with participants having receiver and logged in user only
-            $and: [
-              {
-                participants: { $elemMatch: { $eq: req.user._id } },
-              },
-              {
-                participants: {
-                  $elemMatch: { $eq: new mongoose.Types.ObjectId(receiverId) },
-                },
-              },
-            ],
-          },
-        },
-        ...chatCommonAggregation(),
-      ]);
-
-      if (chat.length) {
-        // if we find the chat that means user already has created a chat
-        return res
-          .status(200)
-          .json(new ApiResponse(200, chat[0], 'Chat retrieved successfully'));
-      }
-
-      // if not we need to create a new one on one chat
-      const newChatInstance = await ChatModel.create({
-        name: 'One on one chat',
-        participants: [req.user._id, new mongoose.Types.ObjectId(receiverId)], // add receiver and logged in user as participants
-        admin: req.user._id,
+      // Check if chat already exists
+      let chat = await ChatModel.findOne({
+        participants: { $all: [senderId, receiverId] },
+        isGroupChat: false,
       });
 
-      // structure the chat as per the common aggregation to keep the consistency
-      const createdChat = await ChatModel.aggregate([
-        {
-          $match: {
-            _id: newChatInstance._id,
-          },
-        },
-        ...chatCommonAggregation(),
-      ]);
+      if (!chat) {
+        // Create a new one-to-one chat
+        chat = new ChatModel({
+          name: `One to one chat`,
+          participants: [senderId, receiverId],
+          isGroupChat: false,
+        });
 
-      const payload = createdChat[0]; // store the aggregation result
-
-      if (!payload) {
-        throw new ApiError(500, 'Internal server error');
+        await chat.save();
       }
 
       // logic to emit socket event about the new chat added to the participants
-      payload?.participants?.forEach((participant) => {
+      chat?.participants?.forEach((participant) => {
         if (participant._id.toString() === req.user._id.toString()) return; // don't emit the event for the logged in use as he is the one who is initiating the chat
 
         // emit event to other participants with new chat as a payload
@@ -185,13 +135,18 @@ class ChatController {
           req,
           participant._id?.toString(),
           ChatEventEnum.NEW_CHAT_EVENT,
-          payload,
+          chat,
         );
       });
-
       return res
         .status(201)
-        .json(new ApiResponse(201, payload, 'Chat retrieved successfully'));
+        .json(
+          new ApiResponse(
+            201,
+            { chatId: chat._id },
+            'Chat retrieved successfully',
+          ),
+        );
     } catch (err) {
       res.json(
         new ApiError(
