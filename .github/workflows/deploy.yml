@@ -34,9 +34,13 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           HOST: ${{ secrets.HOST }}
 
-      - name: Copy files to EC2
+      - name: Archive application excluding .git
         run: |
-          scp -i private_key.pem -r . ${{ secrets.USER }}@${{ secrets.HOST }}:/home/ubuntu/app
+          tar --exclude='.git' -czf app.tar.gz .
+
+      - name: Copy application archive to EC2
+        run: |
+          scp -i private_key.pem app.tar.gz ${{ secrets.USER }}@${{ secrets.HOST }}:/home/ubuntu/app/
 
       - name: Deploy on EC2
         run: |
