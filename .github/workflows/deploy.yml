@@ -55,6 +55,6 @@ jobs:
 
             # Install dependencies and restart or start the app with pm2
             npm install --legacy-peer-deps
-            pm2 restart all || pm2 start index.js --name my-node-app
+            pm2 restart all || pm2 start NODE_ENV=production node -r dotenv/config  src/index.js --name my-node-app
             exit
           EOF
