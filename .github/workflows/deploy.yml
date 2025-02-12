@@ -1,0 +1,56 @@
+name: Deploy Node.js App
+
+on:
+  push:
+    branches:
+      - main # Change if using a different branch
+
+jobs:
+  build:
+    runs-on: ubuntu
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests
+        run: npm test
+
+      - name: Build the app
+        run: npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: build
+          path: . # Change path if necessary
+
+  deploy:
+    runs-on: ubuntu
+    needs: build
+
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: build
+          path: . # Change path if necessary
+
+      - name: Deploy to EC2
+        env:
+          PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          HOST: ${{ secrets.EC2_HOST }}
+          USER: ubuntu
+        run: |
+          echo "$PRIVATE_KEY" > private_key.pem
+          chmod 600 private_key.pem
+          scp -i private_key.pem -r . $USER@$HOST:/home/ubuntu/app
+          ssh -i private_key.pem $USER@$HOST << 'EOF'
+            cd /home/ubuntu/app
+            npm install
+            pm2 restart all || pm2 start index.js --name my-node-app
+            exit
+          EOF
