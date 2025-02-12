@@ -28,6 +28,7 @@ dotenv.config({
 const app = express();
 const httpServer = createServer(app);
 const io = new Server(httpServer, {
+  path: '/socket.io',
   pingInterval: 1000,
   transports: ['websocket'],
   cors: {
