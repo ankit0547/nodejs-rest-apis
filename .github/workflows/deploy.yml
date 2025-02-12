@@ -1,0 +1,60 @@
+name: Deploy Node app to EC2
+
+on:
+  push:
+    branches:
+      - chat-app
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Set up SSH key and known_hosts
+        run: |
+          # Create the SSH directory with proper permissions
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+
+          # Write the private key to a file and secure it
+          echo "$SSH_PRIVATE_KEY" > private_key.pem
+          chmod 600 private_key.pem
+
+          # Remove any existing known_hosts file, create a new one, and set proper permissions
+          rm -f ~/.ssh/known_hosts
+          touch ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+
+          # Fetch and add the host's SSH key to known_hosts securely
+          ssh-keyscan -H "$HOST" >> ~/.ssh/known_hosts
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          HOST: ${{ secrets.HOST }}
+
+      - name: Archive application excluding .git
+        run: |
+          git archive --format=tar.gz --output=app.tar.gz HEAD
+
+      - name: Copy application archive to EC2
+        run: |
+          scp -i private_key.pem app.tar.gz ${{ secrets.USER }}@${{ secrets.HOST }}:/home/ubuntu/app/
+
+      - name: Deploy on EC2
+        run: |
+          ssh -t -i private_key.pem ${{ secrets.USER }}@${{ secrets.HOST }} << 'EOF'
+            # Explicitly load nvm (if using nvm)
+            export NVM_DIR="$HOME/.nvm" 
+            [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+            # Navigate to the app directory and extract the archive
+            cd /home/ubuntu/app
+            tar -xzf app.tar.gz
+
+            # Install dependencies and restart or start the app with pm2
+            npm install --legacy-peer-deps
+            pm2 restart all || pm2 start npm --name my-app -- run prod 
+            exit
+          EOF
