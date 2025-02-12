@@ -17,6 +17,9 @@ jobs:
       # 2. Set up SSH: Write the private key and update known_hosts
       - name: Set up SSH key and known_hosts
         run: |
+          # Create the SSH directory if it does not exist
+          sudo mkdir -p ~/.ssh
+
           # Write the private key to a file and secure it
           echo "$SSH_PRIVATE_KEY" > private_key.pem
           chmod 600 private_key.pem
