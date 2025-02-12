@@ -46,9 +46,14 @@ jobs:
         run: |
           ssh -t -i private_key.pem ${{ secrets.USER }}@${{ secrets.HOST }} << 'EOF'
             # Explicitly load nvm (if using nvm)
-            export NVM_DIR="$HOME/.nvm" [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+            export NVM_DIR="$HOME/.nvm" 
+            [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+            # Navigate to the app directory and extract the archive
             cd /home/ubuntu/app
             tar -xzf app.tar.gz
+
+            # Install dependencies and restart or start the app with pm2
             npm install --legacy-peer-deps
             pm2 restart all || pm2 start index.js --name my-node-app
             exit
