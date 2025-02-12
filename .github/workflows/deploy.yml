@@ -15,7 +15,7 @@ jobs:
 
       - name: Set up SSH key and known_hosts
         run: |
-          # Create the SSH directory with proper permissions
+          # Create the SSH directory with proper permissions:
           mkdir -p ~/.ssh
           chmod 700 ~/.ssh
 
