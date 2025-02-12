@@ -31,7 +31,7 @@ const io = new Server(httpServer, {
   pingInterval: 1000,
   transports: ['websocket'],
   cors: {
-    origin: process.env.WS_CORS_ORIGIN,
+    origin: process.env.CORS_ORIGIN,
     credentials: true,
   },
   methods: ['GET', 'POST'],
