@@ -78,7 +78,7 @@ import userRouter from './route/user/user.routes.js';
 import authRouter from './route/auth/auth.routes.js';
 
 // * healthcheck
-app.use('/api/v1/healthcheck', healthcheckRouter);
+app.use('/', healthcheckRouter);
 
 // * App apis
 app.use('/api/v1/user', userRouter);
