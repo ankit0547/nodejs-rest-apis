@@ -1,56 +1,49 @@
-name: Deploy Node.js App
+name: Deploy to EC2
 
 on:
   push:
     branches:
-      - master # Change if using a different branch
+      - master
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Install dependencies
-        run: npm install --legacy-peer-deps
-
-      #- name: Run tests
-      # run: npm test
-
-      # - name: Build the app
-      #  run: npm run build
-
-      #- name: Upload artifact
-      # uses: actions/upload-artifact@v4
-      #with:
-      # name: build
-      #path: . # Change path if necessary
-
   deploy:
     runs-on: ubuntu-latest
-    needs: build
 
     steps:
-      # - name: Download artifact
-      #   uses: actions/download-artifact@v4
-      #   with:
-      #     name: build
-      #     path: . # Change path if necessary
+      # 1. Check out the repository code
+      - name: Check out code
+        uses: actions/checkout@v2
 
-      - name: Deploy to EC2
-        env:
-          PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          HOST: ${{ secrets.EC2_HOST }}
-          USER: ubuntu
+      # 2. Set up SSH: Write the private key and update known_hosts
+      - name: Set up SSH key and known_hosts
         run: |
-          echo "$PRIVATE_KEY" > private_key.pem
+          # Create the SSH directory if it does not exist
+          mkdir -p ~/.ssh
+
+          # Write the private key to a file and secure it
+          echo "$SSH_PRIVATE_KEY" > private_key.pem
           chmod 600 private_key.pem
-          scp -i private_key.pem -r . $USER@$HOST:/home/ubuntu/app
-          ssh -i private_key.pem $USER@$HOST << 'EOF'
+
+          # Use ssh-keyscan to fetch and add the host's SSH key to known_hosts
+          ssh-keyscan -H "$HOST" >> ~/.ssh/known_hosts
+
+          # Optional: For debugging (remove in production)
+          # cat ~/.ssh/known_hosts
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          HOST: ${{ secrets.HOST }}
+
+      # 3. Copy files to the EC2 instance using scp
+      - name: Copy files to EC2
+        run: |
+          scp -i private_key.pem -r . ${{ secrets.USER }}@${{ secrets.HOST }}:/home/ubuntu/app
+
+      # 4. Connect via SSH to install dependencies and restart your app
+      - name: Deploy on EC2
+        run: |
+          ssh -i private_key.pem ${{ secrets.USER }}@${{ secrets.HOST }} << 'EOF'
             cd /home/ubuntu/app
-            npm install
+            npm install --legacy-peer-deps
             pm2 restart all || pm2 start index.js --name my-node-app
             exit
           EOF
